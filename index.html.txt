@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>By Occasion - Elevated Style for Every Celebration</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --ivory: #FAF8F3;
+            --beige: #F5F1E8;
+            --warm-beige: #E8E3D8;
+            --taupe: #C9C4BA;
+            --navy-blue: #2C4A6E;
+            --ocean-blue: #5B8BA8;
+            --sky-blue: #8AACC8;
+            --soft-blue: #A8C5D9;
+            --charcoal: #3D3D3D;
+            --accent-blue: #4A7BA7;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Work Sans', sans-serif;
+            background: var(--ivory);
+            color: var(--charcoal);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+        
+        /* Decorative elements */
+        .bg-decoration {
+            position: fixed;
+            top: -50%;
+            right: -20%;
+            width: 800px;
+            height: 800px;
+            background: radial-gradient(circle, rgba(168,197,217,0.12) 0%, transparent 70%);
+            border-radius: 50%;
+            z-index: -1;
+            animation: float 20s ease-in-out infinite;
+        }
+        
+        .bg-decoration-2 {
+            position: fixed;
+            bottom: -30%;
+            left: -10%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(91,139,168,0.08) 0%, transparent 70%);
+            border-radius: 50%;
+            z-index: -1;
+            animation: float 25s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            50% { transform: translate(30px, 30px) scale(1.05); }
+        }
+        
+        /* Header */
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(91, 139, 168, 0.2);
+            padding: 1.5rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+        }
+        
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.2rem;
+            font-weight: 600;
+            background: linear-gradient(135deg, #2C4A6E 0%, #5B8BA8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: 0.03em;
+        }
+        
+        nav ul {
+            display: flex;
+            gap: 3rem;
+            list-style: none;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: var(--navy-blue);
+            font-weight: 500;
+            font-size: 0.9rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--ocean-blue);
+            transition: width 0.3s ease;
+        }
+        
+        nav a:hover::after {
+            width: 100%;
+        }
+        
+        /* Hero */
+        .hero {
+            max-width: 1400px;
+            margin: 6rem auto 8rem;
+            padding: 0 3rem;
+            text-align: center;
+            position: relative;
+        }
+        
+        .hero-badge {
+            display: inline-block;
+            background: var(--warm-beige);
+            padding: 0.5rem 1.5rem;
+            border-radius: 30px;
+            font-size: 0.75rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--ocean-blue);
+            font-weight: 600;
+            margin-bottom: 2rem;
+            animation: slideDown 0.8s ease;
+        }
+        
+        @keyframes slideDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .hero h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 5rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            color: var(--navy-blue);
+            line-height: 1.1;
+            animation: fadeInUp 1s ease;
+        }
+        
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .hero h1 .gradient-text {
+            background: linear-gradient(135deg, #5B8BA8 0%, #8AACC8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            color: #666;
+            max-width: 650px;
+            margin: 0 auto 3rem;
+            font-weight: 300;
+            line-height: 1.8;
+            animation: fadeInUp 1s ease 0.2s backwards;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: var(--ocean-blue);
+            color: white;
+            padding: 1rem 3rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            transition: all 0.4s ease;
+            box-shadow: 0 10px 30px rgba(91, 139, 168, 0.3);
+            animation: fadeInUp 1s ease 0.4s backwards;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(91, 139, 168, 0.4);
+            background: var(--navy-blue);
+        }
+        
+        /* Occasions Grid */
+        .occasions-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 3rem 6rem;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        
+        .section-header h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 3rem;
+            font-weight: 600;
+            color: var(--navy-blue);
+            margin-bottom: 1rem;
+        }
+        
+        .section-header .divider {
+            width: 80px;
+            height: 3px;
+            background: var(--ocean-blue);
+            margin: 0 auto;
+        }
+        
+        .occasions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem;
+        }
+        
+        .occasion-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+        }
+        
+        .occasion-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.12);
+        }
+        
+        .occasion-image {
+            width: 100%;
+            height: 420px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .occasion-image::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.4) 100%);
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            z-index: 1;
+        }
+        
+        .occasion-card:hover .occasion-image::before {
+            opacity: 1;
+        }
+        
+        .occasion-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: white;
+            color: var(--ocean-blue);
+            padding: 0.5rem 1rem;
+            border-radius: 30px;
+            font-size: 0.7rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            font-weight: 600;
+            z-index: 2;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .occasion-info {
+            padding: 2rem;
+            background: white;
+        }
+        
+        .occasion-info h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            color: var(--navy-blue);
+        }
+        
+        .occasion-info p {
+            font-size: 0.95rem;
+            color: #666;
+            margin-bottom: 1.5rem;
+            font-weight: 300;
+            line-height: 1.6;
+        }
+        
+        .occasion-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--ocean-blue);
+            font-weight: 600;
+            font-size: 0.85rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            transition: gap 0.3s ease;
+        }
+        
+        .occasion-link:hover {
+            gap: 1rem;
+        }
+        
+        .occasion-link::after {
+            content: '→';
+            font-size: 1.2rem;
+        }
+        
+        /* Products Section */
+        .products-section {
+            display: none;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 4rem 3rem;
+            animation: fadeIn 0.6s ease;
+        }
+        
+        .products-section.active {
+            display: block;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .back-button {
+            background: white;
+            border: 2px solid var(--ocean-blue);
+            padding: 0.75rem 2rem;
+            font-family: 'Work Sans', sans-serif;
+            font-size: 0.85rem;
+            color: var(--ocean-blue);
+            cursor: pointer;
+            margin-bottom: 3rem;
+            transition: all 0.3s;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            font-weight: 600;
+            border-radius: 50px;
+        }
+        
+        .back-button:hover {
+            background: var(--ocean-blue);
+            color: white;
+        }
+        
+        .products-header {
+            margin-bottom: 4rem;
+            text-align: center;
+        }
+        
+        .products-header h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 3.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--navy-blue);
+        }
+        
+        .products-header p {
+            font-size: 1.1rem;
+            color: #666;
+            font-weight: 300;
+        }
+        
+        /* Our Story Section */
+        .story-section {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 6rem 3rem;
+        }
+        
+        .story-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        
+        .story-header h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 4rem;
+            font-weight: 600;
+            color: var(--navy-blue);
+            margin-bottom: 1rem;
+        }
+        
+        .story-content {
+            font-size: 1.1rem;
+            line-height: 2;
+            color: var(--charcoal);
+        }
+        
+        .story-content p {
+            margin-bottom: 1.5rem;
+        }
+        
+        /* Filters */
+        .filters {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 4rem;
+            flex-wrap: wrap;
+        }
+        
+        .filter-btn {
+            background: white;
+            border: 2px solid var(--warm-beige);
+            padding: 0.75rem 2rem;
+            font-family: 'Work Sans', sans-serif;
+            font-size: 0.85rem;
+            color: var(--charcoal);
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            border-radius: 50px;
+        }
+        
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: var(--ocean-blue);
+            color: white;
+            border-color: var(--ocean-blue);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(91, 139, 168, 0.3);
+        }
+        
+        /* Product Grid */
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 3rem;
+            margin-bottom: 5rem;
+        }
+        
+        .product-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        }
+        
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+        }
+        
+        .product-image {
+            width: 100%;
+            height: 400px;
+            background: var(--beige);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3.5rem;
+            color: #ccc;
+            position: relative;
+        }
+        
+        .product-info {
+            padding: 2rem;
+        }
+        
+        .product-brand {
+            font-size: 0.75rem;
+            color: var(--ocean-blue);
+            margin-bottom: 0.5rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+        
+        .product-name {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            color: var(--navy-blue);
+            font-weight: 500;
+            line-height: 1.4;
+        }
+        
+        .product-price {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--charcoal);
+            margin-bottom: 1.5rem;
+        }
+        
+        .product-link {
+            display: block;
+            background: var(--navy-blue);
+            color: white;
+            padding: 1rem;
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: all 0.3s;
+            text-align: center;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            font-weight: 600;
+            border-radius: 8px;
+        }
+        
+        .product-link:hover {
+            background: var(--ocean-blue);
+        }
+        
+        .section-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin: 5rem 0 3rem;
+            color: var(--navy-blue);
+            text-align: center;
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--navy-blue);
+            color: white;
+            margin-top: 8rem;
+            padding: 4rem 3rem 3rem;
+        }
+        
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .footer-content p {
+            font-size: 1rem;
+            font-weight: 300;
+            opacity: 0.9;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.1);
+            padding: 0.5rem 1.5rem;
+            border-radius: 30px;
+            font-size: 0.75rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            margin-top: 1rem;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 3rem;
+            }
+            
+            nav ul {
+                gap: 1.5rem;
+            }
+            
+            .occasions-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .products-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-decoration"></div>
+    <div class="bg-decoration-2"></div>
+    
+    <header>
+        <div class="header-content">
+            <div class="logo">By Occasion</div>
+            <nav>
+                <ul>
+                    <li><a href="#occasions">Occasions</a></li>
+                    <li><a href="#our-story">Our Story</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Occasions Grid -->
+        <section id="occasions" class="occasions-container">
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="hero-badge">Curated Fashion</div>
+                <h1>Dress for <span class="gradient-text">Every Occasion</span></h1>
+                <p>Discover perfectly curated outfits for life's most important moments. From celebrations to ceremonies, we've searched the best retailers, so you don't have to.</p>
+                <p>Have an event coming up? Skip the endless scrolling. We scoured the top shops, collected their most recommended picks in one place, and organized them for your convenience—<span class="gradient-text">By Occasion</span>. See the top options from the most popular stores instantly. Find that perfect outfit faster.</p>
+                <a href="#occasions" class="cta-button">Explore Occasions</a>
+            </section>
+
+            <div class="section-header">
+                <h2>Find Your Perfect Look</h2>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="occasions-grid">
+                <div class="occasion-card" onclick="showProducts('graduation')">
+                    <div class="occasion-image" style="background-image: url('https://images.unsplash.com/photo-1695425173758-37e9c23b962a?w=800&auto=format&fit=crop'); background-size: cover; background-position: center;">
+                    </div>
+                    <span class="occasion-badge">Timeless</span>
+                    <div class="occasion-info">
+                        <h3>Graduation</h3>
+                        <p>Classic white dresses for your special achievement. Moms, we got you covered too!</p>
+                        <span class="occasion-link">Shop Now</span>
+                    </div>
+                </div>
+
+                <div class="occasion-card" onclick="showProducts('wedding')">
+                    <div class="occasion-image" style="background-image: url('https://images.unsplash.com/photo-1527529482837-4698179dc6ce?w=800&auto=format&fit=crop'); background-size: cover; background-position: center;">
+                    </div>
+                    <span class="occasion-badge">Celebratory</span>
+                    <div class="occasion-info">
+                        <h3>Wedding Guest</h3>
+                        <p>Find elegant guest attire for any type of affair. Celebrate with confidence.</p>
+                        <span class="occasion-link">Shop Now</span>
+                    </div>
+                </div>
+
+                <div class="occasion-card" onclick="showProducts('prom')">
+                    <div class="occasion-image" style="background-image: url('https://images.unsplash.com/photo-1551915320-f59076ad1aa6?w=800&auto=format&fit=crop'); background-size: cover; background-position: center;">
+                    </div>
+                    <span class="occasion-badge">Glamorous</span>
+                    <div class="occasion-info">
+                        <h3>Prom & Semi-Formal Dances</h3>
+                        <p>Stunning gowns and dresses for memorable nights</p>
+                        <span class="occasion-link">Shop Now</span>
+                    </div>
+                </div>
+
+                <div class="occasion-card" onclick="showProducts('holiday')">
+                    <div class="occasion-image" style="background-image: url('https://images.unsplash.com/photo-1481930916222-5ec4696fc0f2?w=800&auto=format&fit=crop'); background-size: cover; background-position: center;">
+                    </div>
+                    <span class="occasion-badge">Festive</span>
+                    <div class="occasion-info">
+                        <h3>Holiday Party</h3>
+                        <p>Sparkle and shine in festive looks perfect for celebrations</p>
+                        <span class="occasion-link">Shop Now</span>
+                    </div>
+                </div>
+
+                <div class="occasion-card" onclick="showProducts('funeral')">
+                    <div class="occasion-image" style="background: linear-gradient(135deg, #D4CEC4, #B8B2A8); display: flex; align-items: center; justify-content: center; font-size: 5rem;">
+                        🖤
+                    </div>
+                    <span class="occasion-badge">Respectful</span>
+                    <div class="occasion-info">
+                        <h3>Memorial Services Attire</h3>
+                        <p>Modest, respectful attire in black and dark tones for somber occasions</p>
+                        <span class="occasion-link">Shop Now</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section (Hidden by default) -->
+        <section id="products" class="products-section">
+            <button class="back-button" onclick="showOccasions()">← Back to Occasions</button>
+            
+            <div class="products-header">
+                <h2 id="occasion-title">Funeral Attendee</h2>
+                <p id="occasion-tagline">Shop the most popular styles from top retailers. Your perfect outfit awaits!</p>
+            </div>
+
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">All Styles</button>
+                <button class="filter-btn" data-filter="spring-summer">Spring/Summer</button>
+                <button class="filter-btn" data-filter="fall-winter">Fall/Winter</button>
+                <button class="filter-btn" data-filter="black-tie">Black Tie</button>
+                <button class="filter-btn" data-filter="dress">Dresses Only</button>
+                <button class="filter-btn" data-filter="separates">Tops & Pants</button>
+                <button class="filter-btn" data-filter="modern">Modern</button>
+                <button class="filter-btn" data-filter="classic">Classic</button>
+            </div></button>
+            </div>
+
+            <div id="products-content">
+                <h3 class="section-title">Dresses</h3>
+                <div class="products-grid" id="dresses-grid"></div>
+
+                <h3 class="section-title">Tops & Pants</h3>
+                <div class="products-grid" id="separates-grid"></div>
+
+                <h3 class="section-title" id="accessories-title">Festive Accessories</h3>
+                <div class="products-grid" id="accessories-grid"></div>
+            </div>
+        </section>
+
+        <!-- Our Story Section -->
+        <section id="our-story" class="story-section">
+            <div class="story-header">
+                <h2>Our Story</h2>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="story-content">
+                <p>This year, I lost my beautiful and brilliant sister unexpectedly. In the days that followed, family members and I found ourselves in search of appropriate memorial attire. Heavy with grief, I scrolled clothing websites and walked through stores filled with holiday lights and cheerful music, thinking—there has to be a better way. Like most women, I don't have time to just shop; I shop by need, by life's moments—I shop <span class="gradient-text">By Occasion</span>. And like many, I often waste valuable time searching dozens of sites before finding just the right outfit. That's why I created <span class="gradient-text">By Occasion</span>: to make finding the perfect outfit easier, so you can focus on what truly matters—showing up as your most confident self for life's important moments.</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="story-section">
+            <div class="story-header">
+                <h2>Contact</h2>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="story-content" style="text-align: center;">
+                <p>Have a question or suggestion? We'd love to hear from you.</p>
+                <p style="margin-top: 2rem;">
+                    <a href="mailto:byoccasionboutique@gmail.com" style="color: var(--ocean-blue); font-weight: 600; font-size: 1.2rem; text-decoration: none;">
+                        byoccasionboutique@gmail.com
+                    </a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>By Occasion - Your guide to dressing beautifully for life's important moments</p>
+            <div class="footer-badge">Prototype Version</div>
+        </div>
+    </footer>
+
+    <script>
+        // [Same JavaScript as before - keeping it identical]
+        const productData = {
+            funeral: {
+                dresses: [
+                    { brand: "Nordstrom", name: "Classic A-Line Midi Dress", price: "$89", style: "classic", details: ["Midi length", "Long sleeves"], store: "Nordstrom.com" },
+                    { brand: "J.Crew", name: "Sleek Sheath Dress", price: "$128", style: "modern", details: ["Knee length", "Cap sleeves"], store: "JCrew.com" },
+                    { brand: "Macy's", name: "Elegant Wrap Dress", price: "$76", style: "classic", details: ["Wrap style", "3/4 sleeves"], store: "Macys.com" },
+                    { brand: "Ann Taylor", name: "Ponte Fit & Flare Dress", price: "$139", style: "modern", details: ["Fit & flare", "Short sleeves"], store: "AnnTaylor.com" }
+                ],
+                separates: [
+                    { brand: "Everlane", name: "Silk Blouse + Tailored Pants", price: "$198", style: "modern", details: ["Silk top", "High-waist pants"], store: "Everlane.com" },
+                    { brand: "Banana Republic", name: "Classic Button-Up & Trousers", price: "$158", style: "classic", details: ["Cotton blend", "Straight leg"], store: "BananaRepublic.com" },
+                    { brand: "Zara", name: "Modern Blazer & Pant Set", price: "$119", style: "modern", details: ["Structured", "Wide leg"], store: "Zara.com" }
+                ]
+            },
+            wedding: {
+                dresses: [
+                    { brand: "Reformation", name: "Floral Midi Dress", price: "$248", style: "modern", formalLevel: "semi-formal", details: ["Spring florals", "Midi length"], store: "Reformation.com" },
+                    { brand: "Anthropologie", name: "Flowy Maxi Dress", price: "$198", style: "classic", formalLevel: "semi-formal", details: ["Maxi length", "Romantic"], store: "Anthropologie.com" },
+                    { brand: "ASOS", name: "Pastel Midi Dress", price: "$89", style: "modern", formalLevel: "semi-formal", details: ["Light colors", "Breathable"], store: "ASOS.com" },
+                    { brand: "Nordstrom", name: "Velvet Wrap Dress", price: "$178", style: "classic", formalLevel: "semi-formal", details: ["Rich velvet", "Midi length"], store: "Nordstrom.com" },
+                    { brand: "J.Crew", name: "Jewel Tone Sheath", price: "$158", style: "modern", formalLevel: "semi-formal", details: ["Deep colors", "Elegant"], store: "JCrew.com" },
+                    { brand: "Zara", name: "Satin Evening Dress", price: "$129", style: "classic", formalLevel: "semi-formal", details: ["Luxe fabric", "Sophisticated"], store: "Zara.com" },
+                    { brand: "Nordstrom", name: "Floor-Length Gown", price: "$298", style: "classic", formalLevel: "black-tie", details: ["Formal gown", "Elegant"], store: "Nordstrom.com" },
+                    { brand: "Bloomingdale's", name: "Embellished Evening Gown", price: "$358", style: "modern", formalLevel: "black-tie", details: ["Beaded detail", "Luxurious"], store: "Bloomingdales.com" },
+                    { brand: "Revolve", name: "Silk Formal Gown", price: "$428", style: "modern", formalLevel: "black-tie", details: ["Floor length", "Sophisticated"], store: "Revolve.com" },
+                    { brand: "Neiman Marcus", name: "Classic Ball Gown", price: "$498", style: "classic", formalLevel: "black-tie", details: ["Timeless", "Statement"], store: "NeimanMarcus.com" }
+                ],
+                separates: [
+                    { brand: "Mango", name: "Silk Top & Wide Leg Pants", price: "$156", style: "modern", formalLevel: "semi-formal", details: ["Elegant", "Flowy"], store: "Mango.com" },
+                    { brand: "Everlane", name: "Linen Blazer & Trousers", price: "$198", style: "classic", formalLevel: "semi-formal", details: ["Breathable", "Chic"], store: "Everlane.com" },
+                    { brand: "Banana Republic", name: "Wool Blend Suit", price: "$298", style: "classic", formalLevel: "semi-formal", details: ["Warm", "Tailored"], store: "BananaRepublic.com" },
+                    { brand: "Theory", name: "Evening Separates", price: "$398", style: "modern", formalLevel: "black-tie", details: ["Formal", "Elegant"], store: "Theory.com" }
+                ]
+            },
+            prom: {
+                dresses: [
+                    { brand: "Lulus", name: "Sequined Mermaid Gown", price: "$118", style: "modern", formalLevel: "prom", details: ["Floor length", "Sparkle"], store: "Lulus.com" },
+                    { brand: "David's Bridal", name: "Classic Ball Gown", price: "$299", style: "classic", formalLevel: "prom", details: ["Full skirt", "Romantic"], store: "DavidsBridal.com" },
+                    { brand: "Revolve", name: "Sleek Satin Gown", price: "$268", style: "modern", formalLevel: "prom", details: ["Satin finish", "Dramatic"], store: "Revolve.com" },
+                    { brand: "ASOS", name: "Elegant Midi Dress", price: "$89", style: "modern", formalLevel: "semi-formal", details: ["Semi-formal", "Chic"], store: "ASOS.com" },
+                    { brand: "Lulus", name: "Cocktail Dress", price: "$78", style: "modern", formalLevel: "semi-formal", details: ["Party-ready", "Flattering"], store: "Lulus.com" },
+                    { brand: "Nordstrom", name: "Satin A-Line Dress", price: "$148", style: "classic", formalLevel: "semi-formal", details: ["Sophisticated", "Midi length"], store: "Nordstrom.com" }
+                ],
+                separates: []
+            },
+            graduation: {
+                dresses: [
+                    { brand: "Lulus", name: "Sweetest Admirer White Lace Midi Dress", price: "$64", style: "modern", audience: "graduate", details: ["Lace detail", "Midi length"], store: "Lulus.com", link: "https://www.lulus.com/products/sweetest-admirer-white-lace-midi-dress/1893176.html" },
+                    { brand: "Nordstrom", name: "Open Edit Sleeveless Midi Dress", price: "$39", style: "modern", audience: "graduate", details: ["Clean lines", "Versatile"], store: "Nordstrom.com", link: "https://www.nordstrom.com/s/sleeveless-midi-dress/7366826" },
+                    { brand: "Abercrombie", name: "Satin Midi Slip Dress", price: "$90", style: "modern", audience: "graduate", details: ["Satin finish", "Elegant"], store: "Abercrombie.com", link: "https://www.abercrombie.com/shop/us/p/satin-midi-slip-dress-52690819" },
+                    { brand: "J.Crew", name: "Sleeveless Tie-Waist Shirtdress", price: "$128", style: "classic", audience: "graduate", details: ["Classic style", "Structured"], store: "JCrew.com", link: "https://www.jcrew.com/p/womens/categories/clothing/dresses-and-jumpsuits/midi/sleeveless-tie-waist-shirtdress/BL168" },
+                    { brand: "Bloomingdale's", name: "Aqua Eyelet Midi Dress", price: "$98", style: "modern", audience: "graduate", details: ["Eyelet detail", "Fresh"], store: "Bloomingdales.com", link: "https://www.bloomingdales.com/shop/product/aqua-eyelet-midi-dress" },
+                    { brand: "Nordstrom", name: "Chelsea28 Ruffle Sleeve Dress", price: "$89", style: "classic", audience: "graduate", details: ["Ruffle sleeves", "Feminine"], store: "Nordstrom.com", link: "https://www.nordstrom.com/s/chelsea28-ruffle-sleeve-dress/6895438" },
+                    { brand: "Lulus", name: "Much Obliged White Lace Midi Dress", price: "$82", style: "classic", audience: "graduate", details: ["Romantic lace", "Midi length"], store: "Lulus.com", link: "https://www.lulus.com/products/much-obliged-white-lace-midi-dress/641562.html" },
+                    { brand: "Ann Taylor", name: "Floral Eyelet Midi Dress", price: "$139", style: "classic", audience: "mom", details: ["Sophisticated", "Eyelet detail"], store: "AnnTaylor.com", link: "https://www.anntaylor.com/floral-eyelet-midi-dress/608529" },
+                    { brand: "J.Crew", name: "Ruffle-Trim Dress in Crisp Cotton", price: "$148", style: "modern", audience: "mom", details: ["Polished", "Crisp cotton"], store: "JCrew.com", link: "https://www.jcrew.com/p/womens/categories/clothing/dresses-and-jumpsuits/midi/ruffle-trim-dress-in-crisp-cotton/BM876" },
+                    { brand: "Nordstrom", name: "Eliza J Fit & Flare Dress", price: "$158", style: "classic", audience: "mom", details: ["Classic", "Flattering"], store: "Nordstrom.com", link: "https://www.nordstrom.com/s/eliza-j-fit-flare-dress/5437821" },
+                    { brand: "Bloomingdale's", name: "Lafayette 148 Linen Dress", price: "$348", style: "classic", audience: "mom", details: ["Luxury linen", "Sophisticated"], store: "Bloomingdales.com", link: "https://www.bloomingdales.com/shop/product/lafayette-148-new-york-linen-dress" },
+                    { brand: "Talbots", name: "Eyelet Fit and Flare Dress", price: "$139", style: "classic", audience: "mom", details: ["Comfortable", "Elegant"], store: "Talbots.com", link: "https://www.talbots.com/eyelet-fit-and-flare-dress/P212020577.html" }
+                ],
+                separates: []
+            },
+            holiday: {
+                dresses: [
+                    { brand: "Anthropologie", name: "Sequined Cocktail Dress", price: "$198", style: "modern", details: ["Sparkle", "Midi length"], store: "Anthropologie.com" },
+                    { brand: "Nordstrom", name: "Velvet Party Dress", price: "$158", style: "classic", details: ["Rich velvet", "Festive"], store: "Nordstrom.com" },
+                    { brand: "ASOS", name: "Metallic Wrap Dress", price: "$89", style: "modern", details: ["Shimmer", "Bold"], store: "ASOS.com" },
+                    { brand: "J.Crew", name: "Silk Slip Dress", price: "$178", style: "classic", details: ["Elegant", "Luxe"], store: "JCrew.com" }
+                ],
+                separates: [
+                    { brand: "Zara", name: "Sparkle Top & Trousers", price: "$119", style: "modern", details: ["Festive", "Chic"], store: "Zara.com" },
+                    { brand: "Banana Republic", name: "Satin Blouse & Pants", price: "$188", style: "classic", details: ["Sophisticated", "Party-ready"], store: "BananaRepublic.com" }
+                ],
+                accessories: [
+                    { brand: "Kate Spade", name: "Sparkle Clutch", price: "$98", style: "modern", details: ["Evening bag", "Festive"], store: "KateSpade.com" },
+                    { brand: "J.Crew", name: "Statement Earrings", price: "$48", style: "classic", details: ["Holiday sparkle", "Bold"], store: "JCrew.com" },
+                    { brand: "Nordstrom", name: "Velvet Headband", price: "$32", style: "classic", details: ["Festive", "Elegant"], store: "Nordstrom.com" },
+                    { brand: "Anthropologie", name: "Embellished Belt", price: "$58", style: "modern", details: ["Sparkle", "Statement"], store: "Anthropologie.com" }
+                ]
+            }
+        };
+
+        const occasionContent = {
+            funeral: { 
+                title: "Memorial Services Attire", 
+                description: "Respectful, modest attire for somber occasions in black and dark tones",
+                tagline: "Browse respectful attire from top retailers. We're here to assist you during this difficult time."
+            },
+            wedding: { 
+                title: "Wedding Guest", 
+                description: "Elegant guest attire - chic dresses and outfits to celebrate in style",
+                tagline: "Shop the most popular styles from top retailers. Your perfect outfit awaits!"
+            },
+            prom: { 
+                title: "Prom & Semi-Formal Dances", 
+                description: "Show-stopping gowns for prom and elegant dresses for semi-formal dances",
+                tagline: "Shop the most popular styles from top retailers. Your perfect outfit awaits!"
+            },
+            graduation: { 
+                title: "Graduation", 
+                description: "Classic white dresses for your special day. Moms, we've got you covered too!",
+                tagline: "Shop the most popular styles from top retailers. Your perfect outfit awaits!"
+            },
+            holiday: { 
+                title: "Holiday Party", 
+                description: "Festive, sparkly looks perfect for celebrating the season",
+                tagline: "Shop the most popular styles from top retailers. Your perfect outfit awaits!"
+            }
+        };
+
+        let currentOccasion = 'funeral';
+        let currentFilter = 'all';
+
+        function showProducts(occasion) {
+            currentOccasion = occasion;
+            currentFilter = 'all';
+            document.getElementById('occasion-title').textContent = occasionContent[occasion].title;
+            document.getElementById('occasion-tagline').textContent = occasionContent[occasion].tagline;
+            document.getElementById('occasions').style.display = 'none';
+            document.getElementById('our-story').style.display = 'none';
+            document.getElementById('products').classList.add('active');
+            
+            // Update filters based on occasion
+            const filtersContainer = document.querySelector('.filters');
+            
+            if (occasion === 'wedding') {
+                filtersContainer.innerHTML = `
+                    <button class="filter-btn active" data-filter="all">All Items</button>
+                    <button class="filter-btn" data-filter="black-tie">Black-Tie/Formal</button>
+                    <button class="filter-btn" data-filter="semi-formal">Semi-Formal/Cocktail/Dressy Casual</button>
+                    <button class="filter-btn" data-filter="separates">Tops & Pants</button>
+                `;
+            } else if (occasion === 'prom') {
+                filtersContainer.innerHTML = `
+                    <button class="filter-btn active" data-filter="all">All Items</button>
+                    <button class="filter-btn" data-filter="prom">Prom</button>
+                    <button class="filter-btn" data-filter="semi-formal">Semi-Formal</button>
+                `;
+            } else if (occasion === 'holiday') {
+                filtersContainer.innerHTML = `
+                    <button class="filter-btn active" data-filter="all">All Items</button>
+                    <button class="filter-btn" data-filter="dress">Dresses</button>
+                    <button class="filter-btn" data-filter="separates">Separates</button>
+                    <button class="filter-btn" data-filter="accessories">Festive Accessories</button>
+                `;
+            } else if (occasion === 'graduation') {
+                filtersContainer.innerHTML = `
+                    <button class="filter-btn active" data-filter="all">All Items</button>
+                    <button class="filter-btn" data-filter="graduate">For Graduate</button>
+                    <button class="filter-btn" data-filter="mom">For Mom</button>
+                `;
+            } else {
+                filtersContainer.innerHTML = `
+                    <button class="filter-btn active" data-filter="all">All Items</button>
+                    <button class="filter-btn" data-filter="dress">Dresses Only</button>
+                    <button class="filter-btn" data-filter="separates">Tops & Pants</button>
+                `;
+            }
+            
+            attachFilterListeners();
+            loadProducts();
+            window.scrollTo(0, 0);
+        }
+        
+        function attachFilterListeners() {
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    currentFilter = this.dataset.filter;
+                    this.parentElement.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    loadProducts();
+                });
+            });
+        }
+
+        function showOccasions() {
+            document.getElementById('products').classList.remove('active');
+            document.getElementById('occasions').style.display = 'block';
+            document.getElementById('our-story').style.display = 'block';
+            window.scrollTo(0, 0);
+        }
+
+        function loadProducts() {
+            const data = productData[currentOccasion];
+            const dressesGrid = document.getElementById('dresses-grid');
+            const separatesGrid = document.getElementById('separates-grid');
+            const accessoriesGrid = document.getElementById('accessories-grid');
+            const accessoriesTitle = document.getElementById('accessories-title');
+            
+            dressesGrid.innerHTML = '';
+            separatesGrid.innerHTML = '';
+            accessoriesGrid.innerHTML = '';
+            
+            // Show accessories section only for holiday occasion
+            if (currentOccasion === 'holiday') {
+                accessoriesTitle.style.display = 'block';
+                accessoriesGrid.style.display = 'grid';
+            } else {
+                accessoriesTitle.style.display = 'none';
+                accessoriesGrid.style.display = 'none';
+            }
+            
+            if (data.dresses && data.dresses.length > 0) {
+                data.dresses.forEach(product => {
+                    if (shouldShowProduct(product)) {
+                        dressesGrid.innerHTML += createProductCard(product);
+                    }
+                });
+            }
+            
+            if (data.separates && data.separates.length > 0) {
+                data.separates.forEach(product => {
+                    if (shouldShowProduct(product)) {
+                        separatesGrid.innerHTML += createProductCard(product);
+                    }
+                });
+            }
+            
+            if (data.accessories && data.accessories.length > 0) {
+                data.accessories.forEach(product => {
+                    if (shouldShowProduct(product)) {
+                        accessoriesGrid.innerHTML += createProductCard(product);
+                    }
+                });
+            }
+        }
+
+        function shouldShowProduct(product) {
+            if (currentFilter === 'all') return true;
+            if (currentFilter === 'black-tie' && product.formalLevel === 'black-tie') return true;
+            if (currentFilter === 'prom' && product.formalLevel === 'prom') return true;
+            if (currentFilter === 'semi-formal' && product.formalLevel === 'semi-formal') return true;
+            if (currentFilter === 'graduate' && product.audience === 'graduate') return true;
+            if (currentFilter === 'mom' && product.audience === 'mom') return true;
+            if (currentFilter === 'dress' || currentFilter === 'separates' || currentFilter === 'accessories') return true;
+            if (currentFilter === 'modern' || currentFilter === 'classic') {
+                return product.style === currentFilter;
+            }
+            return true;
+        }
+
+        function createProductCard(product) {
+            const linkHref = product.link || '#';
+            const linkTarget = product.link ? '_blank' : '_self';
+            const linkOnclick = product.link ? '' : 'onclick="return false;"';
+            
+            return `
+                <div class="product-card">
+                    <div class="product-image">👗</div>
+                    <div class="product-info">
+                        <div class="product-brand">${product.brand}</div>
+                        <div class="product-name">${product.name}</div>
+                        <div class="product-price">${product.price}</div>
+                        <a href="${linkHref}" class="product-link" target="${linkTarget}" ${linkOnclick}>Shop at ${product.store}</a>
+                    </div>
+                </div>
+            `;
+        }
+
+    </script>
+</body>
+</html>

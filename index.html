@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,7 +34,6 @@
             overflow-x: hidden;
         }
         
-        /* Decorative elements */
         .bg-decoration {
             position: fixed;
             top: -50%;
@@ -63,7 +63,6 @@
             50% { transform: translate(30px, 30px) scale(1.05); }
         }
         
-        /* Header */
         header {
             background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(20px);
@@ -127,7 +126,6 @@
             width: 100%;
         }
         
-        /* Hero */
         .hero {
             max-width: 1400px;
             margin: 6rem auto 8rem;
@@ -209,7 +207,6 @@
             background: var(--navy-blue);
         }
         
-        /* Occasions Grid */
         .occasions-container {
             max-width: 1400px;
             margin: 0 auto;
@@ -339,7 +336,6 @@
             font-size: 1.2rem;
         }
         
-        /* Products Section */
         .products-section {
             display: none;
             max-width: 1400px;
@@ -396,8 +392,15 @@
             color: #666;
             font-weight: 300;
         }
+
+        .affiliate-notice {
+            text-align: center;
+            font-size: 0.8rem;
+            color: #999;
+            margin-bottom: 2rem;
+            font-style: italic;
+        }
         
-        /* Our Story Section */
         .story-section {
             max-width: 800px;
             margin: 0 auto;
@@ -416,6 +419,13 @@
             color: var(--navy-blue);
             margin-bottom: 1rem;
         }
+
+        .divider {
+            width: 80px;
+            height: 3px;
+            background: var(--ocean-blue);
+            margin: 0 auto;
+        }
         
         .story-content {
             font-size: 1.1rem;
@@ -427,7 +437,6 @@
             margin-bottom: 1.5rem;
         }
         
-        /* Filters */
         .filters {
             display: flex;
             justify-content: center;
@@ -459,7 +468,6 @@
             box-shadow: 0 8px 20px rgba(91, 139, 168, 0.3);
         }
         
-        /* Product Grid */
         .products-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -548,7 +556,6 @@
             text-align: center;
         }
         
-        /* Footer */
         footer {
             background: var(--navy-blue);
             color: white;
@@ -568,6 +575,26 @@
             opacity: 0.9;
             margin-bottom: 1rem;
         }
+
+        .footer-links {
+            margin-top: 1.5rem;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .footer-links a {
+            color: white;
+            opacity: 0.7;
+            text-decoration: none;
+            font-size: 0.85rem;
+            letter-spacing: 0.05em;
+            transition: opacity 0.3s;
+        }
+
+        .footer-links a:hover {
+            opacity: 1;
+        }
         
         .footer-badge {
             display: inline-block;
@@ -579,21 +606,59 @@
             text-transform: uppercase;
             margin-top: 1rem;
         }
+
+        /* Privacy Policy Page */
+        .privacy-section {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 6rem 3rem;
+            display: none;
+        }
+
+        .privacy-section.active {
+            display: block;
+        }
+
+        .privacy-section h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 3rem;
+            font-weight: 600;
+            color: var(--navy-blue);
+            margin-bottom: 0.5rem;
+            text-align: center;
+        }
+
+        .privacy-section .last-updated {
+            text-align: center;
+            color: #999;
+            font-size: 0.9rem;
+            margin-bottom: 3rem;
+        }
+
+        .privacy-section h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            color: var(--navy-blue);
+            margin: 2rem 0 1rem;
+        }
+
+        .privacy-section p {
+            font-size: 1rem;
+            line-height: 1.9;
+            color: var(--charcoal);
+            margin-bottom: 1rem;
+        }
         
-        /* Responsive */
         @media (max-width: 768px) {
             .hero h1 {
                 font-size: 3rem;
             }
-            
             nav ul {
                 gap: 1.5rem;
             }
-            
             .occasions-grid {
                 grid-template-columns: 1fr;
             }
-            
             .products-grid {
                 grid-template-columns: 1fr;
             }
@@ -609,7 +674,7 @@
             <div class="logo">By Occasion</div>
             <nav>
                 <ul>
-                    <li><a href="#occasions">Occasions</a></li>
+                    <li><a href="#" onclick="showMain()">Occasions</a></li>
                     <li><a href="#our-story">Our Story</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -620,7 +685,6 @@
     <main>
         <!-- Occasions Grid -->
         <section id="occasions" class="occasions-container">
-            <!-- Hero Section -->
             <section class="hero">
                 <div class="hero-badge">Curated Fashion</div>
                 <h1>Dress for <span class="gradient-text">Every Occasion</span></h1>
@@ -636,8 +700,7 @@
             
             <div class="occasions-grid">
                 <div class="occasion-card" onclick="showProducts('graduation')">
-                    <div class="occasion-image" style="background-image: url('https://images.unsplash.com/photo-1695425173758-37e9c23b962a?w=800&auto=format&fit=crop'); background-size: cover; background-position: center;">
-                    </div>
+                    <div class="occasion-image" style="background-image: url('https://images.unsplash.com/photo-1695425173758-37e9c23b962a?w=800&auto=format&fit=crop'); background-size: cover; background-position: center;"></div>
                     <span class="occasion-badge">Timeless</span>
                     <div class="occasion-info">
                         <h3>Graduation</h3>
@@ -647,8 +710,7 @@
                 </div>
 
                 <div class="occasion-card" onclick="showProducts('wedding')">
-                    <div class="occasion-image" style="background-image: url('https://images.unsplash.com/photo-1527529482837-4698179dc6ce?w=800&auto=format&fit=crop'); background-size: cover; background-position: center;">
-                    </div>
+                    <div class="occasion-image" style="background-image: url('https://images.unsplash.com/photo-1527529482837-4698179dc6ce?w=800&auto=format&fit=crop'); background-size: cover; background-position: center;"></div>
                     <span class="occasion-badge">Celebratory</span>
                     <div class="occasion-info">
                         <h3>Wedding Guest</h3>
@@ -658,8 +720,7 @@
                 </div>
 
                 <div class="occasion-card" onclick="showProducts('prom')">
-                    <div class="occasion-image" style="background-image: url('https://images.unsplash.com/photo-1551915320-f59076ad1aa6?w=800&auto=format&fit=crop'); background-size: cover; background-position: center;">
-                    </div>
+                    <div class="occasion-image" style="background-image: url('https://images.unsplash.com/photo-1551915320-f59076ad1aa6?w=800&auto=format&fit=crop'); background-size: cover; background-position: center;"></div>
                     <span class="occasion-badge">Glamorous</span>
                     <div class="occasion-info">
                         <h3>Prom & Semi-Formal Dances</h3>
@@ -669,8 +730,7 @@
                 </div>
 
                 <div class="occasion-card" onclick="showProducts('holiday')">
-                    <div class="occasion-image" style="background-image: url('https://images.unsplash.com/photo-1481930916222-5ec4696fc0f2?w=800&auto=format&fit=crop'); background-size: cover; background-position: center;">
-                    </div>
+                    <div class="occasion-image" style="background-image: url('https://images.unsplash.com/photo-1481930916222-5ec4696fc0f2?w=800&auto=format&fit=crop'); background-size: cover; background-position: center;"></div>
                     <span class="occasion-badge">Festive</span>
                     <div class="occasion-info">
                         <h3>Holiday Party</h3>
@@ -693,7 +753,7 @@
             </div>
         </section>
 
-        <!-- Products Section (Hidden by default) -->
+        <!-- Products Section -->
         <section id="products" class="products-section">
             <button class="back-button" onclick="showOccasions()">← Back to Occasions</button>
             
@@ -702,16 +762,10 @@
                 <p id="occasion-tagline">Shop the most popular styles from top retailers. Your perfect outfit awaits!</p>
             </div>
 
+            <p class="affiliate-notice">Links direct to retailer homepages. By Occasion is not currently an affiliate partner of these retailers.</p>
+
             <div class="filters">
                 <button class="filter-btn active" data-filter="all">All Styles</button>
-                <button class="filter-btn" data-filter="spring-summer">Spring/Summer</button>
-                <button class="filter-btn" data-filter="fall-winter">Fall/Winter</button>
-                <button class="filter-btn" data-filter="black-tie">Black Tie</button>
-                <button class="filter-btn" data-filter="dress">Dresses Only</button>
-                <button class="filter-btn" data-filter="separates">Tops & Pants</button>
-                <button class="filter-btn" data-filter="modern">Modern</button>
-                <button class="filter-btn" data-filter="classic">Classic</button>
-            </div></button>
             </div>
 
             <div id="products-content">
@@ -732,7 +786,6 @@
                 <h2>Our Story</h2>
                 <div class="divider"></div>
             </div>
-            
             <div class="story-content">
                 <p>This year, I lost my beautiful and brilliant sister unexpectedly. In the days that followed, family members and I found ourselves in search of appropriate memorial attire. Heavy with grief, I scrolled clothing websites and walked through stores filled with holiday lights and cheerful music, thinking—there has to be a better way. Like most women, I don't have time to just shop; I shop by need, by life's moments—I shop <span class="gradient-text">By Occasion</span>. And like many, I often waste valuable time searching dozens of sites before finding just the right outfit. That's why I created <span class="gradient-text">By Occasion</span>: to make finding the perfect outfit easier, so you can focus on what truly matters—showing up as your most confident self for life's important moments.</p>
             </div>
@@ -744,7 +797,6 @@
                 <h2>Contact</h2>
                 <div class="divider"></div>
             </div>
-            
             <div class="story-content" style="text-align: center;">
                 <p>Have a question or suggestion? We'd love to hear from you.</p>
                 <p style="margin-top: 2rem;">
@@ -754,129 +806,185 @@
                 </p>
             </div>
         </section>
+
+        <!-- Privacy Policy Section -->
+        <section id="privacy" class="privacy-section">
+            <h2>Privacy Policy</h2>
+            <p class="last-updated">Last updated: March 28, 2026</p>
+            <div class="divider" style="margin-bottom: 3rem;"></div>
+
+            <p>By Occasion ("we," "us," or "our") operates this website. This Privacy Policy explains how we collect, use, and protect your information when you visit our site.</p>
+
+            <h3>Information We Collect</h3>
+            <p>We may collect basic information such as your email address if you contact us directly. We do not currently collect payment information or require account creation.</p>
+
+            <h3>Affiliate Links</h3>
+            <p>By Occasion participates in affiliate marketing programs. This means we may earn a small commission if you click a link on our site and make a purchase, at no additional cost to you. We only recommend products we believe are relevant and useful to our visitors.</p>
+
+            <h3>Third Party Links</h3>
+            <p>Our site contains links to third party retail websites. We are not responsible for the privacy practices or content of those sites and encourage you to review their privacy policies.</p>
+
+            <h3>Cookies</h3>
+            <p>Our site may use basic cookies to improve your browsing experience. We do not sell or share cookie data with third parties.</p>
+
+            <h3>Google Fonts</h3>
+            <p>Our site uses Google Fonts, which may collect basic usage data. You can review Google's privacy policy at google.com/policies/privacy.</p>
+
+            <h3>Contact Us</h3>
+            <p>If you have any questions about this Privacy Policy please contact us at: <a href="mailto:byoccasionboutique@gmail.com" style="color: var(--ocean-blue);">byoccasionboutique@gmail.com</a></p>
+
+            <h3>Changes to This Policy</h3>
+            <p>We may update this policy from time to time. Any changes will be posted on this page with an updated date.</p>
+        </section>
     </main>
 
     <footer>
         <div class="footer-content">
             <p>By Occasion - Your guide to dressing beautifully for life's important moments</p>
+            <div class="footer-links">
+                <a href="#" onclick="showPrivacy()">Privacy Policy</a>
+                <a href="#contact">Contact</a>
+            </div>
             <div class="footer-badge">Prototype Version</div>
         </div>
     </footer>
 
     <script>
-        // [Same JavaScript as before - keeping it identical]
+        // Store homepage links
+        const storeLinks = {
+            "Nordstrom": "https://www.nordstrom.com",
+            "J.Crew": "https://www.jcrew.com",
+            "Macy's": "https://www.macys.com",
+            "Ann Taylor": "https://www.anntaylor.com",
+            "Everlane": "https://www.everlane.com",
+            "Banana Republic": "https://www.bananarepublic.com",
+            "Zara": "https://www.zara.com",
+            "Reformation": "https://www.thereformation.com",
+            "Anthropologie": "https://www.anthropologie.com",
+            "ASOS": "https://www.asos.com",
+            "Bloomingdale's": "https://www.bloomingdales.com",
+            "Revolve": "https://www.revolve.com",
+            "Neiman Marcus": "https://www.neimanmarcus.com",
+            "Mango": "https://www.mango.com",
+            "Theory": "https://www.theory.com",
+            "Lulus": "https://www.lulus.com",
+            "David's Bridal": "https://www.davidsbridal.com",
+            "Abercrombie": "https://www.abercrombie.com",
+            "Talbots": "https://www.talbots.com",
+            "Kate Spade": "https://www.katespade.com"
+        };
+
         const productData = {
             funeral: {
                 dresses: [
-                    { brand: "Nordstrom", name: "Classic A-Line Midi Dress", price: "$89", style: "classic", details: ["Midi length", "Long sleeves"], store: "Nordstrom.com" },
-                    { brand: "J.Crew", name: "Sleek Sheath Dress", price: "$128", style: "modern", details: ["Knee length", "Cap sleeves"], store: "JCrew.com" },
-                    { brand: "Macy's", name: "Elegant Wrap Dress", price: "$76", style: "classic", details: ["Wrap style", "3/4 sleeves"], store: "Macys.com" },
-                    { brand: "Ann Taylor", name: "Ponte Fit & Flare Dress", price: "$139", style: "modern", details: ["Fit & flare", "Short sleeves"], store: "AnnTaylor.com" }
+                    { brand: "Nordstrom", name: "Classic A-Line Midi Dress", price: "$89", style: "classic", details: ["Midi length", "Long sleeves"] },
+                    { brand: "J.Crew", name: "Sleek Sheath Dress", price: "$128", style: "modern", details: ["Knee length", "Cap sleeves"] },
+                    { brand: "Macy's", name: "Elegant Wrap Dress", price: "$76", style: "classic", details: ["Wrap style", "3/4 sleeves"] },
+                    { brand: "Ann Taylor", name: "Ponte Fit & Flare Dress", price: "$139", style: "modern", details: ["Fit & flare", "Short sleeves"] }
                 ],
                 separates: [
-                    { brand: "Everlane", name: "Silk Blouse + Tailored Pants", price: "$198", style: "modern", details: ["Silk top", "High-waist pants"], store: "Everlane.com" },
-                    { brand: "Banana Republic", name: "Classic Button-Up & Trousers", price: "$158", style: "classic", details: ["Cotton blend", "Straight leg"], store: "BananaRepublic.com" },
-                    { brand: "Zara", name: "Modern Blazer & Pant Set", price: "$119", style: "modern", details: ["Structured", "Wide leg"], store: "Zara.com" }
+                    { brand: "Everlane", name: "Silk Blouse + Tailored Pants", price: "$198", style: "modern", details: ["Silk top", "High-waist pants"] },
+                    { brand: "Banana Republic", name: "Classic Button-Up & Trousers", price: "$158", style: "classic", details: ["Cotton blend", "Straight leg"] },
+                    { brand: "Zara", name: "Modern Blazer & Pant Set", price: "$119", style: "modern", details: ["Structured", "Wide leg"] }
                 ]
             },
             wedding: {
                 dresses: [
-                    { brand: "Reformation", name: "Floral Midi Dress", price: "$248", style: "modern", formalLevel: "semi-formal", details: ["Spring florals", "Midi length"], store: "Reformation.com" },
-                    { brand: "Anthropologie", name: "Flowy Maxi Dress", price: "$198", style: "classic", formalLevel: "semi-formal", details: ["Maxi length", "Romantic"], store: "Anthropologie.com" },
-                    { brand: "ASOS", name: "Pastel Midi Dress", price: "$89", style: "modern", formalLevel: "semi-formal", details: ["Light colors", "Breathable"], store: "ASOS.com" },
-                    { brand: "Nordstrom", name: "Velvet Wrap Dress", price: "$178", style: "classic", formalLevel: "semi-formal", details: ["Rich velvet", "Midi length"], store: "Nordstrom.com" },
-                    { brand: "J.Crew", name: "Jewel Tone Sheath", price: "$158", style: "modern", formalLevel: "semi-formal", details: ["Deep colors", "Elegant"], store: "JCrew.com" },
-                    { brand: "Zara", name: "Satin Evening Dress", price: "$129", style: "classic", formalLevel: "semi-formal", details: ["Luxe fabric", "Sophisticated"], store: "Zara.com" },
-                    { brand: "Nordstrom", name: "Floor-Length Gown", price: "$298", style: "classic", formalLevel: "black-tie", details: ["Formal gown", "Elegant"], store: "Nordstrom.com" },
-                    { brand: "Bloomingdale's", name: "Embellished Evening Gown", price: "$358", style: "modern", formalLevel: "black-tie", details: ["Beaded detail", "Luxurious"], store: "Bloomingdales.com" },
-                    { brand: "Revolve", name: "Silk Formal Gown", price: "$428", style: "modern", formalLevel: "black-tie", details: ["Floor length", "Sophisticated"], store: "Revolve.com" },
-                    { brand: "Neiman Marcus", name: "Classic Ball Gown", price: "$498", style: "classic", formalLevel: "black-tie", details: ["Timeless", "Statement"], store: "NeimanMarcus.com" }
+                    { brand: "Reformation", name: "Floral Midi Dress", price: "$248", style: "modern", formalLevel: "semi-formal", details: ["Spring florals", "Midi length"] },
+                    { brand: "Anthropologie", name: "Flowy Maxi Dress", price: "$198", style: "classic", formalLevel: "semi-formal", details: ["Maxi length", "Romantic"] },
+                    { brand: "ASOS", name: "Pastel Midi Dress", price: "$89", style: "modern", formalLevel: "semi-formal", details: ["Light colors", "Breathable"] },
+                    { brand: "Nordstrom", name: "Velvet Wrap Dress", price: "$178", style: "classic", formalLevel: "semi-formal", details: ["Rich velvet", "Midi length"] },
+                    { brand: "J.Crew", name: "Jewel Tone Sheath", price: "$158", style: "modern", formalLevel: "semi-formal", details: ["Deep colors", "Elegant"] },
+                    { brand: "Zara", name: "Satin Evening Dress", price: "$129", style: "classic", formalLevel: "semi-formal", details: ["Luxe fabric", "Sophisticated"] },
+                    { brand: "Nordstrom", name: "Floor-Length Gown", price: "$298", style: "classic", formalLevel: "black-tie", details: ["Formal gown", "Elegant"] },
+                    { brand: "Bloomingdale's", name: "Embellished Evening Gown", price: "$358", style: "modern", formalLevel: "black-tie", details: ["Beaded detail", "Luxurious"] },
+                    { brand: "Revolve", name: "Silk Formal Gown", price: "$428", style: "modern", formalLevel: "black-tie", details: ["Floor length", "Sophisticated"] },
+                    { brand: "Neiman Marcus", name: "Classic Ball Gown", price: "$498", style: "classic", formalLevel: "black-tie", details: ["Timeless", "Statement"] }
                 ],
                 separates: [
-                    { brand: "Mango", name: "Silk Top & Wide Leg Pants", price: "$156", style: "modern", formalLevel: "semi-formal", details: ["Elegant", "Flowy"], store: "Mango.com" },
-                    { brand: "Everlane", name: "Linen Blazer & Trousers", price: "$198", style: "classic", formalLevel: "semi-formal", details: ["Breathable", "Chic"], store: "Everlane.com" },
-                    { brand: "Banana Republic", name: "Wool Blend Suit", price: "$298", style: "classic", formalLevel: "semi-formal", details: ["Warm", "Tailored"], store: "BananaRepublic.com" },
-                    { brand: "Theory", name: "Evening Separates", price: "$398", style: "modern", formalLevel: "black-tie", details: ["Formal", "Elegant"], store: "Theory.com" }
+                    { brand: "Mango", name: "Silk Top & Wide Leg Pants", price: "$156", style: "modern", formalLevel: "semi-formal", details: ["Elegant", "Flowy"] },
+                    { brand: "Everlane", name: "Linen Blazer & Trousers", price: "$198", style: "classic", formalLevel: "semi-formal", details: ["Breathable", "Chic"] },
+                    { brand: "Banana Republic", name: "Wool Blend Suit", price: "$298", style: "classic", formalLevel: "semi-formal", details: ["Warm", "Tailored"] },
+                    { brand: "Theory", name: "Evening Separates", price: "$398", style: "modern", formalLevel: "black-tie", details: ["Formal", "Elegant"] }
                 ]
             },
             prom: {
                 dresses: [
-                    { brand: "Lulus", name: "Sequined Mermaid Gown", price: "$118", style: "modern", formalLevel: "prom", details: ["Floor length", "Sparkle"], store: "Lulus.com" },
-                    { brand: "David's Bridal", name: "Classic Ball Gown", price: "$299", style: "classic", formalLevel: "prom", details: ["Full skirt", "Romantic"], store: "DavidsBridal.com" },
-                    { brand: "Revolve", name: "Sleek Satin Gown", price: "$268", style: "modern", formalLevel: "prom", details: ["Satin finish", "Dramatic"], store: "Revolve.com" },
-                    { brand: "ASOS", name: "Elegant Midi Dress", price: "$89", style: "modern", formalLevel: "semi-formal", details: ["Semi-formal", "Chic"], store: "ASOS.com" },
-                    { brand: "Lulus", name: "Cocktail Dress", price: "$78", style: "modern", formalLevel: "semi-formal", details: ["Party-ready", "Flattering"], store: "Lulus.com" },
-                    { brand: "Nordstrom", name: "Satin A-Line Dress", price: "$148", style: "classic", formalLevel: "semi-formal", details: ["Sophisticated", "Midi length"], store: "Nordstrom.com" }
+                    { brand: "Lulus", name: "Sequined Mermaid Gown", price: "$118", style: "modern", formalLevel: "prom", details: ["Floor length", "Sparkle"] },
+                    { brand: "David's Bridal", name: "Classic Ball Gown", price: "$299", style: "classic", formalLevel: "prom", details: ["Full skirt", "Romantic"] },
+                    { brand: "Revolve", name: "Sleek Satin Gown", price: "$268", style: "modern", formalLevel: "prom", details: ["Satin finish", "Dramatic"] },
+                    { brand: "ASOS", name: "Elegant Midi Dress", price: "$89", style: "modern", formalLevel: "semi-formal", details: ["Semi-formal", "Chic"] },
+                    { brand: "Lulus", name: "Cocktail Dress", price: "$78", style: "modern", formalLevel: "semi-formal", details: ["Party-ready", "Flattering"] },
+                    { brand: "Nordstrom", name: "Satin A-Line Dress", price: "$148", style: "classic", formalLevel: "semi-formal", details: ["Sophisticated", "Midi length"] }
                 ],
                 separates: []
             },
             graduation: {
                 dresses: [
-                    { brand: "Lulus", name: "Sweetest Admirer White Lace Midi Dress", price: "$64", style: "modern", audience: "graduate", details: ["Lace detail", "Midi length"], store: "Lulus.com", link: "https://www.lulus.com/products/sweetest-admirer-white-lace-midi-dress/1893176.html" },
-                    { brand: "Nordstrom", name: "Open Edit Sleeveless Midi Dress", price: "$39", style: "modern", audience: "graduate", details: ["Clean lines", "Versatile"], store: "Nordstrom.com", link: "https://www.nordstrom.com/s/sleeveless-midi-dress/7366826" },
-                    { brand: "Abercrombie", name: "Satin Midi Slip Dress", price: "$90", style: "modern", audience: "graduate", details: ["Satin finish", "Elegant"], store: "Abercrombie.com", link: "https://www.abercrombie.com/shop/us/p/satin-midi-slip-dress-52690819" },
-                    { brand: "J.Crew", name: "Sleeveless Tie-Waist Shirtdress", price: "$128", style: "classic", audience: "graduate", details: ["Classic style", "Structured"], store: "JCrew.com", link: "https://www.jcrew.com/p/womens/categories/clothing/dresses-and-jumpsuits/midi/sleeveless-tie-waist-shirtdress/BL168" },
-                    { brand: "Bloomingdale's", name: "Aqua Eyelet Midi Dress", price: "$98", style: "modern", audience: "graduate", details: ["Eyelet detail", "Fresh"], store: "Bloomingdales.com", link: "https://www.bloomingdales.com/shop/product/aqua-eyelet-midi-dress" },
-                    { brand: "Nordstrom", name: "Chelsea28 Ruffle Sleeve Dress", price: "$89", style: "classic", audience: "graduate", details: ["Ruffle sleeves", "Feminine"], store: "Nordstrom.com", link: "https://www.nordstrom.com/s/chelsea28-ruffle-sleeve-dress/6895438" },
-                    { brand: "Lulus", name: "Much Obliged White Lace Midi Dress", price: "$82", style: "classic", audience: "graduate", details: ["Romantic lace", "Midi length"], store: "Lulus.com", link: "https://www.lulus.com/products/much-obliged-white-lace-midi-dress/641562.html" },
-                    { brand: "Ann Taylor", name: "Floral Eyelet Midi Dress", price: "$139", style: "classic", audience: "mom", details: ["Sophisticated", "Eyelet detail"], store: "AnnTaylor.com", link: "https://www.anntaylor.com/floral-eyelet-midi-dress/608529" },
-                    { brand: "J.Crew", name: "Ruffle-Trim Dress in Crisp Cotton", price: "$148", style: "modern", audience: "mom", details: ["Polished", "Crisp cotton"], store: "JCrew.com", link: "https://www.jcrew.com/p/womens/categories/clothing/dresses-and-jumpsuits/midi/ruffle-trim-dress-in-crisp-cotton/BM876" },
-                    { brand: "Nordstrom", name: "Eliza J Fit & Flare Dress", price: "$158", style: "classic", audience: "mom", details: ["Classic", "Flattering"], store: "Nordstrom.com", link: "https://www.nordstrom.com/s/eliza-j-fit-flare-dress/5437821" },
-                    { brand: "Bloomingdale's", name: "Lafayette 148 Linen Dress", price: "$348", style: "classic", audience: "mom", details: ["Luxury linen", "Sophisticated"], store: "Bloomingdales.com", link: "https://www.bloomingdales.com/shop/product/lafayette-148-new-york-linen-dress" },
-                    { brand: "Talbots", name: "Eyelet Fit and Flare Dress", price: "$139", style: "classic", audience: "mom", details: ["Comfortable", "Elegant"], store: "Talbots.com", link: "https://www.talbots.com/eyelet-fit-and-flare-dress/P212020577.html" }
+                    { brand: "Lulus", name: "Sweetest Admirer White Lace Midi Dress", price: "$64", style: "modern", audience: "graduate", details: ["Lace detail", "Midi length"] },
+                    { brand: "Nordstrom", name: "Open Edit Sleeveless Midi Dress", price: "$39", style: "modern", audience: "graduate", details: ["Clean lines", "Versatile"] },
+                    { brand: "Abercrombie", name: "Satin Midi Slip Dress", price: "$90", style: "modern", audience: "graduate", details: ["Satin finish", "Elegant"] },
+                    { brand: "J.Crew", name: "Sleeveless Tie-Waist Shirtdress", price: "$128", style: "classic", audience: "graduate", details: ["Classic style", "Structured"] },
+                    { brand: "Bloomingdale's", name: "Aqua Eyelet Midi Dress", price: "$98", style: "modern", audience: "graduate", details: ["Eyelet detail", "Fresh"] },
+                    { brand: "Nordstrom", name: "Chelsea28 Ruffle Sleeve Dress", price: "$89", style: "classic", audience: "graduate", details: ["Ruffle sleeves", "Feminine"] },
+                    { brand: "Lulus", name: "Much Obliged White Lace Midi Dress", price: "$82", style: "classic", audience: "graduate", details: ["Romantic lace", "Midi length"] },
+                    { brand: "Ann Taylor", name: "Floral Eyelet Midi Dress", price: "$139", style: "classic", audience: "mom", details: ["Sophisticated", "Eyelet detail"] },
+                    { brand: "J.Crew", name: "Ruffle-Trim Dress in Crisp Cotton", price: "$148", style: "modern", audience: "mom", details: ["Polished", "Crisp cotton"] },
+                    { brand: "Nordstrom", name: "Eliza J Fit & Flare Dress", price: "$158", style: "classic", audience: "mom", details: ["Classic", "Flattering"] },
+                    { brand: "Bloomingdale's", name: "Lafayette 148 Linen Dress", price: "$348", style: "classic", audience: "mom", details: ["Luxury linen", "Sophisticated"] },
+                    { brand: "Talbots", name: "Eyelet Fit and Flare Dress", price: "$139", style: "classic", audience: "mom", details: ["Comfortable", "Elegant"] }
                 ],
                 separates: []
             },
             holiday: {
                 dresses: [
-                    { brand: "Anthropologie", name: "Sequined Cocktail Dress", price: "$198", style: "modern", details: ["Sparkle", "Midi length"], store: "Anthropologie.com" },
-                    { brand: "Nordstrom", name: "Velvet Party Dress", price: "$158", style: "classic", details: ["Rich velvet", "Festive"], store: "Nordstrom.com" },
-                    { brand: "ASOS", name: "Metallic Wrap Dress", price: "$89", style: "modern", details: ["Shimmer", "Bold"], store: "ASOS.com" },
-                    { brand: "J.Crew", name: "Silk Slip Dress", price: "$178", style: "classic", details: ["Elegant", "Luxe"], store: "JCrew.com" }
+                    { brand: "Anthropologie", name: "Sequined Cocktail Dress", price: "$198", style: "modern", details: ["Sparkle", "Midi length"] },
+                    { brand: "Nordstrom", name: "Velvet Party Dress", price: "$158", style: "classic", details: ["Rich velvet", "Festive"] },
+                    { brand: "ASOS", name: "Metallic Wrap Dress", price: "$89", style: "modern", details: ["Shimmer", "Bold"] },
+                    { brand: "J.Crew", name: "Silk Slip Dress", price: "$178", style: "classic", details: ["Elegant", "Luxe"] }
                 ],
                 separates: [
-                    { brand: "Zara", name: "Sparkle Top & Trousers", price: "$119", style: "modern", details: ["Festive", "Chic"], store: "Zara.com" },
-                    { brand: "Banana Republic", name: "Satin Blouse & Pants", price: "$188", style: "classic", details: ["Sophisticated", "Party-ready"], store: "BananaRepublic.com" }
+                    { brand: "Zara", name: "Sparkle Top & Trousers", price: "$119", style: "modern", details: ["Festive", "Chic"] },
+                    { brand: "Banana Republic", name: "Satin Blouse & Pants", price: "$188", style: "classic", details: ["Sophisticated", "Party-ready"] }
                 ],
                 accessories: [
-                    { brand: "Kate Spade", name: "Sparkle Clutch", price: "$98", style: "modern", details: ["Evening bag", "Festive"], store: "KateSpade.com" },
-                    { brand: "J.Crew", name: "Statement Earrings", price: "$48", style: "classic", details: ["Holiday sparkle", "Bold"], store: "JCrew.com" },
-                    { brand: "Nordstrom", name: "Velvet Headband", price: "$32", style: "classic", details: ["Festive", "Elegant"], store: "Nordstrom.com" },
-                    { brand: "Anthropologie", name: "Embellished Belt", price: "$58", style: "modern", details: ["Sparkle", "Statement"], store: "Anthropologie.com" }
+                    { brand: "Kate Spade", name: "Sparkle Clutch", price: "$98", style: "modern", details: ["Evening bag", "Festive"] },
+                    { brand: "J.Crew", name: "Statement Earrings", price: "$48", style: "classic", details: ["Holiday sparkle", "Bold"] },
+                    { brand: "Nordstrom", name: "Velvet Headband", price: "$32", style: "classic", details: ["Festive", "Elegant"] },
+                    { brand: "Anthropologie", name: "Embellished Belt", price: "$58", style: "modern", details: ["Sparkle", "Statement"] }
                 ]
             }
         };
 
         const occasionContent = {
-            funeral: { 
-                title: "Memorial Services Attire", 
-                description: "Respectful, modest attire for somber occasions in black and dark tones",
-                tagline: "Browse respectful attire from top retailers. We're here to assist you during this difficult time."
-            },
-            wedding: { 
-                title: "Wedding Guest", 
-                description: "Elegant guest attire - chic dresses and outfits to celebrate in style",
-                tagline: "Shop the most popular styles from top retailers. Your perfect outfit awaits!"
-            },
-            prom: { 
-                title: "Prom & Semi-Formal Dances", 
-                description: "Show-stopping gowns for prom and elegant dresses for semi-formal dances",
-                tagline: "Shop the most popular styles from top retailers. Your perfect outfit awaits!"
-            },
-            graduation: { 
-                title: "Graduation", 
-                description: "Classic white dresses for your special day. Moms, we've got you covered too!",
-                tagline: "Shop the most popular styles from top retailers. Your perfect outfit awaits!"
-            },
-            holiday: { 
-                title: "Holiday Party", 
-                description: "Festive, sparkly looks perfect for celebrating the season",
-                tagline: "Shop the most popular styles from top retailers. Your perfect outfit awaits!"
-            }
+            funeral: { title: "Memorial Services Attire", tagline: "Browse respectful attire from top retailers. We're here to assist you during this difficult time." },
+            wedding: { title: "Wedding Guest", tagline: "Shop the most popular styles from top retailers. Your perfect outfit awaits!" },
+            prom: { title: "Prom & Semi-Formal Dances", tagline: "Shop the most popular styles from top retailers. Your perfect outfit awaits!" },
+            graduation: { title: "Graduation", tagline: "Shop the most popular styles from top retailers. Your perfect outfit awaits!" },
+            holiday: { title: "Holiday Party", tagline: "Shop the most popular styles from top retailers. Your perfect outfit awaits!" }
         };
 
         let currentOccasion = 'funeral';
         let currentFilter = 'all';
+
+        function showMain() {
+            document.getElementById('occasions').style.display = 'block';
+            document.getElementById('our-story').style.display = 'block';
+            document.getElementById('contact').style.display = 'block';
+            document.getElementById('products').classList.remove('active');
+            document.getElementById('privacy').classList.remove('active');
+            window.scrollTo(0, 0);
+        }
+
+        function showPrivacy() {
+            document.getElementById('occasions').style.display = 'none';
+            document.getElementById('our-story').style.display = 'none';
+            document.getElementById('contact').style.display = 'none';
+            document.getElementById('products').classList.remove('active');
+            document.getElementById('privacy').classList.add('active');
+            window.scrollTo(0, 0);
+            return false;
+        }
 
         function showProducts(occasion) {
             currentOccasion = occasion;
@@ -885,16 +993,16 @@
             document.getElementById('occasion-tagline').textContent = occasionContent[occasion].tagline;
             document.getElementById('occasions').style.display = 'none';
             document.getElementById('our-story').style.display = 'none';
+            document.getElementById('contact').style.display = 'none';
+            document.getElementById('privacy').classList.remove('active');
             document.getElementById('products').classList.add('active');
-            
-            // Update filters based on occasion
+
             const filtersContainer = document.querySelector('.filters');
-            
             if (occasion === 'wedding') {
                 filtersContainer.innerHTML = `
                     <button class="filter-btn active" data-filter="all">All Items</button>
                     <button class="filter-btn" data-filter="black-tie">Black-Tie/Formal</button>
-                    <button class="filter-btn" data-filter="semi-formal">Semi-Formal/Cocktail/Dressy Casual</button>
+                    <button class="filter-btn" data-filter="semi-formal">Semi-Formal/Cocktail</button>
                     <button class="filter-btn" data-filter="separates">Tops & Pants</button>
                 `;
             } else if (occasion === 'prom') {
@@ -908,7 +1016,7 @@
                     <button class="filter-btn active" data-filter="all">All Items</button>
                     <button class="filter-btn" data-filter="dress">Dresses</button>
                     <button class="filter-btn" data-filter="separates">Separates</button>
-                    <button class="filter-btn" data-filter="accessories">Festive Accessories</button>
+                    <button class="filter-btn" data-filter="accessories">Accessories</button>
                 `;
             } else if (occasion === 'graduation') {
                 filtersContainer.innerHTML = `
@@ -923,12 +1031,12 @@
                     <button class="filter-btn" data-filter="separates">Tops & Pants</button>
                 `;
             }
-            
+
             attachFilterListeners();
             loadProducts();
             window.scrollTo(0, 0);
         }
-        
+
         function attachFilterListeners() {
             document.querySelectorAll('.filter-btn').forEach(btn => {
                 btn.addEventListener('click', function() {
@@ -944,6 +1052,7 @@
             document.getElementById('products').classList.remove('active');
             document.getElementById('occasions').style.display = 'block';
             document.getElementById('our-story').style.display = 'block';
+            document.getElementById('contact').style.display = 'block';
             window.scrollTo(0, 0);
         }
 
@@ -953,12 +1062,11 @@
             const separatesGrid = document.getElementById('separates-grid');
             const accessoriesGrid = document.getElementById('accessories-grid');
             const accessoriesTitle = document.getElementById('accessories-title');
-            
+
             dressesGrid.innerHTML = '';
             separatesGrid.innerHTML = '';
             accessoriesGrid.innerHTML = '';
-            
-            // Show accessories section only for holiday occasion
+
             if (currentOccasion === 'holiday') {
                 accessoriesTitle.style.display = 'block';
                 accessoriesGrid.style.display = 'grid';
@@ -966,30 +1074,10 @@
                 accessoriesTitle.style.display = 'none';
                 accessoriesGrid.style.display = 'none';
             }
-            
-            if (data.dresses && data.dresses.length > 0) {
-                data.dresses.forEach(product => {
-                    if (shouldShowProduct(product)) {
-                        dressesGrid.innerHTML += createProductCard(product);
-                    }
-                });
-            }
-            
-            if (data.separates && data.separates.length > 0) {
-                data.separates.forEach(product => {
-                    if (shouldShowProduct(product)) {
-                        separatesGrid.innerHTML += createProductCard(product);
-                    }
-                });
-            }
-            
-            if (data.accessories && data.accessories.length > 0) {
-                data.accessories.forEach(product => {
-                    if (shouldShowProduct(product)) {
-                        accessoriesGrid.innerHTML += createProductCard(product);
-                    }
-                });
-            }
+
+            if (data.dresses) data.dresses.forEach(p => { if (shouldShowProduct(p)) dressesGrid.innerHTML += createProductCard(p); });
+            if (data.separates) data.separates.forEach(p => { if (shouldShowProduct(p)) separatesGrid.innerHTML += createProductCard(p); });
+            if (data.accessories) data.accessories.forEach(p => { if (shouldShowProduct(p)) accessoriesGrid.innerHTML += createProductCard(p); });
         }
 
         function shouldShowProduct(product) {
@@ -1000,17 +1088,12 @@
             if (currentFilter === 'graduate' && product.audience === 'graduate') return true;
             if (currentFilter === 'mom' && product.audience === 'mom') return true;
             if (currentFilter === 'dress' || currentFilter === 'separates' || currentFilter === 'accessories') return true;
-            if (currentFilter === 'modern' || currentFilter === 'classic') {
-                return product.style === currentFilter;
-            }
+            if (currentFilter === 'modern' || currentFilter === 'classic') return product.style === currentFilter;
             return true;
         }
 
         function createProductCard(product) {
-            const linkHref = product.link || '#';
-            const linkTarget = product.link ? '_blank' : '_self';
-            const linkOnclick = product.link ? '' : 'onclick="return false;"';
-            
+            const storeUrl = storeLinks[product.brand] || '#';
             return `
                 <div class="product-card">
                     <div class="product-image">👗</div>
@@ -1018,12 +1101,11 @@
                         <div class="product-brand">${product.brand}</div>
                         <div class="product-name">${product.name}</div>
                         <div class="product-price">${product.price}</div>
-                        <a href="${linkHref}" class="product-link" target="${linkTarget}" ${linkOnclick}>Shop at ${product.store}</a>
+                        <a href="${storeUrl}" class="product-link" target="_blank">Shop at ${product.brand}</a>
                     </div>
                 </div>
             `;
         }
-
     </script>
 </body>
 </html>

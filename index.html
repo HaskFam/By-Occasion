@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>By Occasion - Elevated Style for Every Celebration</title>
+    <meta name="description" content="By Occasion curates the perfect outfits for life's most important moments — wedding guest, prom, graduation, funeral attire, memorial services, and holiday parties. Find what to wear to a funeral, wedding, or graduation in one place.">
+    <meta name="keywords" content="funeral attire women, what to wear to a funeral, funeral dress code, memorial service outfit, funeral clothing, funeral dress, what to wear to a memorial service, wedding guest dress, prom dress 2026, graduation dress, by occasion boutique, conservative black dress, modest black dress, memorial outfit, black dress for funeral, navy dress for funeral, black clothing for funeral, modest funeral dress, appropriate funeral attire, black or navy clothing, funeral appropriate dress, understated black dress, simple black dress funeral, respectful funeral outfit, dark clothing memorial service, somber occasion dress, black midi dress, black maxi dress, funeral guest outfit, prom dresses, trending prom dress, trendy prom dresses, classic prom dresses, corset prom dress, long prom dresses, prom dress 2026, best prom dresses 2026, prom gown, formal prom dress, what to wear to a wedding, wedding guest attire, wedding guest looks, wedding guest outfit, garden party wedding outfit, garden wedding dress, black tie wedding guest dress, formal wedding guest dress, cocktail wedding guest dress, semi-casual wedding dress, casual wedding dress, floral wedding guest dress, midi dress for wedding, jumpsuit wedding guest, maxi dress wedding guest, plus size wedding guest dress, wedding guest style, elegant wedding guest dress, chic wedding guest outfit, spring wedding guest dress, summer wedding guest dress, fall wedding guest dress, winter wedding guest dress, what to wear to graduation, graduation ceremony outfit, graduation party dress, white graduation dress, white dresses, graduate dress, graduation outfit ideas, college graduation dress, high school graduation dress, graduation dress 2026, cute graduation dress, simple graduation dress, elegant graduation dress, short graduation dress, long graduation dress, graduation day outfit, graduation photoshoot dress, what to wear under graduation gown, affordable wedding guest dress, budget wedding guest dress, cheap prom dress, inexpensive formal dress, dresses for every budget, affordable formal wear, budget friendly prom dress, prom dress under $50, prom dress under $100, affordable graduation dress, budget funeral attire, inexpensive black dress">
+    <meta property="og:title" content="By Occasion - Dress for Every Moment">
+    <meta property="og:description" content="Curated outfits for weddings, prom, graduation, funeral services, and more. Find the perfect dress faster.">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -34,6 +38,7 @@
             overflow-x: hidden;
         }
         
+        /* Decorative elements */
         .bg-decoration {
             position: fixed;
             top: -50%;
@@ -63,6 +68,7 @@
             50% { transform: translate(30px, 30px) scale(1.05); }
         }
         
+        /* Header */
         header {
             background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(20px);
@@ -126,6 +132,7 @@
             width: 100%;
         }
         
+        /* Hero */
         .hero {
             max-width: 1400px;
             margin: 6rem auto 8rem;
@@ -207,6 +214,7 @@
             background: var(--navy-blue);
         }
         
+        /* Occasions Grid */
         .occasions-container {
             max-width: 1400px;
             margin: 0 auto;
@@ -336,6 +344,7 @@
             font-size: 1.2rem;
         }
         
+        /* Products Section */
         .products-section {
             display: none;
             max-width: 1400px;
@@ -392,51 +401,8 @@
             color: #666;
             font-weight: 300;
         }
-
-        .affiliate-notice {
-            text-align: center;
-            font-size: 0.8rem;
-            color: #999;
-            margin-bottom: 2rem;
-            font-style: italic;
-        }
         
-        .story-section {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 6rem 3rem;
-        }
-        
-        .story-header {
-            text-align: center;
-            margin-bottom: 4rem;
-        }
-        
-        .story-header h2 {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 4rem;
-            font-weight: 600;
-            color: var(--navy-blue);
-            margin-bottom: 1rem;
-        }
-
-        .divider {
-            width: 80px;
-            height: 3px;
-            background: var(--ocean-blue);
-            margin: 0 auto;
-        }
-        
-        .story-content {
-            font-size: 1.1rem;
-            line-height: 2;
-            color: var(--charcoal);
-        }
-        
-        .story-content p {
-            margin-bottom: 1.5rem;
-        }
-        
+        /* Filters */
         .filters {
             display: flex;
             justify-content: center;
@@ -468,6 +434,7 @@
             box-shadow: 0 8px 20px rgba(91, 139, 168, 0.3);
         }
         
+        /* Product Grid */
         .products-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -556,6 +523,7 @@
             text-align: center;
         }
         
+        /* Footer */
         footer {
             background: var(--navy-blue);
             color: white;
@@ -575,26 +543,6 @@
             opacity: 0.9;
             margin-bottom: 1rem;
         }
-
-        .footer-links {
-            margin-top: 1.5rem;
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-        }
-
-        .footer-links a {
-            color: white;
-            opacity: 0.7;
-            text-decoration: none;
-            font-size: 0.85rem;
-            letter-spacing: 0.05em;
-            transition: opacity 0.3s;
-        }
-
-        .footer-links a:hover {
-            opacity: 1;
-        }
         
         .footer-badge {
             display: inline-block;
@@ -606,59 +554,21 @@
             text-transform: uppercase;
             margin-top: 1rem;
         }
-
-        /* Privacy Policy Page */
-        .privacy-section {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 6rem 3rem;
-            display: none;
-        }
-
-        .privacy-section.active {
-            display: block;
-        }
-
-        .privacy-section h2 {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 3rem;
-            font-weight: 600;
-            color: var(--navy-blue);
-            margin-bottom: 0.5rem;
-            text-align: center;
-        }
-
-        .privacy-section .last-updated {
-            text-align: center;
-            color: #999;
-            font-size: 0.9rem;
-            margin-bottom: 3rem;
-        }
-
-        .privacy-section h3 {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 1.5rem;
-            color: var(--navy-blue);
-            margin: 2rem 0 1rem;
-        }
-
-        .privacy-section p {
-            font-size: 1rem;
-            line-height: 1.9;
-            color: var(--charcoal);
-            margin-bottom: 1rem;
-        }
         
+        /* Responsive */
         @media (max-width: 768px) {
             .hero h1 {
                 font-size: 3rem;
             }
+            
             nav ul {
                 gap: 1.5rem;
             }
+            
             .occasions-grid {
                 grid-template-columns: 1fr;
             }
+            
             .products-grid {
                 grid-template-columns: 1fr;
             }
@@ -671,11 +581,11 @@
     
     <header>
         <div class="header-content">
-            <div class="logo">By Occasion</div>
+            <div class="logo" onclick="showOccasions()" style="cursor: pointer;">By Occasion</div>
             <nav>
                 <ul>
-                    <li><a href="#" onclick="showMain()">Occasions</a></li>
-                    <li><a href="#our-story">Our Story</a></li>
+                    <li><a href="javascript:void(0)" onclick="showOccasions()">Occasions</a></li>
+                    <li><a href="#our-story" onclick="showOurStory()">Our Story</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -685,32 +595,24 @@
     <main>
         <!-- Occasions Grid -->
         <section id="occasions" class="occasions-container">
+            <!-- Hero Section -->
             <section class="hero">
                 <div class="hero-badge">Curated Fashion</div>
                 <h1>Dress for <span class="gradient-text">Every Occasion</span></h1>
                 <p>Discover perfectly curated outfits for life's most important moments. From celebrations to ceremonies, we've searched the best retailers, so you don't have to.</p>
-                <p>Have an event coming up? Skip the endless scrolling. We scoured the top shops, collected their most recommended picks in one place, and organized them for your convenience—<span class="gradient-text">By Occasion</span>. See the top options from the most popular stores instantly. Find that perfect outfit faster.</p>
-                <a href="#occasions" class="cta-button">Explore Occasions</a>
+                <p>Have an event coming up? Skip the endless scrolling. We scoured the top shops, collected their most recommended picks in one place, and organized them for your convenience—By Occasion. See the top options from the most popular stores instantly. Find that perfect outfit faster.</p>
+                <a href="#find-your-look" class="cta-button">Explore Occasions</a>
             </section>
 
-            <div class="section-header">
+            <div class="section-header" id="find-your-look">
                 <h2>Find Your Perfect Look</h2>
                 <div class="divider"></div>
             </div>
             
             <div class="occasions-grid">
-                <div class="occasion-card" onclick="showProducts('graduation')">
-                    <div class="occasion-image" style="background-image: url('https://images.unsplash.com/photo-1695425173758-37e9c23b962a?w=800&auto=format&fit=crop'); background-size: cover; background-position: center;"></div>
-                    <span class="occasion-badge">Timeless</span>
-                    <div class="occasion-info">
-                        <h3>Graduation</h3>
-                        <p>Classic white dresses for your special achievement. Moms, we got you covered too!</p>
-                        <span class="occasion-link">Shop Now</span>
-                    </div>
-                </div>
-
                 <div class="occasion-card" onclick="showProducts('wedding')">
-                    <div class="occasion-image" style="background-image: url('https://images.unsplash.com/photo-1527529482837-4698179dc6ce?w=800&auto=format&fit=crop'); background-size: cover; background-position: center;"></div>
+                    <div class="occasion-image" style="background-image: url('https://images.unsplash.com/photo-1527529482837-4698179dc6ce?w=800&auto=format&fit=crop'); background-size: cover; background-position: center;">
+                    </div>
                     <span class="occasion-badge">Celebratory</span>
                     <div class="occasion-info">
                         <h3>Wedding Guest</h3>
@@ -720,17 +622,30 @@
                 </div>
 
                 <div class="occasion-card" onclick="showProducts('prom')">
-                    <div class="occasion-image" style="background-image: url('https://images.unsplash.com/photo-1551915320-f59076ad1aa6?w=800&auto=format&fit=crop'); background-size: cover; background-position: center;"></div>
+                    <div class="occasion-image" style="background-image: url('https://images.unsplash.com/photo-1551915320-f59076ad1aa6?w=800&auto=format&fit=crop'); background-size: cover; background-position: center;">
+                    </div>
                     <span class="occasion-badge">Glamorous</span>
                     <div class="occasion-info">
-                        <h3>Prom & Semi-Formal Dances</h3>
-                        <p>Stunning gowns and dresses for memorable nights</p>
+                        <h3>Prom</h3>
+                        <p>Stunning gowns and dresses for a memorable night</p>
+                        <span class="occasion-link">Shop Now</span>
+                    </div>
+                </div>
+
+                <div class="occasion-card" onclick="showProducts('graduation')">
+                    <div class="occasion-image" style="background-image: url('https://images.unsplash.com/photo-1695425173758-37e9c23b962a?w=800&auto=format&fit=crop'); background-size: cover; background-position: center;">
+                    </div>
+                    <span class="occasion-badge">Timeless</span>
+                    <div class="occasion-info">
+                        <h3>Graduation</h3>
+                        <p>Classic white dresses for your special achievement.</p>
                         <span class="occasion-link">Shop Now</span>
                     </div>
                 </div>
 
                 <div class="occasion-card" onclick="showProducts('holiday')">
-                    <div class="occasion-image" style="background-image: url('https://images.unsplash.com/photo-1481930916222-5ec4696fc0f2?w=800&auto=format&fit=crop'); background-size: cover; background-position: center;"></div>
+                    <div class="occasion-image" style="background-image: url('https://images.unsplash.com/photo-1481930916222-5ec4696fc0f2?w=800&auto=format&fit=crop'); background-size: cover; background-position: center;">
+                    </div>
                     <span class="occasion-badge">Festive</span>
                     <div class="occasion-info">
                         <h3>Holiday Party</h3>
@@ -739,252 +654,297 @@
                     </div>
                 </div>
 
-                <div class="occasion-card" onclick="showProducts('funeral')">
+                <div class="occasion-card" onclick="showProducts('memorial')">
                     <div class="occasion-image" style="background: linear-gradient(135deg, #D4CEC4, #B8B2A8); display: flex; align-items: center; justify-content: center; font-size: 5rem;">
                         🖤
                     </div>
                     <span class="occasion-badge">Respectful</span>
                     <div class="occasion-info">
-                        <h3>Memorial Services Attire</h3>
-                        <p>Modest, respectful attire in black and dark tones for somber occasions</p>
+                        <h3>Memorial Services</h3>
+                        <p>Modest, respectful attire in black and dark tones for funeral services and memorial occasions</p>
                         <span class="occasion-link">Shop Now</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Products Section -->
+        <!-- Products Section (Hidden by default) -->
         <section id="products" class="products-section">
             <button class="back-button" onclick="showOccasions()">← Back to Occasions</button>
             
             <div class="products-header">
-                <h2 id="occasion-title">Funeral Attendee</h2>
+                <h2 id="occasion-title">Memorial Services</h2>
                 <p id="occasion-tagline">Shop the most popular styles from top retailers. Your perfect outfit awaits!</p>
             </div>
 
-            <p class="affiliate-notice">Links direct to retailer homepages. By Occasion is not currently an affiliate partner of these retailers.</p>
-
             <div class="filters">
                 <button class="filter-btn active" data-filter="all">All Styles</button>
+                <button class="filter-btn" data-filter="spring-summer">Spring/Summer</button>
+                <button class="filter-btn" data-filter="fall-winter">Fall/Winter</button>
+                <button class="filter-btn" data-filter="black-tie">Black Tie</button>
+                <button class="filter-btn" data-filter="dress">Dresses Only</button>
+                <button class="filter-btn" data-filter="separates">Tops & Pants</button>
+                <button class="filter-btn" data-filter="modern">Modern</button>
+                <button class="filter-btn" data-filter="classic">Classic</button>
+            </div></button>
             </div>
 
             <div id="products-content">
                 <h3 class="section-title">Dresses</h3>
+                <div id="dress-code-note" style="margin: -10px 0 20px 0; font-size: 0.95rem; color: #556B7E;"></div>
                 <div class="products-grid" id="dresses-grid"></div>
 
-                <h3 class="section-title">Tops & Pants</h3>
+                <h3 class="section-title" id="separates-title">Tops & Pants</h3>
                 <div class="products-grid" id="separates-grid"></div>
 
-                <h3 class="section-title" id="accessories-title">Festive Accessories</h3>
-                <div class="products-grid" id="accessories-grid"></div>
+
             </div>
-        </section>
-
-        <!-- Our Story Section -->
-        <section id="our-story" class="story-section">
-            <div class="story-header">
-                <h2>Our Story</h2>
-                <div class="divider"></div>
-            </div>
-            <div class="story-content">
-                <p>This year, I lost my beautiful and brilliant sister unexpectedly. In the days that followed, family members and I found ourselves in search of appropriate memorial attire. Heavy with grief, I scrolled clothing websites and walked through stores filled with holiday lights and cheerful music, thinking—there has to be a better way. Like most women, I don't have time to just shop; I shop by need, by life's moments—I shop <span class="gradient-text">By Occasion</span>. And like many, I often waste valuable time searching dozens of sites before finding just the right outfit. That's why I created <span class="gradient-text">By Occasion</span>: to make finding the perfect outfit easier, so you can focus on what truly matters—showing up as your most confident self for life's important moments.</p>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="story-section">
-            <div class="story-header">
-                <h2>Contact</h2>
-                <div class="divider"></div>
-            </div>
-            <div class="story-content" style="text-align: center;">
-                <p>Have a question or suggestion? We'd love to hear from you.</p>
-                <p style="margin-top: 2rem;">
-                    <a href="mailto:byoccasionboutique@gmail.com" style="color: var(--ocean-blue); font-weight: 600; font-size: 1.2rem; text-decoration: none;">
-                        byoccasionboutique@gmail.com
-                    </a>
-                </p>
-            </div>
-        </section>
-
-        <!-- Privacy Policy Section -->
-        <section id="privacy" class="privacy-section">
-            <h2>Privacy Policy</h2>
-            <p class="last-updated">Last updated: March 28, 2026</p>
-            <div class="divider" style="margin-bottom: 3rem;"></div>
-
-            <p>By Occasion ("we," "us," or "our") operates this website. This Privacy Policy explains how we collect, use, and protect your information when you visit our site.</p>
-
-            <h3>Information We Collect</h3>
-            <p>We may collect basic information such as your email address if you contact us directly. We do not currently collect payment information or require account creation.</p>
-
-            <h3>Affiliate Links</h3>
-            <p>By Occasion participates in affiliate marketing programs. This means we may earn a small commission if you click a link on our site and make a purchase, at no additional cost to you. We only recommend products we believe are relevant and useful to our visitors.</p>
-
-            <h3>Third Party Links</h3>
-            <p>Our site contains links to third party retail websites. We are not responsible for the privacy practices or content of those sites and encourage you to review their privacy policies.</p>
-
-            <h3>Cookies</h3>
-            <p>Our site may use basic cookies to improve your browsing experience. We do not sell or share cookie data with third parties.</p>
-
-            <h3>Google Fonts</h3>
-            <p>Our site uses Google Fonts, which may collect basic usage data. You can review Google's privacy policy at google.com/policies/privacy.</p>
-
-            <h3>Contact Us</h3>
-            <p>If you have any questions about this Privacy Policy please contact us at: <a href="mailto:byoccasionboutique@gmail.com" style="color: var(--ocean-blue);">byoccasionboutique@gmail.com</a></p>
-
-            <h3>Changes to This Policy</h3>
-            <p>We may update this policy from time to time. Any changes will be posted on this page with an updated date.</p>
         </section>
     </main>
 
-    <footer>
+    <!-- Our Story Section -->
+    <section id="our-story" style="display:none; max-width: 780px; margin: 0 auto; padding: 7rem 3rem 8rem; animation: fadeIn 0.6s ease;">
+        <div class="story-badge" style="display: inline-block; background: var(--warm-beige); padding: 0.5rem 1.5rem; border-radius: 30px; font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ocean-blue); font-weight: 600; margin-bottom: 2rem;">Our Story</div>
+        <div style="width: 80px; height: 3px; background: var(--ocean-blue); margin-bottom: 3.5rem;"></div>
+        <p style="font-family: 'Work Sans', sans-serif; font-size: 1.15rem; color: var(--charcoal); line-height: 2; font-weight: 300;">This year, I lost my beautiful and brilliant sister unexpectedly. In the days that followed, family members and I found ourselves in search of appropriate memorial attire. Heavy with grief, I scrolled clothing websites and walked through stores filled with holiday lights and cheerful music, thinking—there has to be a better way. Like most women, I don't have time to just shop; I shop by need, by life's moments—I shop By Occasion. And like many, I often waste valuable time searching dozens of sites before finding just the right outfit. That's why I created By Occasion: to make finding the perfect outfit easier, so you can focus on what truly matters—showing up as your most confident self for life's important moments.</p>
+    </section>
+
+    <footer id="contact">
         <div class="footer-content">
             <p>By Occasion - Your guide to dressing beautifully for life's important moments</p>
-            <div class="footer-links">
-                <a href="#" onclick="showPrivacy()">Privacy Policy</a>
-                <a href="#contact">Contact</a>
-            </div>
+            <p style="margin-top: 1.5rem; font-size: 1rem; opacity: 0.85;">We'd love to hear from you! Reach out with any comments or questions.</p>
+            <p style="margin-top: 0.5rem;">
+                <a href="mailto:info@byoccasionboutique.com" style="color: white; font-weight: 500; text-decoration: underline; font-size: 1rem;">info@byoccasionboutique.com</a>
+            </p>
             <div class="footer-badge">Prototype Version</div>
+            <p style="margin-top: 2rem; font-size: 0.75rem; opacity: 0.6; max-width: 600px; margin-left: auto; margin-right: auto; line-height: 1.6;">By Occasion participates in affiliate advertising programs, including the Amazon Services LLC Associates Program. We may earn a commission from qualifying purchases made through links on this site, at no extra cost to you. We only recommend products we believe in.</p>
         </div>
     </footer>
 
     <script>
-        // Store homepage links
-        const storeLinks = {
-            "Nordstrom": "https://www.nordstrom.com",
-            "J.Crew": "https://www.jcrew.com",
-            "Macy's": "https://www.macys.com",
-            "Ann Taylor": "https://www.anntaylor.com",
-            "Everlane": "https://www.everlane.com",
-            "Banana Republic": "https://www.bananarepublic.com",
-            "Zara": "https://www.zara.com",
-            "Reformation": "https://www.thereformation.com",
-            "Anthropologie": "https://www.anthropologie.com",
-            "ASOS": "https://www.asos.com",
-            "Bloomingdale's": "https://www.bloomingdales.com",
-            "Revolve": "https://www.revolve.com",
-            "Neiman Marcus": "https://www.neimanmarcus.com",
-            "Mango": "https://www.mango.com",
-            "Theory": "https://www.theory.com",
-            "Lulus": "https://www.lulus.com",
-            "David's Bridal": "https://www.davidsbridal.com",
-            "Abercrombie": "https://www.abercrombie.com",
-            "Talbots": "https://www.talbots.com",
-            "Kate Spade": "https://www.katespade.com"
-        };
-
+        // [Same JavaScript as before - keeping it identical]
         const productData = {
-            funeral: {
+            memorial: {
                 dresses: [
-                    { brand: "Nordstrom", name: "Classic A-Line Midi Dress", price: "$89", style: "classic", details: ["Midi length", "Long sleeves"] },
-                    { brand: "J.Crew", name: "Sleek Sheath Dress", price: "$128", style: "modern", details: ["Knee length", "Cap sleeves"] },
-                    { brand: "Macy's", name: "Elegant Wrap Dress", price: "$76", style: "classic", details: ["Wrap style", "3/4 sleeves"] },
-                    { brand: "Ann Taylor", name: "Ponte Fit & Flare Dress", price: "$139", style: "modern", details: ["Fit & flare", "Short sleeves"] }
+                    { brand: "Boden", name: "Marcia Jersey Shirt Dress", price: "", style: "classic", details: ["Memorial dress"], store: "Boden.com", link: "https://us.boden.com/products/women-marcia-jersey-shirt-dress-black-d1033blk?_pos=1&_sid=6796bff8c&_ss=r", image: "https://us.boden.com/cdn/shop/files/25waut_d1033_blk_m04_v1_d4386f31-00bf-45da-8e02-4f93ba461ac7.jpg?v=1770126716&width=823" },
+                    { brand: "Amazon", name: "BTFBM Womens Mock Neck Satin Dress", price: "", style: "classic", details: ["Memorial dress"], store: "Amazon.com", link: "https://amzn.to/48vU4b0", image: "https://m.media-amazon.com/images/I/510LBzSeAtL._AC_SY741_.jpg" },
+                    { brand: "Boden", name: "Zinnia Tie Ponte Midi Dress", price: "", style: "classic", details: ["Memorial dress"], store: "Boden.com", link: "https://us.boden.com/products/women-zinnia-tie-ponte-midi-dress-black-d1604blk?_pos=14&_sid=6796bff8c&_ss=r", image: "https://us.boden.com/cdn/shop/files/26wsum_d1604_blk_m01_v2_49ad94fc-f812-4620-ba87-7ce0512c05d1.jpg?v=1770810758&width=823" },
+                    { brand: "Amazon", name: "Calvin Klein Women's Short Buttoned Sleeve Knee Length Crepe Sheath Dress", price: "", style: "classic", details: ["Memorial dress"], store: "Amazon.com", link: "https://amzn.to/4mavvpL", image: "https://m.media-amazon.com/images/I/51aL-fnBk0L._AC_SX679_.jpg" },
+                    { brand: "Boden", name: "Pip Zip-Up Ponte Midi Dress", price: "", style: "classic", details: ["Memorial dress"], store: "Boden.com", link: "https://us.boden.com/products/women-pip-zip-up-ponte-midi-dress-black-d1082blk?_pos=10&_sid=6796bff8c&_ss=r", image: "https://us.boden.com/cdn/shop/files/26wspr_d1082_blk_m01_f3bdb4df-76c1-46f3-b363-d90e26c5a776.jpg?v=1768569986&width=823" },
+                    { brand: "Amazon", name: "Calvin Klein Women's Tulip Sleeve A-line Midi Dress", price: "", style: "classic", details: ["Memorial dress"], store: "Amazon.com", link: "https://amzn.to/4sLEuAe", image: "https://m.media-amazon.com/images/I/41GDpxoc0BL._AC_SX569_.jpg" },
+                    { brand: "Bloomingdale's", name: "Theory Pleated Midi Dress", price: "", style: "classic", details: ["Memorial dress"], store: "Bloomingdales.com", link: "https://www.bloomingdales.com/shop/product/theory-pleated-midi-dress?ID=5835377&CategoryID=2910", image: "https://images.bloomingdalesassets.com/is/image/BLM/products/6/optimized/15348776_fpx.tif?op_sharpen=1&wid=1500&fit=fit%2C1&fmt=webp" },
+                    { brand: "Amazon", name: "Amazon Essentials Women's Georgette Long Sleeve Midi Length Shirt Dress", price: "", style: "classic", details: ["Memorial dress"], store: "Amazon.com", link: "https://amzn.to/4dYm2zO", image: "https://m.media-amazon.com/images/I/61MJdnfZBFL._AC_SX679_.jpg" },
+                    { brand: "Bloomingdale's", name: "C by Bloomingdale's Cashmere 100% Cashmere Mock Neck Dress", price: "", style: "classic", details: ["Memorial dress"], store: "Bloomingdales.com", link: "https://www.bloomingdales.com/shop/product/c-by-bloomingdales-cashmere-mock-neck-dress-exclusive?ID=5176258&CategoryID=2910&swatchColor=Black", image: "https://images.bloomingdalesassets.com/is/image/BLM/products/2/optimized/13708892_fpx.tif?op_sharpen=1&wid=1500&fit=fit%2C1&fmt=webp" },
+                    { brand: "Bloomingdale's", name: "Ingrid & Isabel Mixed Media Maternity Dress", price: "", style: "classic", details: ["Memorial dress"], store: "Bloomingdales.com", link: "https://www.bloomingdales.com/shop/product/ingrid-isabel-mixed-media-maternity-dress?ID=5726227&CategoryID=2910&swatchColor=Black#SORTBY/TOP_RATED", image: "https://images.bloomingdalesassets.com/is/image/BLM/products/3/optimized/15158313_fpx.tif?op_sharpen=1&wid=1500&fit=fit%2C1&fmt=webp" },
+                    { brand: "Nordstrom", name: "Anne Klein Sleeveless Sheath Dress & Jacket Set", price: "", style: "classic", details: ["Memorial dress"], store: "Nordstrom.com", link: "https://www.nordstrom.com/s/anne-klein-sleeveless-sheath-dress-jacket-set/8039844?origin=keywordsearch-personalizedsort&breadcrumb=Home%2FAll%20Results&color=001", image: "https://n.nordstrommedia.com/it/b562f16e-b4cb-4f0e-9082-811a835e8796.jpeg?crop=pad&w=780&h=1196" },
+                    { brand: "Nordstrom", name: "Donna Karan New York Belted Sheath Dress", price: "", style: "classic", details: ["Memorial dress"], store: "Nordstrom.com", link: "https://www.nordstrom.com/s/donna-karan-new-york-belted-sheath-dress/8454231?origin=keywordsearch-personalizedsort&breadcrumb=Home%2FAll%20Results&color=001", image: "https://n.nordstrommedia.com/it/deecdcf5-56b7-4a12-9fb1-56d7e6282e59.jpeg?crop=pad&w=780&h=1196" },
+                    { brand: "Macy's", name: "I.N.C. International Concepts Women's Side-Ruched Dress", price: "", style: "modern", details: ["Memorial dress"], store: "Macys.com", link: "https://www.macys.com/shop/product/i.n.c.-international-concepts-womens-side-ruched-dress-macys-exclusive?ID=21914921", image: "https://slimages.macysassets.com/is/image/MCY/products/3/optimized/33243033_fpx.tif?op_sharpen=1&wid=1500&fit=fit%2C1&fmt=webp" },
+                    { brand: "Macy's", name: "Calvin Klein Seamed Scuba Crepe Sheath Dress", price: "", style: "modern", details: ["Memorial dress"], store: "Macys.com", link: "https://www.macys.com/shop/product/calvin-klein-seamed-scuba-crepe-sheath-dress?ID=13870695&tdp=cm_app~zMCOM-NAVAPP~xcm_zone~zPDP_ZONE_A~xcm_choiceId~zcidM05RWT-531f9d44-2078-4928-8703-a5dc51b6871b@HE8@You%2Bmay%2Balso%2Blike$55596$24172324~xcm_pos~zPos3~xcm_srcCatID~z5449", image: "https://slimages.macysassets.com/is/image/MCY/products/0/optimized/9269380_fpx.tif?op_sharpen=1&wid=1500&fit=fit%2C1&fmt=webp" },
+                    { brand: "Macy's", name: "Lauren Ralph Lauren Surplice Jersey Dress", price: "", style: "classic", details: ["Memorial dress"], store: "Macys.com", link: "https://www.macys.com/shop/product/lauren-ralph-lauren-surplice-jersey-dress?ID=14191039&swatchColor=Black", image: "https://slimages.macysassets.com/is/image/MCY/products/5/optimized/30799615_fpx.tif?op_sharpen=1&wid=1500&fit=fit%2C1&fmt=webp" },
+                    { brand: "Macy's", name: "London Times Women's Tab-Waist Fit & Flare Dress", price: "", style: "classic", details: ["Memorial dress"], store: "Macys.com", link: "https://www.macys.com/shop/product/london-times-womens-tab-waist-fit-flare-dress?ID=17129404", image: "https://slimages.macysassets.com/is/image/MCY/products/3/optimized/26142223_fpx.tif?op_sharpen=1&wid=1500&fit=fit%2C1&fmt=webp" },
+                    { brand: "J.Crew", name: "Mathilde Dress in Luster Canvas", price: "", style: "classic", details: ["Memorial dress"], store: "JCrew.com", link: "https://www.jcrew.com/p/womens/categories/clothing/dresses-and-jumpsuits/CI451?display=all&fit=Classic&colorProductCode=CI451&colorCode=BK0001", image: "https://www.jcrew.com/s7-img-facade/CI451_BK0001_m?wid=2000&hei=2000" },
+                    { brand: "J.Crew", name: "Tunic Shirt-Dress in Linen", price: "", style: "classic", details: ["Memorial dress"], store: "JCrew.com", link: "https://www.jcrew.com/p/womens/categories/clothing/dresses-and-jumpsuits/CL644?display=all&fit=Classic&colorProductCode=CL644&colorCode=BK0001", image: "https://www.jcrew.com/s7-img-facade/CL644_BK0001_m?wid=2000&hei=2000" },
+                    { brand: "Ann Taylor", name: "Draped Knit Midi Sheath Dress", price: "", style: "modern", details: ["Memorial dress"], store: "AnnTaylor.com", link: "https://www.anntaylor.com/clothing/dresses/cata000012/draped-knit-midi-sheath-dress/858083.html?priceSort=DES&dwvar_858083_color=2222", image: "https://anninc.scene7.com/is/image/AN/858083_2222?$fullBpdp$" },
+                    { brand: "Ann Taylor", name: "The Midi Flare Dress in Double Knit", price: "", style: "classic", details: ["Memorial dress"], store: "AnnTaylor.com", link: "https://www.anntaylor.com/clothing/suits/cata000013/midi-flare-dress-double-knit/572342.html?priceSort=DES&dwvar_572342_color=2222", image: "https://anninc.scene7.com/is/image/AN/572342_2222?$fullBpdp$" },
+                    { brand: "Ann Taylor", name: "Belted Pleated Midi Dress", price: "", style: "classic", details: ["Memorial dress"], store: "AnnTaylor.com", link: "https://www.anntaylor.com/clothing/dresses/cata000012/belted-pleated-midi-dress/846797.html?priceSort=DES&dwvar_846797_color=2222", image: "https://anninc.scene7.com/is/image/AN/846797_2222?$fullBpdp$" },
+                    { brand: "Ann Taylor", name: "Mixed Media Flare Midi Dress", price: "", style: "modern", details: ["Memorial dress"], store: "AnnTaylor.com", link: "https://www.anntaylor.com/clothing/dresses/cata000012/mixed-media-flare-midi-dress/858037.html?priceSort=DES&dwvar_858037_color=2222", image: "https://anninc.scene7.com/is/image/AN/858037_2222?$fullBpdp$" },
+                    { brand: "Brooks Brothers", name: "Crepe Viscose Butterfly Sleeve Dress", price: "", style: "classic", details: ["Memorial dress"], store: "BrooksBrothers.com", link: "https://www.brooksbrothers.com/crepe-viscose-butterfly-sleeve-dress/WX00945.html?pid=WX00945&dwvar_WX00945_Color=DKBR", image: "https://brooksbrothers.bynder.com/match/WebName/WX00945_BLACK/CREPE_VISCOSE_BUTTERFLY_SLEEVE_DRESS_BLACK?preset=lg" },
+                    { brand: "Eileen Fisher", name: "Washable Stretch Crepe Oval Dress", price: "", style: "modern", details: ["Memorial dress"], store: "EileenFisher.com", link: "https://www.eileenfisher.com/washable-stretch-crepe-oval-dress/S5TK-D5344.html?dwvar_S5TK-D5344_color=001", image: "https://www.eileenfisher.com/dw/image/v2/BGKB_PRD/on/demandware.static/-/Sites-ef-main-catalog/default/dw608686bc/images/S5TK-D5344M-001.jpg?sw=438&sh=584&sfrm=png&q=90" },
+                    { brand: "Eileen Fisher", name: "Stretch Jersey Knit Oval Dress", price: "", style: "modern", details: ["Memorial dress"], store: "EileenFisher.com", link: "https://www.eileenfisher.com/stretch-jersey-knit-oval-dress/S5TFF-D5347.html?dwvar_S5TFF-D5347_color=001", image: "https://www.eileenfisher.com/dw/image/v2/BGKB_PRD/on/demandware.static/-/Sites-ef-main-catalog/default/dw7faf321b/images/S5TFF-D5347M-001.jpg?sw=438&sh=584&sfrm=png&q=90" },
+                    { brand: "Gap", name: "Poplin Cinched Midi Shirtdress", price: "", style: "modern", details: ["Memorial dress"], store: "Gap.com", link: "https://www.gap.com/browse/product.do?pid=875487002&vid=REGULAR&searchText=women%20black#pdp-page-content", image: "https://www.gap.com/webcontent/0061/185/978/cn61185978.jpg" },
+                    { brand: "Revolve", name: "Enza Costa Half Sleeve Crew Midi Dress", price: "", style: "modern", details: ["Memorial dress"], store: "Revolve.com", link: "https://www.revolve.com/enza-costa-half-sleeve-crew-midi-dress-in-black/dp/ENZA-WD446/?d=Womens&page=1&lc=2&itrownum=1&itcurrpage=1&itview=05", image: "https://is4.revolveassets.com/images/p4/n/uv/ENZA-WD446_V1.jpg" },
+                    { brand: "Revolve", name: "Lovers and Friends x Emma Rose Margo Polo Maxi Dress", price: "", style: "modern", details: ["Memorial dress"], store: "Revolve.com", link: "https://www.revolve.com/lovers-and-friends-x-emma-rose-margo-polo-maxi-dress-in-black/dp/LOVF-WD4466/?d=Womens&page=1&lc=28&plpSrc=%2Fr%2FBrands.jsp%3Furl%3Dhttps%3A%2F%2Fwww.revolve.com%2Fcontent%2Fproducts%2Feditorial%3Flistname%3Dworkwear-dresses-cfy%26cplid%3D53526%26searchsynonym%3DWORK%2520BLACK%2520DRESS%26color%3Dblack%26sortBy%3Dfeatured%26productsPerRow%3D4%26preLoadCategory%3D%26preLoadDesigner%3D%26lazyLang%3Den%26lazyCountryCode%3DUS%26lazyCurrency%3DUSD%26_%3D1773416174343&itrownum=7&itcurrpage=1&itview=05", image: "https://is4.revolveassets.com/images/p4/n/uv/LOVF-WD4466_V1.jpg" }
                 ],
                 separates: [
-                    { brand: "Everlane", name: "Silk Blouse + Tailored Pants", price: "$198", style: "modern", details: ["Silk top", "High-waist pants"] },
-                    { brand: "Banana Republic", name: "Classic Button-Up & Trousers", price: "$158", style: "classic", details: ["Cotton blend", "Straight leg"] },
-                    { brand: "Zara", name: "Modern Blazer & Pant Set", price: "$119", style: "modern", details: ["Structured", "Wide leg"] }
+                    { type: "separates", brand: "Eloquii", name: "Velvet Wide Leg Jumpsuit", price: "", style: "modern", details: ["Memorial outfit"], store: "Eloquii.com", link: "https://www.eloquii.com/products/velvet-wide-leg-jumpsuit/1084747.html?dwvar_1084747_color=4474552#cgid=null", image: "https://www.eloquii.com/fleximages/11114/2705_11114_mc_2890.jpg?width=653&height=940&quality=90&fit=bounds" },
+                    { type: "separates", brand: "Nordstrom", name: "NIKKI LUND Joy Long Sleeve Tie Waist Jumpsuit", price: "", style: "modern", details: ["Memorial outfit"], store: "Nordstrom.com", link: "https://www.nordstrom.com/s/nikki-lund-joy-long-sleeve-tie-waist-jumpsuit/7134654?origin=keywordsearch-personalizedsort&breadcrumb=Home%2FAll%20Results&color=001", image: "https://n.nordstrommedia.com/it/9d2a1be5-cad6-446d-8857-a8b1b996df92.jpeg?crop=pad&w=780&h=1196" },
+                    { type: "separates", brand: "Amazon", name: "PRETTYGARDEN Womens Sweaters Spring 2026 Summer Puff Short Sleeve Sweater", price: "", style: "modern", details: ["Memorial outfit"], store: "Amazon.com", link: "https://amzn.to/4mecRNQ", image: "https://m.media-amazon.com/images/I/71LtTRmxh-L._AC_SX679_.jpg" },
+                    { type: "separates", brand: "Aritzia", name: "The Effortless Pant - Crepette", price: "", style: "modern", details: ["Memorial outfit"], store: "Aritzia.com", link: "https://www.aritzia.com/us/en/product/the-effortless-pant%E2%84%A2/77775.html?color=1274", image: "https://assets.aritzia.com/image/upload/c_crop,ar_1920:2623,g_south/q_auto,f_auto,dpr_auto,w_900/s26_a06_77775_1274_on_a" },
+                    { type: "separates", brand: "Amazon", name: "Lee Women's Flex Motion Regular Fit Trouser Pant", price: "", style: "classic", details: ["Memorial outfit"], store: "Amazon.com", link: "https://amzn.to/4v7i9yN", image: "https://m.media-amazon.com/images/I/612gGYUB+gL._AC_SY741_.jpg" },
+                    { type: "separates", brand: "Spanx", name: "AirEssentials Slim Straight Pant", price: "", style: "modern", details: ["Memorial outfit"], store: "Spanx.com", link: "https://spanx.com/products/spanx-airessentials-slim-straight-pant?v=48682834100435&bau-context=standard&Color=Very+Black&q=Slim+Straight+Pant+BLACK", image: "https://cdn.shopify.com/s/files/1/0549/4895/4134/files/21793R-VeryBlack_PDP_014_V1cl.jpg?v=1754061015&width=400&height=500&crop=center" },
+                    { type: "separates", brand: "Gap", name: "365 High Rise Pleated Trousers", price: "", style: "classic", details: ["Memorial outfit"], store: "Gap.com", link: "https://www.gap.com/browse/product.do?pid=800532002&vid=1&searchText=365%20High%20Rise%20Pleated%20Trousers#pdp-page-content", image: "https://www.gap.com/webcontent/0059/941/963/cn59941963.jpg" },
+                    { type: "separates", brand: "J.Crew", name: "Madelyn Blazer in Four-Season Stretch", price: "", style: "classic", details: ["Memorial outfit"], store: "JCrew.com", link: "https://www.jcrew.com/p/womens/categories/clothing/blazers/novelty/CC289?display=all&fit=Classic&colorProductCode=CC289&colorCode=NA0264&color_name=black", image: "https://www.jcrew.com/s7-img-facade/CC289_BK0001_m?wid=2000&hei=2000" },
+                    { type: "separates", brand: "Quince", name: "Mongolian Cashmere Crewneck Sweater", price: "", style: "classic", details: ["Memorial outfit"], store: "Quince.com", link: "https://www.quince.com/women/cashmere/cashmere-crewneck-sweater?color=black&productPosition=1&searchQuery=Mongolian+Cashmere+Crewneck+Sweater&tracker=searchPage__search_section__search_results", image: "https://images.quince.com/2c4MWpvNbCvXrzaV8Mnfa2/864a87eaca1f1a7068d00bfce0e5eee1/W-SWT-135-BLK_2233_EDITED_1.jpg?w=176&q=50&h=220&fm=webp&reqOrigin=website-ssr" },
+                    { type: "separates", brand: "J.Crew", name: "Jackie Cardigan in Premium Ultra-Fine Cotton", price: "", style: "classic", details: ["Memorial outfit"], store: "JCrew.com", link: "https://www.jcrew.com/m/womens/categories/clothing/sweaters/cardigan/ME984?display=all&fit=Classic&colorProductCode=CJ755&colorCode=SR3942&color_name=black", image: "https://www.jcrew.com/s7-img-facade/CJ755_SR3942?wid=2000&hei=2000" },
+                    { type: "separates", brand: "J.Crew", name: "Featherweight Cashmere Cardigan", price: "", style: "classic", details: ["Memorial outfit"], store: "JCrew.com", link: "https://www.jcrew.com/m/womens/categories/clothing/sweaters/cardigan/ME062?display=all&fit=Classic&colorProductCode=BZ400&colorCode=SU3813&color_name=jet-black", image: "https://www.jcrew.com/s7-img-facade/BZ400_SU3813_m?wid=2000&hei=2000" },
+                    { type: "separates", brand: "Bloomingdale's", name: "AQUA Satin Button Front Blouse - Exclusive", price: "", style: "modern", details: ["Memorial outfit"], store: "Bloomingdales.com", link: "https://www.bloomingdales.com/shop/product/aqua-satin-button-front-blouse-exclusive?ID=5634375&CategoryID=2910", image: "https://images.bloomingdalesassets.com/is/image/BLM/products/1/optimized/12936121_fpx.tif?op_sharpen=1&wid=1500&fit=fit%2C1&fmt=webp" },
+                    { type: "separates", brand: "Bloomingdale's", name: "Donna Karan Draped High Neck Sleeveless Top", price: "", style: "modern", details: ["Memorial outfit"], store: "Bloomingdales.com", link: "https://www.bloomingdales.com/shop/product/donna-karan-draped-high-neck-sleeveless-top?ID=5633822&CategoryID=2910&swatchColor=Black", image: "https://images.bloomingdalesassets.com/is/image/BLM/products/2/optimized/14842872_fpx.tif?op_sharpen=1&wid=1500&fit=fit%2C1&fmt=webp" },
+                    { type: "separates", brand: "Nordstrom", name: "KOBI HALPERIN Nellie Stretch Silk Georgette Top", price: "", style: "modern", details: ["Memorial outfit"], store: "Nordstrom.com", link: "https://www.nordstrom.com/s/nellie-stretch-silk-georgette-top/5902779?origin=keywordsearch-personalizedsort&breadcrumb=Home%2FAll%20Results&color=001", image: "https://n.nordstrommedia.com/it/ce113067-54d8-41d5-944c-e18fa5ef14ce.jpeg?crop=pad&w=780&h=1196" },
+                    { type: "separates", brand: "Macy's", name: "Donna Karan New York Women's Button Front Point Hem Top", price: "", style: "modern", details: ["Memorial outfit"], store: "Macys.com", link: "https://www.macys.com/shop/product/donna-karan-new-york-womens-button-front-point-hem-top-regular-petite-sizes?ID=17675798&swatchColor=Black", image: "https://slimages.macysassets.com/is/image/MCY/products/9/optimized/26910959_fpx.tif?op_sharpen=1&wid=1500&fit=fit%2C1&fmt=webp" },
+                    { type: "separates", brand: "Macy's", name: "Marcella Women's Vesey Pencil Skirt", price: "", style: "classic", details: ["Memorial outfit"], store: "Macys.com", link: "https://www.macys.com/shop/product/marcella-womens-vesey-pencil-skirt?ID=18928571", image: "https://slimages.macysassets.com/is/image/MCY/products/7/optimized/28809087_fpx.tif?op_sharpen=1&wid=1500&fit=fit%2C1&fmt=webp" },
+                    { type: "separates", brand: "Ann Taylor", name: "Ruffle Collar Shirt", price: "", style: "classic", details: ["Memorial outfit"], store: "AnnTaylor.com", link: "https://www.anntaylor.com/clothing/tops-and-blouses/cata000010/ruffle-collar-shirt/579410.html?priceSort=DES&dwvar_579410_color=2222", image: "https://anninc.scene7.com/is/image/AN/579410_2222?$fullBpdp$" },
+                    { type: "separates", brand: "Quince", name: "Lightweight Cotton Cashmere Link-Stitch Dolman Sweater", price: "", style: "modern", details: ["Memorial outfit"], store: "Quince.com", link: "https://www.quince.com/women/lightweight-cotton-cashmere-dolman-sleeve-sweater?color=black&productPosition=4&searchQuery=black&tracker=searchPage__search_section__search_results", image: "https://images.quince.com/65QFlEQKYNPxz4s4Jjfw7W/384ee073e9826721928b48d13c32daaf/W-SWT-40-BLK-01_EDITED.jpg?w=176&q=50&h=220&fm=webp&reqOrigin=website-ssr" },
+                    { type: "separates", brand: "Quince", name: "100% Washable Silk Skirt", price: "", style: "classic", details: ["Memorial outfit"], store: "Quince.com", link: "https://www.quince.com/women/silk/silk-skirt?color=black&productPosition=8&searchQuery=black&tracker=searchPage__search_section__search_results", image: "https://images.quince.com/6gjkNLbfniUNBP4QJJNX3l/581f1d7dd4514d8e31013a2577c3bffb/W-PNT-4-BLK_2363.jpg?w=176&q=50&h=220&fm=webp&reqOrigin=website-ssr" },
+                    { type: "separates", brand: "Quince", name: "Ultra-Stretch Ponte Pencil Skirt", price: "", style: "classic", details: ["Memorial outfit"], store: "Quince.com", link: "https://www.quince.com/women/ultra-stretch-ponte-skirt?color=black&productPosition=93&searchQuery=black&tracker=searchPage__search_section__search_results", image: "https://images.quince.com/2rBBTgZWUZaZbzLrhUxYdQ/703257a9be96929bbaa1f6b8e69eb2e1/W-PNT-65-BLK-01-EDITED_1.jpg?w=176&q=50&h=220&fm=webp&reqOrigin=website-ssr" },
+                    { type: "separates", brand: "Nordstrom", name: "KASPER Classic Below Knee Length Skirt", price: "", style: "classic", details: ["Memorial outfit"], store: "Nordstrom.com", link: "https://www.nordstrom.com/s/classic-below-knee-length-skirt-regular-petite/8047282?origin=keywordsearch-personalizedsort&breadcrumb=Home%2FAll%20Results&color=001", image: "https://n.nordstrommedia.com/it/5e3daba6-0744-4c72-aa0a-cda52ae3e323.jpeg?crop=pad&w=780&h=1196" },
+                    { type: "separates", brand: "Eloquii", name: "Kady Fit Double-Weave Pant", price: "", style: "classic", details: ["Memorial outfit"], store: "Eloquii.com", link: "https://www.eloquii.com/products/kady-fit-double-weave-pant/1086200.html?dwvar_1086200_color=4580532#cgid=null", image: "https://www.eloquii.com/fleximages/19547/2731_19547_mc_0742.jpg?width=653&height=940&quality=90&fit=bounds" },
+                    { type: "separates", brand: "Boden", name: "Marylebone Ponte Blazer", price: "", style: "classic", details: ["Memorial outfit"], store: "Boden.com", link: "https://us.boden.com/products/women-marylebone-ponte-blazer-black-u0194blk", image: "https://us.boden.com/cdn/shop/files/25wspr_u0194_blk_m02_b0ffb1b5-53ff-42d3-9c16-07dfaead2121.jpg?v=1735448546&width=823" },
+                    { type: "separates", brand: "Amazon", name: "PRETTYGARDEN One Piece Jumpsuits for Women", price: "", style: "modern", details: ["Memorial outfit"], store: "Amazon.com", link: "https://amzn.to/41MYwhT", image: "https://m.media-amazon.com/images/I/814icb35+PL._AC_SY741_.jpg" }
                 ]
             },
             wedding: {
                 dresses: [
-                    { brand: "Reformation", name: "Floral Midi Dress", price: "$248", style: "modern", formalLevel: "semi-formal", details: ["Spring florals", "Midi length"] },
-                    { brand: "Anthropologie", name: "Flowy Maxi Dress", price: "$198", style: "classic", formalLevel: "semi-formal", details: ["Maxi length", "Romantic"] },
-                    { brand: "ASOS", name: "Pastel Midi Dress", price: "$89", style: "modern", formalLevel: "semi-formal", details: ["Light colors", "Breathable"] },
-                    { brand: "Nordstrom", name: "Velvet Wrap Dress", price: "$178", style: "classic", formalLevel: "semi-formal", details: ["Rich velvet", "Midi length"] },
-                    { brand: "J.Crew", name: "Jewel Tone Sheath", price: "$158", style: "modern", formalLevel: "semi-formal", details: ["Deep colors", "Elegant"] },
-                    { brand: "Zara", name: "Satin Evening Dress", price: "$129", style: "classic", formalLevel: "semi-formal", details: ["Luxe fabric", "Sophisticated"] },
-                    { brand: "Nordstrom", name: "Floor-Length Gown", price: "$298", style: "classic", formalLevel: "black-tie", details: ["Formal gown", "Elegant"] },
-                    { brand: "Bloomingdale's", name: "Embellished Evening Gown", price: "$358", style: "modern", formalLevel: "black-tie", details: ["Beaded detail", "Luxurious"] },
-                    { brand: "Revolve", name: "Silk Formal Gown", price: "$428", style: "modern", formalLevel: "black-tie", details: ["Floor length", "Sophisticated"] },
-                    { brand: "Neiman Marcus", name: "Classic Ball Gown", price: "$498", style: "classic", formalLevel: "black-tie", details: ["Timeless", "Statement"] }
+                    { brand: "Anthropologie", name: "BHLDN Lottie Ruffled Low-Back Maxi Gown", price: "", style: "modern", formalLevel: "semi-formal", details: ["Semi-formal dress"], store: "Anthropologie.com", link: "https://www.anthropologie.com/shop/bhldn-lottie-ruffled-low-back-maxi-gown?color=266&curation_id=playful-colorful-wedding-guest-dresses-curation&curation_name=Wedding+Guest+Dresses:+Playful+%26+Colorful&type=STANDARD&quantity=1", image: "https://images.urbndata.com/is/image/Anthropologie/105746358_266_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640" },
+                    { brand: "Anthropologie", name: "By Anthropologie Floral Organza Mini Dress", price: "", style: "modern", formalLevel: "semi-formal", details: ["Semi-formal dress"], store: "Anthropologie.com", link: "https://www.anthropologie.com/shop/by-anthropologie-strapless-floral-organza-mini-dress?color=526&curation_id=wedding-guest-dresses-curation&curation_name=Wedding%20Guest%20Dresses%3A%20LP", image: "https://images.urbndata.com/is/image/Anthropologie/4130089540147_526_d10?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640" },
+                    { brand: "Amazon", name: "PRETTYGARDEN Women's 2026 Summer Satin Dress", price: "", style: "modern", formalLevel: "semi-formal", details: ["Semi-formal dress"], store: "Amazon.com", link: "https://amzn.to/41ivab1", image: "https://m.media-amazon.com/images/I/61ipspBiiKL._AC_SY606_.jpg", isMultiColor: true },
+                    { brand: "Anthropologie", name: "BHLDN Rosie Mock-Neck Pleated Chiffon Maxi Dress", price: "", style: "modern", formalLevel: "semi-formal", details: ["Semi-formal dress"], store: "Anthropologie.com", link: "https://www.anthropologie.com/shop/bhldn-rosie-mock-neck-pleated-chiffon-maxi-dress?color=525&curation_id=wedding-guest-dresses-curation&curation_name=Wedding%20Guest%20Dresses%3A%20LP", image: "https://images.urbndata.com/is/image/Anthropologie/97975270_525_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640" },
+                    { brand: "Amazon", name: "Ever-Pretty Women's Spring Chiffon Dress", price: "", style: "modern", formalLevel: "semi-formal", details: ["Semi-formal dress"], store: "Amazon.com", link: "https://amzn.to/3NHJKpu", image: "https://m.media-amazon.com/images/I/612I6rdVaRL._AC_SY741_.jpg", isMultiColor: true },
+                    { brand: "Anthropologie", name: "BHLDN Molly Strapless Chiffon Scarf Maxi Dress", price: "", style: "modern", formalLevel: "semi-formal", details: ["Semi-formal dress"], store: "Anthropologie.com", link: "https://www.anthropologie.com/shop/bhldn-molly-strapless-chiffon-scarf-maxi-dress?color=263&curation_id=wedding-guest-dresses-curation&curation_name=Wedding%20Guest%20Dresses%3A%20LP", image: "https://images.urbndata.com/is/image/Anthropologie/101218204_263_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640" },
+                    { brand: "Amazon", name: "PRETTYGARDEN Summer Dresses for Women 2026 Elegant Classy Spring A Line", price: "", style: "modern", formalLevel: "semi-formal", details: ["Semi-formal dress"], store: "Amazon.com", link: "https://amzn.to/4tteWYC", image: "https://m.media-amazon.com/images/I/71YtsDTfL+L._AC_SY741_.jpg", isMultiColor: true },
+                    { brand: "Anthropologie", name: "BHLDN Francesca High-Neck Stretch Satin Midi Dress", price: "", style: "modern", formalLevel: "semi-formal", details: ["Semi-formal dress"], store: "Anthropologie.com", link: "https://www.anthropologie.com/shop/bhldn-francesca-high-neck-stretch-satin-midi-dress?color=001&curation_id=wedding-guest-dresses-curation&curation_name=Wedding+Guest+Dresses:+LP&type=STANDARD&quantity=1", image: "https://images.urbndata.com/is/image/Anthropologie/86604444_001_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640" },
+                    { brand: "Amazon", name: "ZESICA Women's 2026 Summer Sleeveless Halter Neck Ruffle Tiered Layered Chiffon Flowy Swing Long Midi Dress", price: "", style: "modern", formalLevel: "semi-formal", details: ["Semi-formal dress"], store: "Amazon.com", link: "https://amzn.to/4sjcLpn", image: "https://m.media-amazon.com/images/I/71bJaG7lpAL._AC_SX569_.jpg", isMultiColor: true },
+                    { brand: "Anthropologie", name: "BHLDN Gabby Sleeveless Square-Neck Corset Maxi Dress", price: "", style: "modern", formalLevel: "semi-formal", details: ["Semi-formal dress"], store: "Anthropologie.com", link: "https://www.anthropologie.com/shop/bhldn-gabby-sleeveless-square-neck-corset-maxi-dress?color=040&curation_id=wedding-guest-dresses-curation&curation_name=Wedding%20Guest%20Dresses%3A%20LP", image: "https://images.urbndata.com/is/image/Anthropologie/99694945_037_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640" },
+                    { brand: "Amazon", name: "ZZV Long Black Formal Dresses for Women Gowns Evening Party Cocktail Dress, Split Elegant V Neck Wrap Ruffle Wedding Guest Dresses", price: "", style: "modern", formalLevel: "semi-formal", details: ["Semi-formal dress"], store: "Amazon.com", link: "https://amzn.to/3NJu6tJ", image: "https://m.media-amazon.com/images/I/714wD4OV3PL._AC_SX679_.jpg", isMultiColor: true },
+                    { brand: "Anthropologie", name: "BHLDN Selma Halter-Neck High-Shine Satin Maxi Dress", price: "", style: "modern", formalLevel: "semi-formal", details: ["Semi-formal dress"], store: "Anthropologie.com", link: "https://www.anthropologie.com/shop/bhldn-selma-halter-neck-high-shine-satin-maxi-dress?color=529&type=STANDARD", image: "https://images.urbndata.com/is/image/Anthropologie/92423474_529_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640" },
+                    { brand: "Anthropologie", name: "BHLDN Romy Satin Chiffon Cape Dress", price: "", style: "modern", formalLevel: "semi-formal", details: ["Semi-formal dress"], store: "Anthropologie.com", link: "https://www.anthropologie.com/shop/bhldn-romy-satin-chiffon-cape-dress?color=102&type=STANDARD", image: "https://images.urbndata.com/is/image/Anthropologie/107249187_102_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640" },
+                    { brand: "Anthropologie", name: "BHLDN Francesca High-Neck Stretch Satin Maxi Dress", price: "", style: "modern", formalLevel: "semi-formal", details: ["Semi-formal dress"], store: "Anthropologie.com", link: "https://www.anthropologie.com/shop/bhldn-francesca-high-neck-stretch-satin-maxi-dress?color=093&type=STANDARD", image: "https://images.urbndata.com/is/image/Anthropologie/99178345_093_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640" },
+                    { brand: "Revolve", name: "NBD Elsie Gown", price: "", style: "modern", formalLevel: "black-tie", details: ["Black-tie gown"], store: "Revolve.com", link: "https://www.revolve.com/nbd-elsie-gown-in-blue/dp/NBDR-WD3356/?d=Womens&page=1&lc=1&plpSrc=%2Fr%2FSearch.jsp%3Fsearch%3DElsie+Gown%26d%3DWomens%26sortBy%3Dfeatured&itrownum=1&itcurrpage=1&itview=05", image: "https://is4.revolveassets.com/images/p4/n/z/NBDR-WD3356_V2.jpg" },
+                    { brand: "Amazon", name: "YMDUCH Women's Elegant Sleeveless Off Shoulder Bodycon Long Formal Party Evening Dress", price: "", style: "modern", formalLevel: "black-tie", details: ["Black-tie gown"], store: "Amazon.com", link: "https://amzn.to/41Nyw60", image: "https://m.media-amazon.com/images/I/511YfTNHu2L._AC_SY741_.jpg", isMultiColor: true },
+                    { brand: "Anthropologie", name: "BHLDN Lottie Ruffled Low-Back Maxi Gown", price: "", style: "modern", formalLevel: "semi-formal", details: ["Semi-formal dress"], store: "Anthropologie.com", link: "https://www.anthropologie.com/shop/bhldn-lottie-ruffled-low-back-maxi-gown?color=266&curation_id=playful-colorful-wedding-guest-dresses-curation&curation_name=Wedding+Guest+Dresses:+Playful+%26+Colorful&type=STANDARD&quantity=1", image: "https://images.urbndata.com/is/image/Anthropologie/105746358_266_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640" },
+                    { brand: "Anthropologie", name: "BHLDN Molly Strapless Chiffon Scarf Maxi Dress", price: "", style: "modern", formalLevel: "semi-formal", details: ["Semi-formal dress"], store: "Anthropologie.com", link: "https://www.anthropologie.com/shop/bhldn-molly-strapless-chiffon-scarf-maxi-dress?color=263&curation_id=wedding-guest-dresses-curation&curation_name=Wedding%20Guest%20Dresses%3A%20LP", image: "https://images.urbndata.com/is/image/Anthropologie/101218204_263_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640" },
+                    { brand: "Anthropologie", name: "By Anthropologie Floral Organza Mini Dress", price: "", style: "modern", formalLevel: "semi-formal", details: ["Semi-formal dress"], store: "Anthropologie.com", link: "https://www.anthropologie.com/shop/by-anthropologie-strapless-floral-organza-mini-dress?color=526&curation_id=wedding-guest-dresses-curation&curation_name=Wedding%20Guest%20Dresses%3A%20LP", image: "https://images.urbndata.com/is/image/Anthropologie/4130089540147_526_d10?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640" },
+                    { brand: "J.Crew", name: "Ruffle-Hem Slip Dress in Dot Print", price: "", style: "modern", formalLevel: "semi-formal", details: ["Semi-formal dress"], store: "JCrew.com", link: "https://www.jcrew.com/p/womens/categories/clothing/dresses-and-jumpsuits/CP196?display=all&fit=Women&colorProductCode=CP196&colorCode=PT9044", image: "https://www.jcrew.com/s7-img-facade/CP196_PT9044_m?hei=1950&crop=0,0,1560,0" },
+                    { brand: "Bloomingdale's", name: "Eliza J Ruffle Sleeve Cocktail Dress", price: "", style: "modern", formalLevel: "semi-formal", details: ["Semi-formal dress"], store: "Bloomingdales.com", link: "https://www.bloomingdales.com/shop/product/eliza-j-ruffle-sleeve-cocktail-dress?ID=3688981&CategoryID=1096160", image: "https://images.bloomingdalesassets.com/is/image/BLM/products/7/optimized/13020527_fpx.tif?op_sharpen=1&wid=1500&fit=fit%2C1&fmt=webp" },
+                    { brand: "Bloomingdale's", name: "FARM Rio Maira Floral Maxi Dress", price: "", style: "modern", formalLevel: "semi-formal", details: ["Semi-formal dress"], store: "Bloomingdales.com", link: "https://www.bloomingdales.com/shop/product/farm-rio-maira-floral-maxi-dress?ID=5906099&CategoryID=1096160#SORTBY/BEST_SELLERS", image: "https://images.bloomingdalesassets.com/is/image/BLM/products/0/optimized/15582020_fpx.tif?op_sharpen=1&wid=1500&fit=fit%2C1&fmt=webp" },
+                    { brand: "Bloomingdale's", name: "AQUA Pleated Floral Guest of Dress", price: "", style: "modern", formalLevel: "semi-formal", details: ["Semi-formal dress"], store: "Bloomingdales.com", link: "https://www.bloomingdales.com/shop/product/aqua-pleated-floral-dress-exclusive?ID=5727797&CategoryID=1261695", image: "https://images.bloomingdalesassets.com/is/image/BLM/products/9/optimized/14381439_fpx.tif?op_sharpen=1&wid=1500&fit=fit%2C1&fmt=webp" },
+                    { brand: "Bloomingdale's", name: "Lauren Ralph Lauren Belted Faille Cocktail Dress", price: "", style: "modern", formalLevel: "semi-formal", details: ["Semi-formal dress"], store: "Bloomingdales.com", link: "https://www.bloomingdales.com/shop/product/lauren-ralph-lauren-belted-faille-cocktail-dress?ID=5736140&CategoryID=2910", image: "https://images.bloomingdalesassets.com/is/image/BLM/products/9/optimized/15562099_fpx.tif?op_sharpen=1&wid=1500&fit=fit%2C1&fmt=webp" },
+                    { brand: "Bloomingdale's", name: "FARM Rio Boho Beauty Midi Dress", price: "", style: "modern", formalLevel: "semi-formal", details: ["Semi-formal dress"], store: "Bloomingdales.com", link: "https://www.bloomingdales.com/shop/product/farm-rio-boho-beauty-midi-dress?ID=5906096&tdp=cm_app~zBCOM-NAVAPP~xcm_zone~zPDP_ZONE_A~xcm_choiceId~zcidB05RUV-788e4f5b-b50f-4473-ae4a-b6420252ca63@HDJ@OTHERS%2BYOU%2BMAY%2BLIKE$2910$5147351~xcm_pos~zPos3~xcm_srcCatID~z2910", image: "https://images.bloomingdalesassets.com/is/image/BLM/products/1/optimized/15582041_fpx.tif?op_sharpen=1&wid=1500&fit=fit%2C1&fmt=webp" },
+                    { brand: "Nordstrom", name: "Petal & Pup Seychelle Asymmetric Tiered Dress", price: "", style: "modern", formalLevel: "semi-formal", details: ["Semi-formal dress"], store: "Nordstrom.com", link: "https://www.nordstrom.com/s/seychelle-asymmetric-tiered-dress/7754140?origin=category-personalizedsort&breadcrumb=Home%2FWomen%2FClothing%2FDresses%2FGuest%20of%20Wedding&color=410", image: "https://n.nordstrommedia.com/it/0d2ceea3-9c41-4a42-9e20-243fc4e1525c.jpeg?crop=pad&w=1950&h=2990" },
+                    { brand: "Nordstrom", name: "Scarlett & Jo Isabelle Short Sleeve Maxi Dress", price: "", style: "modern", formalLevel: "semi-formal", details: ["Semi-formal dress"], store: "Nordstrom.com", link: "https://www.nordstrom.com/s/isabelle-short-sleeve-maxi-dress/8754206?origin=category-personalizedsort&breadcrumb=Home%2FWomen%2FClothing%2FDresses%2FGuest%20of%20Wedding&color=401", image: "https://n.nordstrommedia.com/it/e507fe28-7584-4599-8115-6b495fa02c32.jpeg?crop=pad&w=780&h=1196" },
+                    { brand: "Nordstrom", name: "JS Collections Meredith Floral Embroidery A-Line Dress", price: "", style: "modern", formalLevel: "semi-formal", details: ["Semi-formal dress"], store: "Nordstrom.com", link: "https://www.nordstrom.com/s/meredith-floral-embroidery-a-line-dress/7706072?origin=category-personalizedsort&breadcrumb=Home%2FWomen%2FClothing%2FDresses%2FGuest%20of%20Wedding&color=475", image: "https://n.nordstrommedia.com/it/3d2bc298-075b-4e3f-a85f-d3825df8f2fe.jpeg?crop=pad&w=780&h=1196" },
+                    { brand: "Nordstrom", name: "Petal & Pup Anabelle Mock Neck Satin Midi Dress", price: "", style: "modern", formalLevel: "semi-formal", details: ["Semi-formal dress"], store: "Nordstrom.com", link: "https://www.nordstrom.com/s/petal-and-pup-anabelle-mock-neck-satin-midi-dress/7761106?origin=category-personalizedsort&breadcrumb=Home%2FWomen%2FClothing%2FDresses%2FGuest%20of%20Wedding&color=410", image: "https://n.nordstrommedia.com/it/a0efe19b-7ec3-4e97-9365-724a5a3a574e.jpeg?crop=pad&w=1950&h=2990" },
+                    { brand: "Revolve", name: "ASTR the Label Blythe Dress", price: "", style: "modern", formalLevel: "semi-formal", details: ["Semi-formal dress"], store: "Revolve.com", link: "https://www.revolve.com/astr-the-label-blythe-dress-in-coral-multi/dp/ASTR-WD190/?d=Womens&sectionURL=https%3A%2F%2Fwww.revolve.com%2Fcontent%2Fproducts%2Feditorial%3Flistname%3Devent-dresses-wedding-guest-cfy%26cplid%3D51461%26d%3DWomens%26prettyPath%3D%2Fr%2FEditorials.jsp%26navsrc%3DsubDresses%26sortBy%3Dpopularity&code=ASTR-WD190&srcType=dp_coloroption", image: "https://is4.revolveassets.com/images/p4/n/uv/ASTR-WD190_V1.jpg" },
+                    { brand: "Macy's", name: "Donna Karan New York Women's Side-Ruched Midi Dress", price: "", style: "modern", formalLevel: "semi-formal", details: ["Semi-formal dress"], store: "Macys.com", link: "https://www.macys.com/shop/product/donna-karan-new-york-womens-side-ruched-midi-dress?ID=20593878", image: "https://slimages.macysassets.com/is/image/MCY/products/7/optimized/35348607_fpx.tif?op_sharpen=1&wid=1500&fit=fit%2C1&fmt=webp" },
+                    { brand: "Macy's", name: "Alex Evenings Sequined Lace Contrast Midi Dress", price: "", style: "modern", formalLevel: "semi-formal", details: ["Semi-formal dress"], store: "Macys.com", link: "https://www.macys.com/shop/product/alex-evenings-sequined-lace-contrast-dress?ID=9710797&tdp=cm_app~zMCOM-NAVAPP~xcm_zone~zBROWSE_ZONE_A~xcm_choiceId~zcidM90RUP-cd3555a0-495d-439c-a0b6-2f4ef40c11c0@HBF@Inspired%2Bby%2Byour%2Bshopping$339414$24968980~xcm_pos~zPos5~xcm_srcCatID~z5449&swatchColor=Fresh+Mint#SORTBY/TOP_RATED", image: "https://slimages.macysassets.com/is/image/MCY/products/3/optimized/27070453_fpx.tif?op_sharpen=1&wid=1500&fit=fit%2C1&fmt=webp" },
+                    { brand: "Reformation", name: "Magnus Dress", price: "", style: "modern", formalLevel: "semi-formal", details: ["Semi-formal dress"], store: "Reformation.com", link: "https://www.thereformation.com/products/magnus-dress/1312571LLN.html?dwvar_1312571LLN_color=LLN", image: "https://media.thereformation.com/image/upload/f_auto,q_auto:eco,dpr_auto/w_500/PRD-SFCC/1312571/LOUISIANA/1312571.1.LOUISIANA" },
+                    { brand: "Reformation", name: "Lilibeth Silk Dress", price: "", style: "modern", formalLevel: "semi-formal", details: ["Semi-formal dress"], store: "Reformation.com", link: "https://www.thereformation.com/products/lilibeth-silk-dress/1318768NVY.html?&dwvar_1318768NVY_color=DOB&quantity=1", image: "https://media.thereformation.com/image/upload/f_auto,q_auto:eco,dpr_auto/w_500/PRD-SFCC/1318768/BLONDE/1318768.1.BLONDE" },
+                    { brand: "Reformation", name: "Evanthe Dress", price: "", style: "modern", formalLevel: "semi-formal", details: ["Semi-formal dress"], store: "Reformation.com", link: "https://www.thereformation.com/products/evanthe-dress/1318170MNA.html?&dwvar_1318170MNA_color=MNA&quantity=1", image: "https://media.thereformation.com/image/upload/f_auto,q_auto:eco,dpr_auto/w_500/PRD-SFCC/1318170/MARIANA/1318170.1.MARIANA" },
+                    { brand: "Reformation", name: "Karla Dress", price: "", style: "modern", formalLevel: "semi-formal", details: ["Semi-formal dress"], store: "Reformation.com", link: "https://www.thereformation.com/products/karla-dress/1319558DAO.html?&dwvar_1319558DAO_color=DAO&quantity=1", image: "https://media.thereformation.com/image/upload/f_auto,q_auto:eco,dpr_1.0/PRD-SFCC/1319558/DANUBE_DOT/1319558.1.DANUBE_DOT" },
+                    { brand: "Abercrombie & Fitch", name: "Bra-Free Dipped Waist Midi Dress", price: "", style: "modern", formalLevel: "semi-formal", details: ["Semi-formal dress"], store: "Abercrombie.com", link: "https://www.abercrombie.com/shop/us/p/bra-free-dipped-waist-midi-dress-62417329?categoryId=620072259&faceout=model&seq=05&afsource=social+proofing&pagefm=navigation-grid&prodvm=navigation-grid", image: "https://img.abercrombie.com/is/image/anf/KIC_159-6777-00361-204_model3?policy=product-medium" },
+                    { brand: "Boden", name: "Imelda Kimono Jersey Dress", price: "", style: "modern", formalLevel: "semi-formal", details: ["Semi-formal dress"], store: "Boden.com", link: "https://us.boden.com/products/women-imelda-kimono-jersey-dress-blue-botanical-trail-d1492blu", image: "https://us.boden.com/cdn/shop/files/26wspr_d1492_blu_m01_3ad7bfad-34d7-47ba-b413-439a2d780476.jpg?v=1770921982&width=823" },
+                    { brand: "Boden", name: "Alexa Long Sleeve Midi Dress", price: "", style: "modern", formalLevel: "semi-formal", details: ["Semi-formal dress"], store: "Boden.com", link: "https://us.boden.com/products/women-alexa-long-sleeve-midi-dress-blue-decorative-blossom-d1511blu", image: "https://us.boden.com/cdn/shop/files/26wspr_d1511_blu_m01_b80f4ea9-5848-4bd1-b8ae-055be4ffcff9.jpg?v=1772109694&width=823" },
+                    { brand: "Eloquii", name: "Flowy Sheer Cape Dress", price: "", style: "modern", formalLevel: "semi-formal", details: ["Semi-formal dress"], store: "Eloquii.com", link: "https://www.eloquii.com/products/flowy-sheer-cape-dress/1114373.html?dwvar_1114373_color=4575338&ctmgrp_csh=zqppe#cgid=ZQ_Event_and_Guest_Of_Dresses", image: "https://www.eloquii.com/fleximages/54993/2703_54993_mc_1379.jpg?width=653&height=940&quality=90&fit=bounds" },
+                    { brand: "Eloquii", name: "Applique Column Dress", price: "", style: "modern", formalLevel: "semi-formal", details: ["Semi-formal dress"], store: "Eloquii.com", link: "https://www.eloquii.com/products/applique-column-dress/1114370.html?dwvar_1114370_color=4553890&ctmgrp_csh=zqppe#cgid=ZQ_Event_and_Guest_Of_Dresses", image: "https://www.eloquii.com/fleximages/54988/2703_54988_mc_1377.jpg?width=653&height=940&quality=90&fit=bounds" },
+
+                    { brand: "Bloomingdale's", name: "AQUA Sleeveless Satin Gown", price: "", style: "modern", formalLevel: "black-tie", details: ["Black-tie gown"], store: "Bloomingdales.com", link: "https://www.bloomingdales.com/shop/product/aqua-sleeveless-satin-gown-exclusive?ID=5059231&CategoryID=2910&swatchColor=Black", image: "https://images.bloomingdalesassets.com/is/image/BLM/products/0/optimized/14183230_fpx.tif?op_sharpen=1&wid=1500&fit=fit%2C1&fmt=webp" },
+                    { brand: "Bloomingdale's", name: "AQUA Racerback Ruffle Hem Gown", price: "", style: "modern", formalLevel: "black-tie", details: ["Black-tie gown"], store: "Bloomingdales.com", link: "https://www.bloomingdales.com/shop/product/aqua-racerback-ruffle-hem-gown-exclusive?ID=4406273&CategoryID=2910&swatchColor=Black", image: "https://images.bloomingdalesassets.com/is/image/BLM/products/9/optimized/13119289_fpx.tif?op_sharpen=1&wid=1500&fit=fit%2C1&fmt=webp" },
+                    { brand: "Bloomingdale's", name: "Eliza J Sleeveless Cascading-Ruffle Gown", price: "", style: "modern", formalLevel: "black-tie", details: ["Black-tie gown"], store: "Bloomingdales.com", link: "https://www.bloomingdales.com/shop/product/eliza-j-sleeveless-cascading-ruffle-gown?ID=3289277&CategoryID=2910&swatchColor=Black", image: "https://images.bloomingdalesassets.com/is/image/BLM/products/6/optimized/12973056_fpx.tif?op_sharpen=1&wid=1500&fit=fit%2C1&fmt=webp" },
+                    { brand: "Nordstrom", name: "Xscape Evenings One-Shoulder Ruffle Scuba Crepe Gown", price: "", style: "modern", formalLevel: "black-tie", details: ["Black-tie gown"], store: "Nordstrom.com", link: "https://www.nordstrom.com/s/one-shoulder-ruffle-scuba-crepe-gown-regular-petite/7955763?origin=keywordsearch-personalizedsort&breadcrumb=Home%2FAll%20Results&color=001", image: "https://n.nordstrommedia.com/it/653a8b03-36f4-4590-acf1-2aa781792dc8.jpeg?crop=pad&w=1950&h=2990" },
+                    { brand: "Nordstrom", name: "Petal & Pup Naira Pleated Maxi Dress", price: "", style: "modern", formalLevel: "black-tie", details: ["Black-tie gown"], store: "Nordstrom.com", link: "https://www.nordstrom.com/s/naira-pleated-maxi-dress/7754323?origin=keywordsearch-personalizedsort&breadcrumb=Home%2FAll%20Results&color=001", image: "https://n.nordstrommedia.com/it/54928a48-4e1d-4fbb-b9c1-3690d6f91fe1.jpeg?crop=pad&w=1950&h=2990" },
+                    { brand: "Zara", name: "Voluminous Satin Long Dress", price: "", style: "modern", formalLevel: "black-tie", details: ["Black-tie gown"], store: "Zara.com", link: "https://www.zara.com/us/en/voluminous-satin-long-dress-p05919121.html?v1=496086966", image: "https://static.zara.net/assets/public/bd71/364b/0484411e91ac/31e3df1d5e26/05919121971-p/05919121971-p.jpg?ts=1771588077560&w=750" },
+                    { brand: "J.Crew", name: "Collection Halter Slip Dress", price: "", style: "modern", formalLevel: "black-tie", details: ["Black-tie gown"], store: "JCrew.com", link: "https://www.jcrew.com/p/womens/categories/clothing/dresses-and-jumpsuits/CO420?display=all&fit=Classic&colorProductCode=CO420&colorCode=BL8133", image: "https://www.jcrew.com/s7-img-facade/CO420_BL8133_m?hei=1950&crop=0,0,1560,0" },
+                    { brand: "Anthropologie", name: "Watters Charmeuse Neck Scarf Dress", price: "", style: "modern", formalLevel: "black-tie", details: ["Black-tie gown"], store: "Anthropologie.com", link: "https://www.anthropologie.com/shop/watters-charmeuse-neck-scarf?color=001&searchparams=q%3Dblack%2520tie%2520wedding", image: "https://images.urbndata.com/is/image/Anthropologie/99413429_001_b15?$redesign-zoom-5x$" },
+                    { brand: "Anthropologie", name: "Helsi Margot Strapless Maxi Dress", price: "", style: "modern", formalLevel: "black-tie", details: ["Black-tie gown"], store: "Anthropologie.com", link: "https://www.anthropologie.com/shop/helsi-margot-strapless-maxi-dress?color=410&curation_id=dresses-formal-curation&curation_name=Formal%20Dresses%3A%20LP", image: "https://images.urbndata.com/is/image/Anthropologie/105115422_410_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640" },
+                    { brand: "Reformation", name: "Bianca Silk Dress", price: "", style: "modern", formalLevel: "black-tie", details: ["Black-tie gown"], store: "Reformation.com", link: "https://www.thereformation.com/products/bianca-silk-dress/1318818BLK.html?dwvar_1318818BLK_color=BLK", image: "https://media.thereformation.com/image/upload/f_auto,q_auto:eco,dpr_auto/w_500/PRD-SFCC/1318818/BLACK/1318818.1.BLACK" },
+                    { brand: "Eloquii", name: "Pleated Ruffle Neckline Midi Dress", price: "", style: "modern", formalLevel: "black-tie", details: ["Black-tie gown"], store: "Eloquii.com", link: "https://www.eloquii.com/products/pleated-ruffle-neckline-midi-dress/1089953.html?cgid=ZQ_Black_Tie_Dresses&dwvar_1089953_color=4534829&hqp=hclr", image: "https://www.eloquii.com/fleximages/16889/2703_16889_mc_1264.jpg?width=653&height=940&quality=90&fit=bounds" }
                 ],
                 separates: [
-                    { brand: "Mango", name: "Silk Top & Wide Leg Pants", price: "$156", style: "modern", formalLevel: "semi-formal", details: ["Elegant", "Flowy"] },
-                    { brand: "Everlane", name: "Linen Blazer & Trousers", price: "$198", style: "classic", formalLevel: "semi-formal", details: ["Breathable", "Chic"] },
-                    { brand: "Banana Republic", name: "Wool Blend Suit", price: "$298", style: "classic", formalLevel: "semi-formal", details: ["Warm", "Tailored"] },
-                    { brand: "Theory", name: "Evening Separates", price: "$398", style: "modern", formalLevel: "black-tie", details: ["Formal", "Elegant"] }
+                    { type: "separates", brand: "Boden", name: "Regent Wide Leg Pants", price: "", style: "classic", formalLevel: "semi-formal", details: ["Wide leg", "Elegant"], store: "Boden.com", link: "https://us.boden.com/products/women-regent-wide-leg-pants-ivory-r0697irs", image: "https://us.boden.com/cdn/shop/files/26wspr_r0697_irs_m01_v1.jpg?v=1770824011&width=823" },
+                    { type: "separates", brand: "Eloquii", name: "Corset Blazer", price: "", style: "modern", formalLevel: "semi-formal", details: ["Tailored", "Modern"], store: "Eloquii.com", link: "https://www.eloquii.com/products/corset-blazer/1086367.html", image: "https://www.eloquii.com/fleximages/20603/2732_20603_mc_0472.jpg?width=653&height=940&quality=90&fit=bounds" },
+                    { type: "separates", brand: "Boden", name: "Kensington Linen Pants", price: "", style: "classic", formalLevel: "semi-formal", details: ["Linen", "Elegant"], store: "Boden.com", link: "https://us.boden.com/products/women-kensington-linen-pants-ivory-delicate-blossom-r0855ivo", image: "https://us.boden.com/cdn/shop/files/26wsum_r0855_ivo_m01_v2.jpg?v=1771613478&width=823" },
+                    { type: "separates", brand: "Bloomingdale's", name: "AQUA Faux Wrap Top", price: "", style: "modern", formalLevel: "semi-formal", details: ["Elegant", "Versatile"], store: "Bloomingdales.com", link: "https://www.bloomingdales.com/shop/product/aqua-faux-wrap-top-exclusive?ID=5314238&CategoryID=2910", image: "https://images.bloomingdalesassets.com/is/image/BLM/products/2/optimized/14089632_fpx.tif?op_sharpen=1&wid=1500&fit=fit%2C1&fmt=webp" },
+                    { type: "separates", brand: "Nordstrom", name: "Vince Camuto Tie Waist Wide Leg Jumpsuit", price: "", style: "modern", formalLevel: "semi-formal", details: ["Jumpsuit", "Chic"], store: "Nordstrom.com", link: "https://www.nordstrom.com/s/tie-waist-wide-leg-jumpsuit/8562484?origin=keywordsearch-personalizedsort&breadcrumb=Home%2FAll%20Results&color=001", image: "https://n.nordstrommedia.com/it/fb482b1a-a3e2-48fb-864d-8f8460a2b42b.jpeg?crop=pad&w=780&h=1196" },
+                    { type: "separates", brand: "J.Crew", name: "Cosmo Pant in Luster Charmeuse", price: "", style: "modern", formalLevel: "semi-formal", details: ["Elegant", "Luxe fabric"], store: "JCrew.com", link: "https://www.jcrew.com/m/womens/categories/clothing/pants/relaxed/ME858?display=all&fit=Classic&colorProductCode=CN714&colorCode=BR6747", image: "https://www.jcrew.com/s7-img-facade/CN714_PR0127_m?hei=1950&crop=0,0,1560,0" },
+                    { type: "separates", brand: "Mango", name: "Satin Straight-Fit Pants", price: "", style: "modern", formalLevel: "semi-formal", details: ["Elegant", "Satin"], store: "Mango.com", link: "https://shop.mango.com/us/en/p/women/trousers/party/satin-straight-fit-pants_27075839", image: "https://shop.mango.com/assets/rcs/pics/static/T2/fotos/S/27075839_43.jpg?imwidth=2048&imdensity=1&ts=1770897840237" },
+                    { type: "separates", brand: "Mango", name: "Satin Straight-Fit Pants", price: "", style: "modern", formalLevel: "semi-formal", details: ["Elegant", "Satin"], store: "Mango.com", link: "https://shop.mango.com/us/en/p/women/trousers/straight/satin-straight-fit-pants_27044075?c=32", image: "https://shop.mango.com/assets/rcs/pics/static/T2/fotos/outfit/S/27044075_32-99999999_01.jpg?imwidth=2048&imdensity=1&ts=1766491554791" },
+                    { type: "separates", brand: "Ann Taylor", name: "Lace Column Midi Skirt", price: "", style: "modern", formalLevel: "semi-formal", details: ["Lace detail", "Elegant"], store: "AnnTaylor.com", link: "https://www.anntaylor.com/clothing/skirts-/cata000016/lace-column-midi-skirt/847912.html?priceSort=DES", image: "https://anninc.scene7.com/is/image/AN/847912_020236?$fullBpdp$" }
                 ]
             },
             prom: {
                 dresses: [
-                    { brand: "Lulus", name: "Sequined Mermaid Gown", price: "$118", style: "modern", formalLevel: "prom", details: ["Floor length", "Sparkle"] },
-                    { brand: "David's Bridal", name: "Classic Ball Gown", price: "$299", style: "classic", formalLevel: "prom", details: ["Full skirt", "Romantic"] },
-                    { brand: "Revolve", name: "Sleek Satin Gown", price: "$268", style: "modern", formalLevel: "prom", details: ["Satin finish", "Dramatic"] },
-                    { brand: "ASOS", name: "Elegant Midi Dress", price: "$89", style: "modern", formalLevel: "semi-formal", details: ["Semi-formal", "Chic"] },
-                    { brand: "Lulus", name: "Cocktail Dress", price: "$78", style: "modern", formalLevel: "semi-formal", details: ["Party-ready", "Flattering"] },
-                    { brand: "Nordstrom", name: "Satin A-Line Dress", price: "$148", style: "classic", formalLevel: "semi-formal", details: ["Sophisticated", "Midi length"] }
+                    { brand: "Couture Candy", name: "Ashley Lauren 12230 - Hand Beaded Plunging V-Neck Prom Dress", price: "", style: "modern", formalLevel: "prom", details: ["Trending 2026 Prom Dress"], store: "CoutureCandy.com", link: "https://www.couturecandy.com/products/ashley-lauren-12230-hand-beaded-plunging-v-neck-prom-dress?variant=43369733816403", image: "https://www.couturecandy.com/cdn/shop/files/12230_Aqua_1_b8a93858-95c4-4643-9830-79d753f507b4_700x.progressive.jpg?v=1769041760", isTrending: true },
+                    { brand: "Revolve", name: "NBD Elsie Gown", price: "", style: "modern", formalLevel: "prom", details: ["Prom gown"], store: "Revolve.com", link: "https://www.revolve.com/nbd-elsie-gown-in-blue/dp/NBDR-WD3356/?d=Womens&page=1&lc=1&plpSrc=%2Fr%2FSearch.jsp%3Fsearch%3DElsie+Gown%26d%3DWomens%26sortBy%3Dfeatured&itrownum=1&itcurrpage=1&itview=05", image: "https://is4.revolveassets.com/images/p4/n/z/NBDR-WD3356_V2.jpg" },
+                    { brand: "Amazon", name: "PRETTYGARDEN Womens 2026 Summer Off The Shoulder Dress Ruched Bodycon Sleeveless Split Cocktail Party Maxi Dresses", price: "", style: "modern", formalLevel: "prom", details: ["Prom gown"], store: "Amazon.com", link: "https://amzn.to/4sNeGni", image: "https://m.media-amazon.com/images/I/61HFY2CIRkL._AC_SY741_.jpg", isBudgetPick: true },
+                    { brand: "Bloomingdale's", name: "Dress the Population Melania Off-the-Shoulder Gown", price: "", style: "modern", formalLevel: "prom", details: ["Prom gown"], store: "Bloomingdales.com", link: "https://www.bloomingdales.com/shop/product/dress-the-population-melania-off-the-shoulder-gown?ID=5411954&CategoryID=2910&swatchColor=White", image: "https://images.bloomingdalesassets.com/is/image/BLM/products/1/optimized/14588501_fpx.tif?op_sharpen=1&wid=1500&fit=fit%2C1&fmt=webp" },
+                    { brand: "Bloomingdale's", name: "AQUA Scuba Strapless Gown", price: "", style: "modern", formalLevel: "prom", details: ["Prom gown"], store: "Bloomingdales.com", link: "https://www.bloomingdales.com/shop/product/aqua-scuba-strapless-gown-exclusive?ID=5711275&CategoryID=2910&swatchColor=Black", image: "https://images.bloomingdalesassets.com/is/image/BLM/products/4/optimized/15010954_fpx.tif?op_sharpen=1&wid=1500&fit=fit%2C1&fmt=webp" },
+                    { brand: "Bloomingdale's", name: "AQUA Mikado Strapless Midi Gown", price: "", style: "modern", formalLevel: "prom", details: ["Prom gown"], store: "Bloomingdales.com", link: "https://www.bloomingdales.com/shop/product/aqua-mikado-strapless-midi-gown-exclusive?ID=3991049&CategoryID=2910#SORTBY/BEST_SELLERS", image: "https://images.bloomingdalesassets.com/is/image/BLM/products/3/optimized/14104003_fpx.tif?op_sharpen=1&wid=1500&fit=fit%2C1&fmt=webp" },
+                    { brand: "Nordstrom", name: "Popilush Shapewear Off Shoulder Shine Ruched Sculpting Maxi Dress", price: "", style: "modern", formalLevel: "prom", details: ["Prom gown"], store: "Nordstrom.com", link: "https://www.nordstrom.com/s/shapewear-off-shoulder-shine-ruched-sculpting-maxi-dress/8306279?origin=keywordsearch-personalizedsort&breadcrumb=Home%2FAll%20Results&color=400", image: "https://n.nordstrommedia.com/it/f1dc0dcc-452f-4012-8f0e-130c1d608e69.jpeg?crop=pad&w=780&h=1196" },
+                    { brand: "Nordstrom", name: "La Femme Ruffle Prom Dress with Scoop Neck and Lace Up Back", price: "", style: "modern", formalLevel: "prom", details: ["Prom gown"], store: "Nordstrom.com", link: "https://www.nordstrom.com/s/ruffle-prom-dress-with-scoop-neck-and-lace-up-back/8152510?origin=keywordsearch-personalizedsort&breadcrumb=Home%2FAll%20Results&color=300", image: "https://n.nordstrommedia.com/it/fff7971e-8809-4425-bd76-b0035e68a04d.jpeg?crop=pad&w=780&h=1196" },
+                    { brand: "Nordstrom", name: "Elliatt Ruffle Sateen Fit & Flare Gown", price: "", style: "modern", formalLevel: "prom", details: ["Prom gown"], store: "Nordstrom.com", link: "https://www.nordstrom.com/s/ruffle-sateen-fit-flare-gown/8786970?origin=keywordsearch-personalizedsort&breadcrumb=Home%2FAll%20Results&color=700", image: "https://n.nordstrommedia.com/it/a3653da5-231a-4692-912c-2c117ab029dc.jpeg?crop=pad&w=780&h=1196" },
+                    { brand: "Nordstrom", name: "La Femme Strapless Double Strap Long Jersey Prom Dress", price: "", style: "modern", formalLevel: "prom", details: ["Prom gown"], store: "Nordstrom.com", link: "https://www.nordstrom.com/s/strapless-double-strap-long-jersey-prom-dress/8139579?origin=keywordsearch-personalizedsort&breadcrumb=Home%2FAll%20Results&color=400", image: "https://n.nordstrommedia.com/it/d7f52fb6-eae0-432f-91f8-5d6ce9190aef.jpeg?crop=pad&w=780&h=1196" },
+                    { brand: "Nordstrom", name: "BP. Strapless Satin Gown", price: "", style: "modern", formalLevel: "prom", details: ["Prom gown"], store: "Nordstrom.com", link: "https://www.nordstrom.com/s/strapless-satin-gown/8614436?origin=keywordsearch-personalizedsort&breadcrumb=Home%2FAll%20Results&color=450", image: "https://n.nordstrommedia.com/it/569314fb-54ec-4cd0-81e8-b1e3b6f7290b.jpeg?crop=pad&w=780&h=1196" },
+                    { brand: "Abercrombie & Fitch", name: "The A&F Giselle Drop-Waist Maxi Dress", price: "", style: "modern", formalLevel: "prom", details: ["Prom gown"], store: "Abercrombie.com", link: "https://www.abercrombie.com/shop/us/p/the-a-and-f-giselle-drop-waist-maxi-dress-59777845?faceout=model&seq=01&pagefm=navigation-grid&prodvm=navigation-grid", image: "https://img.abercrombie.com/is/image/anf/KIC_159-5567-00320-230_model1?policy=product-medium" },
+                    { brand: "Abercrombie & Fitch", name: "Bra-Free Strapless Draped Maxi Dress", price: "", style: "modern", formalLevel: "prom", details: ["Prom gown"], store: "Abercrombie.com", link: "https://www.abercrombie.com/shop/us/p/strapless-draped-maxi-dress-62130326?faceout=model&seq=01&pagefm=navigation-grid&prodvm=navigation-grid", image: "https://img.abercrombie.com/is/image/anf/KIC_159-6778-00511-201_model1?policy=product-medium" },
+                    { brand: "Amanda Uprichard", name: "Ella Rose Maxi Dress", price: "", style: "modern", formalLevel: "prom", details: ["Prom gown"], store: "AmandaUprichard.com", link: "https://amandauprichard.com/products/ella-rose-maxi-dress", image: "https://amandauprichard.com/cdn/shop/files/CHMO-23167_ELLA_ROSE_MAXI_BABYBLUE_A.jpg?v=1772037378&width=1440" },
+                    { brand: "Amanda Uprichard", name: "Amalia Silk Gown", price: "", style: "modern", formalLevel: "prom", details: ["Prom gown"], store: "AmandaUprichard.com", link: "https://amandauprichard.com/products/amalia-silk-gown-9?_pos=1&_fid=f682c7bce&_ss=c", image: "https://amandauprichard.com/cdn/shop/files/SC_20418_AMALIA_SILK_GOWN_COBALT_A.jpg?v=1755096235&width=1280" },
+                    { brand: "Revolve", name: "Lovers and Friends Urgonia Gown", price: "", style: "modern", formalLevel: "prom", details: ["Prom gown"], store: "Revolve.com", link: "https://www.revolve.com/lovers-and-friends-urgonia-gown-in-pink-tonal/dp/LOVF-WD2073/?d=Womens&page=1&lc=1&plpSrc=%2Fr%2FBrands.jsp%3FaliasURL%3Dproducts%2Fbr%2F0639be%26listname%3Dthe-prom-shop-cfy%26cplid%3D50536%26sortBy%3Dpopularity%26lazyLoadedPlp%3Dtrue&itrownum=1&itcurrpage=1&itview=05", image: "https://is4.revolveassets.com/images/p4/n/uv/LOVF-WD2073_V1.jpg" },
+                    { brand: "Revolve", name: "Katie May Surreal Gown", price: "", style: "modern", formalLevel: "prom", details: ["Prom gown"], store: "Revolve.com", link: "https://www.revolve.com/katie-may-surreal-gown-in-black/dp/KATR-WD42/?d=Womens&page=1&lc=15&plpSrc=%2Fr%2FBrands.jsp%3FaliasURL%3Dproducts%2Fbr%2F0639be%26listname%3Dthe-prom-shop-cfy%26cplid%3D50536%26sortBy%3Dpopularity&itrownum=4&itcurrpage=1&itview=05", image: "https://is4.revolveassets.com/images/p4/n/uv/KATR-WD42_V1.jpg" },
+                    { brand: "Macy's", name: "B Darlin Juniors' Corset High-Slit Gown", price: "", style: "modern", formalLevel: "prom", details: ["Prom gown"], store: "Macys.com", link: "https://www.macys.com/shop/product/b-darlin-juniors-corset-high-slit-evening-gown?ID=15350980", image: "https://slimages.macysassets.com/is/image/MCY/products/3/optimized/24091243_fpx.tif?op_sharpen=1&wid=1500&fit=fit%2C1&fmt=webp" },
+                    { brand: "Macy's", name: "B Darlin Juniors' Cowl-Neck Beaded Sleeveless Gown", price: "", style: "modern", formalLevel: "prom", details: ["Prom gown"], store: "Macys.com", link: "https://www.macys.com/shop/product/b-darlin-juniors-cowl-neck-beaded-sleeveless-gown?ID=25153732&lid=prom_productgrid-25153732", image: "https://slimages.macysassets.com/is/image/MCY/products/8/optimized/34978438_fpx.tif?op_sharpen=1&wid=1500&fit=fit%2C1&fmt=webp" },
+                    { brand: "Macy's", name: "Emerald Sundae Juniors' Satin Pleated Slit Gown", price: "", style: "modern", formalLevel: "prom", details: ["Prom gown"], store: "Macys.com", link: "https://www.macys.com/shop/product/emerald-sundae-juniors-pleated-gown?ID=13848566&swatchColor=Black#COLOR_NORMAL/Black", image: "https://slimages.macysassets.com/is/image/MCY/products/5/optimized/32486035_fpx.tif?op_sharpen=1&wid=1500&fit=fit%2C1&fmt=webp" },
+                    { brand: "Stacees", name: "Mermaid Cowl V Neck Beaded Corset Prom Dress with Spaghetti Straps Slit", price: "", style: "modern", formalLevel: "prom", details: ["Prom gown"], store: "Stacees.com", link: "https://www.stacees.com/product/trumpet-mermaid-v-neck-silk-like-satin-sweep-train-prom-dress-S9091P", image: "https://cdn-4.stacees.co.uk/uploads/2026/02/10/2026021033022435344_S9091P.jpg" }
                 ],
                 separates: []
             },
             graduation: {
                 dresses: [
-                    { brand: "Lulus", name: "Sweetest Admirer White Lace Midi Dress", price: "$64", style: "modern", audience: "graduate", details: ["Lace detail", "Midi length"] },
-                    { brand: "Nordstrom", name: "Open Edit Sleeveless Midi Dress", price: "$39", style: "modern", audience: "graduate", details: ["Clean lines", "Versatile"] },
-                    { brand: "Abercrombie", name: "Satin Midi Slip Dress", price: "$90", style: "modern", audience: "graduate", details: ["Satin finish", "Elegant"] },
-                    { brand: "J.Crew", name: "Sleeveless Tie-Waist Shirtdress", price: "$128", style: "classic", audience: "graduate", details: ["Classic style", "Structured"] },
-                    { brand: "Bloomingdale's", name: "Aqua Eyelet Midi Dress", price: "$98", style: "modern", audience: "graduate", details: ["Eyelet detail", "Fresh"] },
-                    { brand: "Nordstrom", name: "Chelsea28 Ruffle Sleeve Dress", price: "$89", style: "classic", audience: "graduate", details: ["Ruffle sleeves", "Feminine"] },
-                    { brand: "Lulus", name: "Much Obliged White Lace Midi Dress", price: "$82", style: "classic", audience: "graduate", details: ["Romantic lace", "Midi length"] },
-                    { brand: "Ann Taylor", name: "Floral Eyelet Midi Dress", price: "$139", style: "classic", audience: "mom", details: ["Sophisticated", "Eyelet detail"] },
-                    { brand: "J.Crew", name: "Ruffle-Trim Dress in Crisp Cotton", price: "$148", style: "modern", audience: "mom", details: ["Polished", "Crisp cotton"] },
-                    { brand: "Nordstrom", name: "Eliza J Fit & Flare Dress", price: "$158", style: "classic", audience: "mom", details: ["Classic", "Flattering"] },
-                    { brand: "Bloomingdale's", name: "Lafayette 148 Linen Dress", price: "$348", style: "classic", audience: "mom", details: ["Luxury linen", "Sophisticated"] },
-                    { brand: "Talbots", name: "Eyelet Fit and Flare Dress", price: "$139", style: "classic", audience: "mom", details: ["Comfortable", "Elegant"] }
+                    { brand: "Bloomingdale's", name: "French Connection Whisper Square Neck Mini Dress", price: "", style: "modern", audience: "graduate", details: ["Graduation dress"], store: "Bloomingdales.com", link: "https://www.bloomingdales.com/shop/product/french-connection-whisper-square-neck-mini-dress?ID=5399872&CategoryID=2910", image: "https://images.bloomingdalesassets.com/is/image/BLM/products/0/optimized/14309420_fpx.tif?op_sharpen=1&wid=1500&fit=fit%2C1&fmt=webp" },
+                    { brand: "Amazon", name: "PRETTYGARDEN Summer Dresses for Women 2026 Elegant Classy Spring A Line Business Casual Work Graduation Cocktail Short Dress", price: "", style: "modern", audience: "graduate", details: ["Graduation dress"], store: "Amazon.com", link: "https://amzn.to/4dug5dQ", image: "https://m.media-amazon.com/images/I/718RDb6jTjL._AC_SY741_.jpg" },
+                    { brand: "Bloomingdale's", name: "AQUA Paneled Midi Dress", price: "", style: "modern", audience: "graduate", details: ["Graduation dress"], store: "Bloomingdales.com", link: "https://www.bloomingdales.com/shop/product/aqua-paneled-midi-dress-exclusive?ID=5832687&CategoryID=2910", image: "https://images.bloomingdalesassets.com/is/image/BLM/products/6/optimized/13297066_fpx.tif?op_sharpen=1&wid=1500&fit=fit%2C1&fmt=webp" },
+                    { brand: "Bloomingdale's", name: "French Connection Whisper Frilled Hem Minidress", price: "", style: "modern", audience: "graduate", details: ["Graduation dress"], store: "Bloomingdales.com", link: "https://www.bloomingdales.com/shop/product/french-connection-whisper-frilled-hem-minidress?ID=5882306&CategoryID=2910&swatchColor=Summer%20White", image: "https://images.bloomingdalesassets.com/is/image/BLM/products/6/optimized/15692766_fpx.tif?op_sharpen=1&wid=1500&fit=fit%2C1&fmt=webp" },
+                    { brand: "Amazon", name: "Princess Polly Women's Lanchester Mini Dress White", price: "", style: "modern", audience: "graduate", details: ["Graduation dress"], store: "Amazon.com", link: "https://amzn.to/4mbd7x3", image: "https://m.media-amazon.com/images/I/71knDs4S54L._AC_SY741_.jpg" },
+                    { brand: "Bloomingdale's", name: "French Connection Whisper Classic Mini Dress", price: "", style: "modern", audience: "graduate", details: ["Graduation dress"], store: "Bloomingdales.com", link: "https://www.bloomingdales.com/shop/product/french-connection-whisper-classic-mini-dress?ID=4802233&CategoryID=2910", image: "https://images.bloomingdalesassets.com/is/image/BLM/products/1/optimized/13629631_fpx.tif?op_sharpen=1&wid=1500&fit=fit%2C1&fmt=webp" },
+                    { brand: "Bloomingdale's", name: "AQUA Mock Neck Lace Shift Dress", price: "", style: "modern", audience: "graduate", details: ["Graduation dress"], store: "Bloomingdales.com", link: "https://www.bloomingdales.com/shop/product/aqua-mock-neck-lace-shift-dress-exclusive?ID=5719428&CategoryID=2910", image: "https://images.bloomingdalesassets.com/is/image/BLM/products/4/optimized/13532724_fpx.tif?op_sharpen=1&wid=1500&fit=fit%2C1&fmt=webp" },
+                    { brand: "Bloomingdale's", name: "Self-Portrait White Crepe Flower Mini Dress", price: "", style: "modern", audience: "graduate", details: ["Graduation dress"], store: "Bloomingdales.com", link: "https://www.bloomingdales.com/shop/product/self-portrait-white-crepe-flower-mini-dress-exclusive?ID=5439216&CategoryID=2910", image: "https://images.bloomingdalesassets.com/is/image/BLM/products/6/optimized/14443656_fpx.tif?op_sharpen=1&wid=1500&fit=fit%2C1&fmt=webp" },
+                    { brand: "Bloomingdale's", name: "Waimari Rocio Linen Mini Dress", price: "", style: "modern", audience: "graduate", details: ["Graduation dress"], store: "Bloomingdales.com", link: "https://www.bloomingdales.com/shop/product/waimari-rocio-linen-mini-dress?ID=5769732&CategoryID=2910", image: "https://images.bloomingdalesassets.com/is/image/BLM/products/3/optimized/15238683_fpx.tif?op_sharpen=1&wid=1500&fit=fit%2C1&fmt=webp" },
+                    { brand: "Bloomingdale's", name: "Reformation Everett Linen Dress", price: "", style: "modern", audience: "graduate", details: ["Graduation dress"], store: "Bloomingdales.com", link: "https://www.bloomingdales.com/shop/product/reformation-everett-linen-dress?ID=5564293&CategoryID=2910&swatchColor=White", image: "https://images.bloomingdalesassets.com/is/image/BLM/products/2/optimized/14854872_fpx.tif?op_sharpen=1&wid=1500&fit=fit%2C1&fmt=webp" },
+                    { brand: "Bloomingdale's", name: "AQUA Eyelet Sweetheart Midi Dress", price: "", style: "modern", audience: "graduate", details: ["Graduation dress"], store: "Bloomingdales.com", link: "https://www.bloomingdales.com/shop/product/aqua-eyelet-sweetheart-midi-dress-exclusive?ID=5532094&CategoryID=2910", image: "https://images.bloomingdalesassets.com/is/image/BLM/products/8/optimized/14708318_fpx.tif?op_sharpen=1&wid=1500&fit=fit%2C1&fmt=webp" },
+                    { brand: "Nordstrom", name: "French Connection Ruth Whisper A-Line Dress", price: "", style: "modern", audience: "graduate", details: ["Graduation dress"], store: "Nordstrom.com", link: "https://www.nordstrom.com/s/french-connection-ruth-whisper-a-line-dress/6267749?origin=keywordsearch-personalizedsort&breadcrumb=Home%2FAll%20Results&color=120", image: "https://n.nordstrommedia.com/it/c13a2963-6d1c-4962-83fa-2c5265446aef.jpeg?crop=pad&w=1950&h=2990" },
+                    { brand: "Nordstrom", name: "Princess Polly Anyone But You Tie Back Sleeveless Minidress", price: "", style: "modern", audience: "graduate", details: ["Graduation dress"], store: "Nordstrom.com", link: "https://www.nordstrom.com/s/princess-polly-anyone-but-you-tie-back-sleeveless-minidress/8350974?origin=keywordsearch-personalizedsort&breadcrumb=Home%2FAll%20Results&color=100", image: "https://n.nordstrommedia.com/it/f4e21393-6c1a-43f3-adc7-ee50f36b715a.jpeg?crop=pad&w=1950&h=2990" },
+                    { brand: "Nordstrom", name: "Petal & Pup Laurel A-Line Dress", price: "", style: "modern", audience: "graduate", details: ["Graduation dress"], store: "Nordstrom.com", link: "https://www.nordstrom.com/s/petal-and-pup-laurel-a-line-dress/7744552?origin=keywordsearch-personalizedsort&breadcrumb=Home%2FAll%20Results&color=100", image: "https://n.nordstrommedia.com/it/40d1a213-6356-4415-a7de-932e1cf641da.jpeg?crop=pad&w=1950&h=2990" },
+                    { brand: "Nordstrom", name: "CeCe Clip Dot Flutter Sleeve Midi Dress", price: "", style: "modern", audience: "graduate", details: ["Graduation dress"], store: "Nordstrom.com", link: "https://www.nordstrom.com/s/cece-clip-dot-flutter-sleeve-midi-dress/7045421?origin=keywordsearch-personalizedsort&breadcrumb=Home%2FAll%20Results&color=105", image: "https://n.nordstrommedia.com/it/d6e90107-6d53-4dc7-9d1a-3e7d5d7e8dad.jpeg?crop=pad&w=1950&h=2990" },
+                    { brand: "Nordstrom", name: "Dress the Population Catalina Fit & Flare Cocktail Dress", price: "", style: "modern", audience: "graduate", details: ["Graduation dress"], store: "Nordstrom.com", link: "https://www.nordstrom.com/s/dress-the-population-catalina-fit-flare-cocktail-dress/4937787?origin=keywordsearch-personalizedsort&breadcrumb=Home%2FAll%20Results&color=133", image: "https://n.nordstrommedia.com/it/4a99e9db-9054-4d03-a3f7-f2e948dedd4e.jpeg?crop=pad&w=1950&h=2990" },
+                    { brand: "PacSun", name: "Rhythm Broderie Lace Gathered Maxi Dress", price: "", style: "modern", audience: "graduate", details: ["Graduation dress"], store: "PacSun.com", link: "https://www.pacsun.com/rhythm/broderie-lace-gathered-maxi-dress-0870483770023.html?dwvar_0870483770023_color=010&tileCgid=", image: "https://www.pacsun.com/dw/image/v2/AAJE_PRD/on/demandware.static/-/Sites-pacsun_storefront_catalog/default/dwc3e06191/product_images/0870483770023NEW_01_010.jpg?sw=800" },
+                    { brand: "PacSun", name: "Your Favorite Charlie Ruched Mini Dress", price: "", style: "modern", audience: "graduate", details: ["Graduation dress"], store: "PacSun.com", link: "https://www.pacsun.com/your-favorite/charlie-ruched-mini-dress-0870461580047.html?dwvar_0870461580047_color=010&tileCgid=", image: "https://www.pacsun.com/dw/image/v2/AAJE_PRD/on/demandware.static/-/Sites-pacsun_storefront_catalog/default/dw171a95bc/product_images/0870461580047NEW_00_010.jpg?sw=800" },
+                    { brand: "Hollister", name: "Embroidered Babydoll Maxi Dress", price: "", style: "modern", audience: "graduate", details: ["Graduation dress"], store: "Hollister.com", link: "https://www.hollisterco.com/shop/us/p/embroidered-babydoll-maxi-dress-62215842?faceout=model&seq=02&pagefm=navigation-grid&prodvm=navigation-grid", image: "https://img.hollisterco.com/is/image/anf/KIC_359-6022-00067-100_model1?policy=product-extra-large" },
+                    { brand: "Hollister", name: "Curvy Cap Sleeve Babydoll Mini Dress", price: "", style: "modern", audience: "graduate", details: ["Graduation dress"], store: "Hollister.com", link: "https://www.hollisterco.com/shop/us/p/curvy-cap-sleeve-babydoll-mini-dress-62225827?faceout=model&seq=02&pagefm=navigation-grid&prodvm=navigation-grid", image: "https://img.hollisterco.com/is/image/anf/KIC_359-6043-00365-100_model1?policy=product-extra-large" },
+                    { brand: "Abercrombie & Fitch", name: "Bra-Free Smocked Drop-Waist Maxi Dress", price: "", style: "modern", audience: "graduate", details: ["Graduation dress"], store: "Abercrombie.com", link: "https://www.abercrombie.com/shop/us/p/bra-free-smocked-drop-waist-maxi-dress-62161323?faceout=life&seq=04&pagefm=navigation-grid&prodvm=navigation-grid", image: "https://img.abercrombie.com/is/image/anf/KIC_159-6669-00476-107_model1?policy=product-extra-large" },
+                    { brand: "Abercrombie & Fitch", name: "Babydoll Bubble Hem Mini Dress", price: "", style: "modern", audience: "graduate", details: ["Graduation dress"], store: "Abercrombie.com", link: "https://www.abercrombie.com/shop/us/p/babydoll-bubble-hem-mini-dress-60952841?faceout=model&seq=04&pagefm=navigation-grid&prodvm=navigation-grid", image: "https://img.abercrombie.com/is/image/anf/KIC_159-5834-00532-100_model1?policy=product-extra-large" },
+                    { brand: "Abercrombie & Fitch", name: "Bra-Free Lace Floral Mini Dress", price: "", style: "modern", audience: "graduate", details: ["Graduation dress"], store: "Abercrombie.com", link: "https://www.abercrombie.com/shop/us/p/bra-free-lace-floral-mini-dress-61834326?faceout=model&seq=01&pagefm=navigation-grid&prodvm=navigation-grid", image: "https://img.abercrombie.com/is/image/anf/KIC_159-6474-00837-170_model1?policy=product-extra-large" },
+                    { brand: "Revolve", name: "Amanda Uprichard Annalise Dress", price: "", style: "modern", audience: "graduate", details: ["Graduation dress"], store: "Revolve.com", link: "https://www.revolve.com/amanda-uprichard-annalise-dress-in-white/dp/AMAN-WD919/?d=Womens&vn=true&page=1&lc=3&itrownum=1&itcurrpage=1&itview=05", image: "https://is4.revolveassets.com/images/p4/n/z/AMAN-WD919_V2.jpg" },
+                    { brand: "Macy's", name: "Kasper Women's Stretch-Crepe Pleat-Hem Sheath Dress", price: "", style: "modern", audience: "graduate", details: ["Graduation dress"], store: "Macys.com", link: "https://www.macys.com/shop/product/kasper-womens-stretch-crepe-pleat-hem-sheath-dress-regular-petite?ID=19591489&isDlp=true&swatchColor=Vanilla+Ice#SORTBY/BEST_SELLERS", image: "https://slimages.macysassets.com/is/image/MCY/products/7/optimized/34100597_fpx.tif?op_sharpen=1&wid=1500&fit=fit%2C1&fmt=webp" },
+                    { brand: "Macy's", name: "KARL LAGERFELD PARIS Women's Floral Print Sleeveless Sheath Dress", price: "", style: "modern", audience: "graduate", details: ["Graduation dress"], store: "Macys.com", link: "https://www.macys.com/shop/product/karl-lagerfeld-paris-womens-floral-print-sleeveless-sheath-dress?ID=20714938&isDlp=true#SORTBY/BEST_SELLERS", image: "https://slimages.macysassets.com/is/image/MCY/products/3/optimized/35816123_fpx.tif?op_sharpen=1&wid=1500&fit=fit%2C1&fmt=webp" },
+                    { brand: "Amazon", name: "DREAM PAIRS Women's Chunk Low Heel Pump Sandals", price: "", style: "modern", audience: "graduate", details: ["Graduation shoes"], store: "Amazon.com", link: "https://amzn.to/4vd3KB3", image: "https://m.media-amazon.com/images/I/61kCYBiu84L._AC_SY575_.jpg", isBudgetShoe: true }
                 ],
                 separates: []
             },
             holiday: {
-                dresses: [
-                    { brand: "Anthropologie", name: "Sequined Cocktail Dress", price: "$198", style: "modern", details: ["Sparkle", "Midi length"] },
-                    { brand: "Nordstrom", name: "Velvet Party Dress", price: "$158", style: "classic", details: ["Rich velvet", "Festive"] },
-                    { brand: "ASOS", name: "Metallic Wrap Dress", price: "$89", style: "modern", details: ["Shimmer", "Bold"] },
-                    { brand: "J.Crew", name: "Silk Slip Dress", price: "$178", style: "classic", details: ["Elegant", "Luxe"] }
-                ],
-                separates: [
-                    { brand: "Zara", name: "Sparkle Top & Trousers", price: "$119", style: "modern", details: ["Festive", "Chic"] },
-                    { brand: "Banana Republic", name: "Satin Blouse & Pants", price: "$188", style: "classic", details: ["Sophisticated", "Party-ready"] }
-                ],
-                accessories: [
-                    { brand: "Kate Spade", name: "Sparkle Clutch", price: "$98", style: "modern", details: ["Evening bag", "Festive"] },
-                    { brand: "J.Crew", name: "Statement Earrings", price: "$48", style: "classic", details: ["Holiday sparkle", "Bold"] },
-                    { brand: "Nordstrom", name: "Velvet Headband", price: "$32", style: "classic", details: ["Festive", "Elegant"] },
-                    { brand: "Anthropologie", name: "Embellished Belt", price: "$58", style: "modern", details: ["Sparkle", "Statement"] }
-                ]
+                dresses: [],
+                separates: [],
+                accessories: []
             }
         };
 
         const occasionContent = {
-            funeral: { title: "Memorial Services Attire", tagline: "Browse respectful attire from top retailers. We're here to assist you during this difficult time." },
-            wedding: { title: "Wedding Guest", tagline: "Shop the most popular styles from top retailers. Your perfect outfit awaits!" },
-            prom: { title: "Prom & Semi-Formal Dances", tagline: "Shop the most popular styles from top retailers. Your perfect outfit awaits!" },
-            graduation: { title: "Graduation", tagline: "Shop the most popular styles from top retailers. Your perfect outfit awaits!" },
-            holiday: { title: "Holiday Party", tagline: "Shop the most popular styles from top retailers. Your perfect outfit awaits!" }
+            memorial: { 
+                title: "Memorial Services", 
+                description: "Respectful, modest attire for somber occasions in black and dark tones",
+                tagline: "Browse respectful attire for funeral services and memorial occasions. We're here to assist you during this difficult time."
+            },
+            wedding: { 
+                title: "Wedding Guest", 
+                description: "Elegant guest attire - chic dresses and outfits to celebrate in style",
+                tagline: "Shop the most popular styles from top retailers. Your perfect outfit awaits!"
+            },
+            prom: { 
+                title: "Prom", 
+                description: "Stunning gowns for a memorable night",
+                tagline: "Shop the most popular styles from top retailers. Your perfect dress awaits!"
+            },
+            graduation: { 
+                title: "Graduation", 
+                description: "Classic white dresses for your special day",
+                tagline: "Shop the most popular styles from top retailers. Your perfect outfit awaits!"
+            },
+            holiday: { 
+                title: "Holiday Party", 
+                description: "Festive, sparkly looks perfect for celebrating the season",
+                tagline: "Shop the most popular styles from top retailers. Your perfect outfit awaits!"
+            }
         };
 
-        let currentOccasion = 'funeral';
+        let currentOccasion = 'memorial';
         let currentFilter = 'all';
-
-        function showMain() {
-            document.getElementById('occasions').style.display = 'block';
-            document.getElementById('our-story').style.display = 'block';
-            document.getElementById('contact').style.display = 'block';
-            document.getElementById('products').classList.remove('active');
-            document.getElementById('privacy').classList.remove('active');
-            window.scrollTo(0, 0);
-        }
-
-        function showPrivacy() {
-            document.getElementById('occasions').style.display = 'none';
-            document.getElementById('our-story').style.display = 'none';
-            document.getElementById('contact').style.display = 'none';
-            document.getElementById('products').classList.remove('active');
-            document.getElementById('privacy').classList.add('active');
-            window.scrollTo(0, 0);
-            return false;
-        }
 
         function showProducts(occasion) {
             currentOccasion = occasion;
@@ -992,51 +952,64 @@
             document.getElementById('occasion-title').textContent = occasionContent[occasion].title;
             document.getElementById('occasion-tagline').textContent = occasionContent[occasion].tagline;
             document.getElementById('occasions').style.display = 'none';
-            document.getElementById('our-story').style.display = 'none';
-            document.getElementById('contact').style.display = 'none';
-            document.getElementById('privacy').classList.remove('active');
             document.getElementById('products').classList.add('active');
-
+            
+            // Add dress code guide note for wedding section
+            const dressCodeNote = document.getElementById('dress-code-note');
+            if (occasion === 'wedding') {
+                dressCodeNote.innerHTML = 'Need a little guidance on decoding dress codes? Check out <a href="https://www.brides.com/story/wedding-dress-code-explained" target="_blank" style="color: #2C4A6E; text-decoration: underline;">Brides.com\'s Wedding Dress Code Guide</a>';
+            } else {
+                dressCodeNote.innerHTML = '';
+            }
+            
+            // Update filters based on occasion
             const filtersContainer = document.querySelector('.filters');
+            
             if (occasion === 'wedding') {
                 filtersContainer.innerHTML = `
-                    <button class="filter-btn active" data-filter="all">All Items</button>
+                    <button class="filter-btn active" data-filter="all">All Styles</button>
                     <button class="filter-btn" data-filter="black-tie">Black-Tie/Formal</button>
-                    <button class="filter-btn" data-filter="semi-formal">Semi-Formal/Cocktail</button>
-                    <button class="filter-btn" data-filter="separates">Tops & Pants</button>
+                    <button class="filter-btn" data-filter="semi-formal">Cocktail/Semi-Formal/Dress Casual</button>
+                    <button class="filter-btn" data-filter="separates">Separates</button>
                 `;
             } else if (occasion === 'prom') {
                 filtersContainer.innerHTML = `
-                    <button class="filter-btn active" data-filter="all">All Items</button>
-                    <button class="filter-btn" data-filter="prom">Prom</button>
-                    <button class="filter-btn" data-filter="semi-formal">Semi-Formal</button>
+                    <button class="filter-btn active" data-filter="all">All Prom Dresses</button>
                 `;
+                document.getElementById('separates-title').style.display = 'none';
+                document.getElementById('separates-grid').style.display = 'none';
             } else if (occasion === 'holiday') {
                 filtersContainer.innerHTML = `
                     <button class="filter-btn active" data-filter="all">All Items</button>
                     <button class="filter-btn" data-filter="dress">Dresses</button>
                     <button class="filter-btn" data-filter="separates">Separates</button>
-                    <button class="filter-btn" data-filter="accessories">Accessories</button>
+
                 `;
             } else if (occasion === 'graduation') {
                 filtersContainer.innerHTML = `
-                    <button class="filter-btn active" data-filter="all">All Items</button>
-                    <button class="filter-btn" data-filter="graduate">For Graduate</button>
-                    <button class="filter-btn" data-filter="mom">For Mom</button>
+                    <button class="filter-btn active" data-filter="graduate">For Graduate</button>
                 `;
+                // Hide separates and accessories sections for graduation
+                document.getElementById('separates-title').style.display = 'none';
+                document.getElementById('separates-grid').style.display = 'none';
+
             } else {
                 filtersContainer.innerHTML = `
                     <button class="filter-btn active" data-filter="all">All Items</button>
                     <button class="filter-btn" data-filter="dress">Dresses Only</button>
                     <button class="filter-btn" data-filter="separates">Tops & Pants</button>
                 `;
-            }
+                // Show separates and accessories sections for other occasions
+                document.getElementById('separates-title').style.display = 'block';
+                document.getElementById('separates-grid').style.display = 'grid';
 
+            }
+            
             attachFilterListeners();
             loadProducts();
             window.scrollTo(0, 0);
         }
-
+        
         function attachFilterListeners() {
             document.querySelectorAll('.filter-btn').forEach(btn => {
                 btn.addEventListener('click', function() {
@@ -1048,64 +1021,130 @@
             });
         }
 
+        function showOurStory() {
+            document.getElementById('occasions').style.display = 'none';
+            document.getElementById('products').classList.remove('active');
+            document.getElementById('our-story').style.display = 'block';
+            window.scrollTo(0, 0);
+        }
+
         function showOccasions() {
             document.getElementById('products').classList.remove('active');
             document.getElementById('occasions').style.display = 'block';
-            document.getElementById('our-story').style.display = 'block';
-            document.getElementById('contact').style.display = 'block';
-            window.scrollTo(0, 0);
+            document.getElementById('our-story').style.display = 'none';
+            setTimeout(function() {
+                document.getElementById('find-your-look').scrollIntoView({ behavior: 'smooth' });
+            }, 50);
         }
 
         function loadProducts() {
             const data = productData[currentOccasion];
             const dressesGrid = document.getElementById('dresses-grid');
             const separatesGrid = document.getElementById('separates-grid');
-            const accessoriesGrid = document.getElementById('accessories-grid');
-            const accessoriesTitle = document.getElementById('accessories-title');
-
+            const separatesTitle = document.getElementById('separates-title');
             dressesGrid.innerHTML = '';
             separatesGrid.innerHTML = '';
-            accessoriesGrid.innerHTML = '';
-
-            if (currentOccasion === 'holiday') {
-                accessoriesTitle.style.display = 'block';
-                accessoriesGrid.style.display = 'grid';
-            } else {
-                accessoriesTitle.style.display = 'none';
-                accessoriesGrid.style.display = 'none';
+            
+            if (data.dresses && data.dresses.length > 0) {
+                data.dresses.forEach(product => {
+                    if (shouldShowProduct(product)) {
+                        dressesGrid.innerHTML += createProductCard(product);
+                    }
+                });
+            }
+            
+            if (data.separates && data.separates.length > 0) {
+                data.separates.forEach(product => {
+                    if (shouldShowProduct(product)) {
+                        separatesGrid.innerHTML += createProductCard(product);
+                    }
+                });
             }
 
-            if (data.dresses) data.dresses.forEach(p => { if (shouldShowProduct(p)) dressesGrid.innerHTML += createProductCard(p); });
-            if (data.separates) data.separates.forEach(p => { if (shouldShowProduct(p)) separatesGrid.innerHTML += createProductCard(p); });
-            if (data.accessories) data.accessories.forEach(p => { if (shouldShowProduct(p)) accessoriesGrid.innerHTML += createProductCard(p); });
+            // Hide the Tops & Pants heading if nothing is showing in separates
+            if (separatesTitle) {
+                separatesTitle.style.display = separatesGrid.innerHTML.trim() === '' ? 'none' : 'block';
+            }
         }
 
         function shouldShowProduct(product) {
             if (currentFilter === 'all') return true;
-            if (currentFilter === 'black-tie' && product.formalLevel === 'black-tie') return true;
-            if (currentFilter === 'prom' && product.formalLevel === 'prom') return true;
-            if (currentFilter === 'semi-formal' && product.formalLevel === 'semi-formal') return true;
-            if (currentFilter === 'graduate' && product.audience === 'graduate') return true;
-            if (currentFilter === 'mom' && product.audience === 'mom') return true;
-            if (currentFilter === 'dress' || currentFilter === 'separates' || currentFilter === 'accessories') return true;
+            if (currentFilter === 'spring-summer') return product.season === 'spring-summer';
+            if (currentFilter === 'fall-winter') return product.season === 'fall-winter';
+            if (currentFilter === 'black-tie') return product.formalLevel === 'black-tie';
+            if (currentFilter === 'prom') return product.formalLevel === 'prom';
+            if (currentFilter === 'semi-formal') return product.formalLevel === 'semi-formal';
+            if (currentFilter === 'graduate') return product.audience === 'graduate';
+            if (currentFilter === 'mom') return product.audience === 'mom';
+            if (currentFilter === 'dress') return product.type !== 'separates';
+            if (currentFilter === 'separates') return product.type === 'separates';
             if (currentFilter === 'modern' || currentFilter === 'classic') return product.style === currentFilter;
             return true;
         }
 
         function createProductCard(product) {
-            const storeUrl = storeLinks[product.brand] || '#';
+            const linkHref = product.link || '#';
+            const linkTarget = product.link ? '_blank' : '_self';
+            const imageUrl = product.image || '';
+            const photoCredit = product.brand.includes("Amazon") ? "Amazon" :
+                                product.brand.includes("Bloomingdale") ? "Bloomingdale's" : 
+                                product.brand.includes("Nordstrom") ? "Nordstrom" : 
+                                product.brand.includes("PacSun") ? "PacSun" : 
+                                product.brand.includes("Hollister") ? "Hollister" :
+                                product.brand.includes("Abercrombie") ? "Abercrombie & Fitch" :
+                                product.brand.includes("Revolve") ? "Revolve" :
+                                product.brand.includes("Macy") ? "Macy's" :
+                                product.brand.includes("Zara") ? "Zara" :
+                                product.brand.includes("J.Crew") ? "J.Crew" :
+                                product.brand.includes("Anthropologie") ? "Anthropologie" :
+                                product.brand.includes("Reformation") ? "Reformation" :
+                                product.brand.includes("Eloquii") ? "Eloquii" :
+                                product.brand.includes("Boden") ? "Boden" :
+                                product.brand.includes("Mango") ? "Mango" :
+                                product.brand.includes("Ann Taylor") ? "Ann Taylor" :
+                                product.brand.includes("Couture Candy") ? "Couture Candy" :
+                                product.brand.includes("Amanda Uprichard") ? "Amanda Uprichard" :
+                                product.brand.includes("Stacees") ? "Stacees" :
+                                product.store;
+            const objectFit = product.brand === "Amazon" ? "contain" : "cover";
+            const imageHtml = imageUrl ? 
+                `<img src="${imageUrl}" alt="${product.name}" style="width: 100%; height: 100%; object-fit: ${objectFit};">
+                 <div style="position: absolute; bottom: 5px; right: 5px; background: rgba(255,255,255,0.9); padding: 2px 8px; font-size: 0.65rem; color: #666; border-radius: 3px;">Photo: ${photoCredit}</div>` : 
+                '👗';
+            
+            const trendingBadge = product.isTrending ? 
+                `<div style="background: #2C4A6E; color: white; padding: 6px 12px; font-size: 0.75rem; font-weight: 600; text-align: center; margin-top: 8px; border-radius: 3px;">✨ Trending 2026 Prom Dress</div>` : '';
+
+            const multiColorBadge = product.isMultiColor ?
+                `<div style="background: #7A9E7E; color: white; padding: 6px 12px; font-size: 0.75rem; font-weight: 600; text-align: center; margin-top: 8px; border-radius: 3px;">🎨 Available in a Variety of Colors</div>` : '';
+
+            const budgetBadge = product.isBudgetPick ?
+                `<div style="background: #5B8BA8; color: white; padding: 6px 12px; font-size: 0.75rem; font-weight: 600; text-align: center; margin-top: 8px; border-radius: 3px;">⭐ Amazon Budget Pick · Highly Rated · Available in Every Imaginable Color</div>` : '';
+
+            const budgetShoeBadge = product.isBudgetShoe ?
+                `<div style="background: #5B8BA8; color: white; padding: 6px 12px; font-size: 0.75rem; font-weight: 600; text-align: center; margin-top: 8px; border-radius: 3px;">👟 Budget Shoe Pick · Highly Rated · Comfortable</div>` : '';
+            
             return `
                 <div class="product-card">
-                    <div class="product-image">👗</div>
-                    <div class="product-info">
-                        <div class="product-brand">${product.brand}</div>
-                        <div class="product-name">${product.name}</div>
-                        <div class="product-price">${product.price}</div>
-                        <a href="${storeUrl}" class="product-link" target="_blank">Shop at ${product.brand}</a>
-                    </div>
+                    <a href="${linkHref}" target="${linkTarget}" style="text-decoration: none; color: inherit;">
+                        <div class="product-image" style="position: relative;">
+                            ${imageHtml}
+                        </div>
+                        <div class="product-info">
+                            <div class="product-brand">${product.brand}</div>
+                            <div class="product-name">${product.name}</div>
+                            <div class="product-price">${product.price}</div>
+                            ${trendingBadge}
+                            ${budgetBadge}
+                            ${budgetShoeBadge}
+                            ${multiColorBadge}
+                            <span class="product-link">Shop Now</span>
+                        </div>
+                    </a>
                 </div>
             `;
         }
+
     </script>
 </body>
 </html>

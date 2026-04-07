@@ -1,4 +1,12 @@
+Inserted suggestion that works for youNone selected
 
+Skip to content
+Using Gmail with screen readers
+Conversations
+28% of 15 GB used
+Terms · Privacy · Program Policies
+Last account activity: 1 minute ago
+Details
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -557,20 +565,129 @@
         
         /* Responsive */
         @media (max-width: 768px) {
+            .hero {
+                margin: 3rem auto 4rem;
+                padding: 0 1.5rem;
+            }
+
             .hero h1 {
-                font-size: 3rem;
+                font-size: 2.5rem;
             }
-            
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .header-content {
+                padding: 0 1.5rem;
+                flex-wrap: wrap;
+                gap: 0.5rem;
+            }
+
+            .logo {
+                font-size: 1.7rem;
+            }
+
             nav ul {
-                gap: 1.5rem;
+                gap: 1rem;
             }
-            
+
+            nav a {
+                font-size: 0.75rem;
+                letter-spacing: 0.04em;
+            }
+
+            .occasions-container {
+                padding: 0 1.5rem 4rem;
+            }
+
             .occasions-grid {
                 grid-template-columns: 1fr;
+                gap: 1.5rem;
             }
-            
+
+            .occasion-image {
+                height: 280px;
+            }
+
+            .products-section {
+                padding: 2rem 1.5rem;
+            }
+
             .products-grid {
                 grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .products-header h2 {
+                font-size: 2.2rem;
+            }
+
+            .section-header h2 {
+                font-size: 2rem;
+            }
+
+            .filters {
+                gap: 0.5rem;
+                margin-bottom: 2rem;
+            }
+
+            .filter-btn {
+                padding: 0.6rem 1.2rem;
+                font-size: 0.75rem;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+                margin: 3rem 0 2rem;
+            }
+
+            .back-button {
+                padding: 0.6rem 1.5rem;
+                font-size: 0.8rem;
+            }
+
+            .product-image {
+                height: 320px;
+            }
+
+            footer {
+                padding: 3rem 1.5rem 2rem;
+            }
+
+            #our-story {
+                padding: 4rem 1.5rem 5rem !important;
+            }
+
+            #our-story .story-title {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .logo {
+                font-size: 1.5rem;
+            }
+
+            nav ul {
+                gap: 0.75rem;
+            }
+
+            nav a {
+                font-size: 0.7rem;
+            }
+
+            .products-header h2 {
+                font-size: 1.8rem;
+            }
+
+            .filter-btn {
+                padding: 0.5rem 1rem;
+                font-size: 0.7rem;
             }
         }
     </style>
@@ -717,9 +834,73 @@
                 <a href="mailto:info@byoccasionboutique.com" style="color: white; font-weight: 500; text-decoration: underline; font-size: 1rem;">info@byoccasionboutique.com</a>
             </p>
             <div class="footer-badge">Prototype Version</div>
-            <p style="margin-top: 2rem; font-size: 0.75rem; opacity: 0.6; max-width: 600px; margin-left: auto; margin-right: auto; line-height: 1.6;">By Occasion participates in affiliate advertising programs, including the Amazon Services LLC Associates Program. We may earn a commission from qualifying purchases made through links on this site, at no extra cost to you. We only recommend products we believe in.</p>
+            <p style="margin-top: 2rem; font-size: 0.75rem; opacity: 0.6; max-width: 600px; margin-left: auto; margin-right: auto; line-height: 1.6;">As an Amazon Associate I earn from qualifying purchases. We may earn a commission from qualifying purchases made through links on this site, at no extra cost to you. We only recommend products we believe in.</p>
+            <p style="margin-top: 1.5rem; font-size: 0.75rem; opacity: 0.5;">
+                © 2026 By Occasion &nbsp;·&nbsp; 
+                <a href="javascript:void(0)" onclick="showTerms()" style="color: white; text-decoration: underline;">Terms of Use</a>
+                &nbsp;·&nbsp;
+                <a href="javascript:void(0)" onclick="showPrivacy()" style="color: white; text-decoration: underline;">Privacy Policy</a>
+            </p>
         </div>
     </footer>
+
+    <!-- Terms of Use Section -->
+    <section id="terms-of-use" style="display:none; max-width: 780px; margin: 0 auto; padding: 7rem 3rem 8rem; animation: fadeIn 0.6s ease;">
+        <div style="display: inline-block; background: var(--warm-beige); padding: 0.5rem 1.5rem; border-radius: 30px; font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ocean-blue); font-weight: 600; margin-bottom: 2rem;">Legal</div>
+        <div style="width: 80px; height: 3px; background: var(--ocean-blue); margin-bottom: 3.5rem;"></div>
+        <h2 style="font-family: 'Cormorant Garamond', serif; font-size: 2.5rem; color: var(--navy-blue); margin-bottom: 2rem;">Terms of Use</h2>
+        <p style="font-size: 0.8rem; color: #888; margin-bottom: 2rem;">Last updated: April 2026</p>
+        <div style="font-family: 'Work Sans', sans-serif; font-size: 1rem; color: var(--charcoal); line-height: 1.9; font-weight: 300;">
+            <p style="margin-bottom: 1.5rem;">By accessing or using byoccasionboutique.com ("the Site"), you agree to the following terms.</p>
+            <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; color: var(--navy-blue); margin-bottom: 0.75rem;">Use of the Site</h3>
+            <p style="margin-bottom: 1.5rem;">This Site is for personal, non-commercial use only. You may not copy, reproduce, or redistribute any content without permission.</p>
+            <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; color: var(--navy-blue); margin-bottom: 0.75rem;">Affiliate Links & Third Party Sites</h3>
+            <p style="margin-bottom: 1.5rem;">The Site contains affiliate links. As an Amazon Associate and participant in other affiliate programs, we earn from qualifying purchases at no extra cost to you. We are not responsible for the content, accuracy, or practices of third-party websites we link to.</p>
+            <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; color: var(--navy-blue); margin-bottom: 0.75rem;">No Warranties</h3>
+            <p style="margin-bottom: 1.5rem;">The Site is provided "as is" without warranties of any kind. We make no guarantees that product information, pricing, or availability is accurate or current, as these are controlled by third-party retailers.</p>
+            <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; color: var(--navy-blue); margin-bottom: 0.75rem;">Limitation of Liability</h3>
+            <p style="margin-bottom: 1.5rem;">By Occasion is not liable for any damages arising from your use of this Site or purchases made through affiliate links.</p>
+            <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; color: var(--navy-blue); margin-bottom: 0.75rem;">Intellectual Property</h3>
+            <p style="margin-bottom: 1.5rem;">All original content on this Site, including design, text, and layout, is the property of By Occasion. All product images remain the property of their respective retailers and brands.</p>
+            <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; color: var(--navy-blue); margin-bottom: 0.75rem;">Changes to Terms</h3>
+            <p style="margin-bottom: 1.5rem;">We reserve the right to update these terms at any time. Continued use of the Site constitutes acceptance of any changes.</p>
+            <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; color: var(--navy-blue); margin-bottom: 0.75rem;">Contact</h3>
+            <p>Questions? Email us at <a href="mailto:info@byoccasionboutique.com" style="color: var(--ocean-blue);">info@byoccasionboutique.com</a></p>
+        </div>
+    </section>
+
+    <!-- Privacy Policy Section -->
+    <section id="privacy-policy" style="display:none; max-width: 780px; margin: 0 auto; padding: 7rem 3rem 8rem; animation: fadeIn 0.6s ease;">
+        <div style="display: inline-block; background: var(--warm-beige); padding: 0.5rem 1.5rem; border-radius: 30px; font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ocean-blue); font-weight: 600; margin-bottom: 2rem;">Legal</div>
+        <div style="width: 80px; height: 3px; background: var(--ocean-blue); margin-bottom: 3.5rem;"></div>
+        <h2 style="font-family: 'Cormorant Garamond', serif; font-size: 2.5rem; color: var(--navy-blue); margin-bottom: 2rem;">Privacy Policy</h2>
+        <p style="font-size: 0.8rem; color: #888; margin-bottom: 2rem;">Last updated: April 2026</p>
+        <div style="font-family: 'Work Sans', sans-serif; font-size: 1rem; color: var(--charcoal); line-height: 1.9; font-weight: 300;">
+            <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; color: var(--navy-blue); margin-bottom: 0.75rem;">Who We Are</h3>
+            <p style="margin-bottom: 1.5rem;">By Occasion (byoccasionboutique.com) is a curated fashion site that helps you find the perfect outfit for life's important moments. You can reach us at info@byoccasionboutique.com.</p>
+            <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; color: var(--navy-blue); margin-bottom: 0.75rem;">Information We Collect</h3>
+            <p style="margin-bottom: 0.75rem;">We do not directly collect personal information from visitors. However, third-party services we use may collect certain data automatically, including:</p>
+            <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem;">
+                <li style="margin-bottom: 0.5rem;">IP address and browser type — collected automatically when you visit</li>
+                <li style="margin-bottom: 0.5rem;">Pages visited and time spent — collected via analytics tools</li>
+                <li style="margin-bottom: 0.5rem;">Clicks on affiliate links — tracked by affiliate programs including Amazon Associates</li>
+            </ul>
+            <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; color: var(--navy-blue); margin-bottom: 0.75rem;">Cookies</h3>
+            <p style="margin-bottom: 1.5rem;">This site uses cookies — small text files stored on your device — to improve your browsing experience. Third-party services including Google Analytics and Amazon may also place cookies on your device. You can disable cookies in your browser settings, though some features may not work properly.</p>
+            <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; color: var(--navy-blue); margin-bottom: 0.75rem;">Third-Party Links & Affiliate Programs</h3>
+            <p style="margin-bottom: 1.5rem;">This site contains links to third-party retailers. As an Amazon Associate we earn from qualifying purchases. We are not responsible for the privacy practices of any third-party sites. We encourage you to review their privacy policies before making a purchase.</p>
+            <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; color: var(--navy-blue); margin-bottom: 0.75rem;">Google Analytics</h3>
+            <p style="margin-bottom: 1.5rem;">We use or plan to use Google Analytics to understand how visitors use our site. Google Analytics collects anonymous data about your visit. You can opt out at <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" style="color: var(--ocean-blue);">tools.google.com/dlpage/gaoptout</a>.</p>
+            <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; color: var(--navy-blue); margin-bottom: 0.75rem;">Your Rights</h3>
+            <p style="margin-bottom: 1.5rem;">Depending on your location you may have rights regarding your personal data including the right to access, correct, or delete it. Contact us at info@byoccasionboutique.com with any requests.</p>
+            <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; color: var(--navy-blue); margin-bottom: 0.75rem;">Children's Privacy</h3>
+            <p style="margin-bottom: 1.5rem;">This site is not directed at children under 13. We do not knowingly collect data from children.</p>
+            <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; color: var(--navy-blue); margin-bottom: 0.75rem;">Changes to This Policy</h3>
+            <p style="margin-bottom: 1.5rem;">We may update this policy from time to time. Continued use of the site constitutes acceptance of any changes.</p>
+            <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; color: var(--navy-blue); margin-bottom: 0.75rem;">Contact</h3>
+            <p>Questions? Email us at <a href="mailto:info@byoccasionboutique.com" style="color: var(--ocean-blue);">info@byoccasionboutique.com</a></p>
+        </div>
+    </section>
 
     <script>
         // [Same JavaScript as before - keeping it identical]
@@ -1025,6 +1206,26 @@
             document.getElementById('occasions').style.display = 'none';
             document.getElementById('products').classList.remove('active');
             document.getElementById('our-story').style.display = 'block';
+            document.getElementById('terms-of-use').style.display = 'none';
+            document.getElementById('privacy-policy').style.display = 'none';
+            window.scrollTo(0, 0);
+        }
+
+        function showTerms() {
+            document.getElementById('occasions').style.display = 'none';
+            document.getElementById('products').classList.remove('active');
+            document.getElementById('our-story').style.display = 'none';
+            document.getElementById('privacy-policy').style.display = 'none';
+            document.getElementById('terms-of-use').style.display = 'block';
+            window.scrollTo(0, 0);
+        }
+
+        function showPrivacy() {
+            document.getElementById('occasions').style.display = 'none';
+            document.getElementById('products').classList.remove('active');
+            document.getElementById('our-story').style.display = 'none';
+            document.getElementById('terms-of-use').style.display = 'none';
+            document.getElementById('privacy-policy').style.display = 'block';
             window.scrollTo(0, 0);
         }
 
@@ -1032,6 +1233,8 @@
             document.getElementById('products').classList.remove('active');
             document.getElementById('occasions').style.display = 'block';
             document.getElementById('our-story').style.display = 'none';
+            document.getElementById('terms-of-use').style.display = 'none';
+            document.getElementById('privacy-policy').style.display = 'none';
             setTimeout(function() {
                 document.getElementById('find-your-look').scrollIntoView({ behavior: 'smooth' });
             }, 50);
@@ -1148,3 +1351,5 @@
     </script>
 </body>
 </html>
+ByOccasionDraft920.html
+Displaying ByOccasionDraft920.html.
